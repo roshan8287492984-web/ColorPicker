@@ -1,0 +1,7 @@
+ColorPick Error Pages — corrected
+
+The error pages are now self-contained: their CSS and JavaScript are inline, so they render correctly even when the browser reaches a 404 through a nested URL such as /index.html/roshan. They no longer depend on relative style.css or language.js paths.
+
+For production, configure your host/server to map HTTP 400/401/403/404/408/429/500/502/503/504 responses to the corresponding HTML files.
+
+For local testing with the included Node server, run start-server.bat.

@@ -1,0 +1,8 @@
+COLORPICK SEO SETUP
+
+1. Replace every occurrence of https://YOUR-DOMAIN.com with your real HTTPS domain in all HTML files, sitemap.xml and robots.txt.
+2. Verify canonical URLs and Open Graph URLs after replacement.
+3. The site is an MPA: each tool and legal/company page is a separate crawlable HTML document.
+4. Submit sitemap.xml in Google Search Console and Bing Webmaster Tools.
+5. The legal pages are templates. Replace the placeholder contact email and review the Privacy Policy and Terms with qualified legal counsel for your jurisdiction and actual data practices.
+6. If analytics, ads, server-side uploads, accounts, cookies or other third-party services are added, update the Privacy Policy accordingly.

@@ -1,0 +1,8 @@
+# ColorPick robots.txt
+# Replace YOUR-DOMAIN.com with your real website domain before publishing.
+
+User-agent: *
+Allow: /
+
+# XML sitemap for all indexable ColorPick pages.
+Sitemap: https://YOUR-DOMAIN.com/sitemap.xml

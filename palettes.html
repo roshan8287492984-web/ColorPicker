@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<script>
+(function () {
+    try {
+        const savedTheme = localStorage.getItem("colorpick-theme");
+        if (savedTheme === "dark") {
+            document.documentElement.classList.add("dark-loading");
+            document.documentElement.style.colorScheme = "dark";
+        } else {
+            document.documentElement.style.colorScheme = "light";
+        }
+    } catch (e) {
+        document.documentElement.style.colorScheme = "light";
+    }
+})();
+</script>
+<style>
+html.dark-loading {
+  background:#101014 !important;
+  color:#f5f5f7;
+  color-scheme:dark;
+  --bg:#101014; --card:#19191f; --text:#f5f5f7; --muted:#a4a4ad;
+  --border:#303039; --primary:#9278ff; --primary-hover:#a38dff;
+  --primary-light:#292341; --input:#24242b;
+}
+html.dark-loading body { background:#101014 !important; color:#f5f5f7 !important; }
+html.dark-loading .navbar { background:#19191f !important; border-color:#303039 !important; }
+</style>
+
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Explore Palette - Color Palettes & HEX Codes | ColorPick</title>
+    <meta name="description" content="Explore palette ideas for websites, branding, UI and creative projects, then copy HEX colors and use ColorPick tools to refine your choices.">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta name="keywords" content="explore palette, color picker, hex color picker, color picker from image, rgb color picker, image color picker, hex code color picker, hex color picker from image, color picker wheel, online color picker, color picker tool, color picker image, color picker from screen">
+    <link rel="canonical" href="https://YOUR-DOMAIN.com/palettes.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Explore Palette - Color Palettes & HEX Codes | ColorPick">
+    <meta property="og:description" content="Explore palette ideas for websites, branding, UI and creative projects, then copy HEX colors and use ColorPick tools to refine your choices.">
+    <meta property="og:url" content="https://YOUR-DOMAIN.com/palettes.html">
+    <meta property="og:site_name" content="ColorPick">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://YOUR-DOMAIN.com/og-image.png">
+    <meta property="og:image:alt" content="ColorPick color tools">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Explore Palette - Color Palettes & HEX Codes | ColorPick">
+    <meta name="twitter:description" content="Explore palette ideas for websites, branding, UI and creative projects, then copy HEX colors and use ColorPick tools to refine your choices.">
+    <meta name="twitter:image" content="https://YOUR-DOMAIN.com/og-image.png">
+
+
+          <!-- ColorPick Favicon -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="ColorPick">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Apply saved theme before page renders -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ColorPick language selector styles -->
+    <style>
+        .language-selector{position:relative;display:inline-flex;align-items:center}
+        .language-toggle{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(127,127,127,.25);background:transparent;color:inherit;border-radius:999px;padding:8px 11px;cursor:pointer;font:inherit;transition:background .2s ease,transform .2s ease}
+        .language-toggle:hover{background:rgba(127,127,127,.10);transform:translateY(-1px)}
+        .translate-icon{width:21px;height:21px;border:1.5px solid currentColor;border-radius:50%;display:inline-grid;place-items:center;font-size:11px;font-weight:700;line-height:1}
+        .language-chevron{width:8px;height:8px;display:inline-block;flex:0 0 8px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);margin:-4px 1px 0 1px;opacity:.7}
+        .language-menu{position:absolute;right:0;top:calc(100% + 9px);z-index:1000;min-width:155px;padding:6px;border:1px solid rgba(127,127,127,.22);border-radius:14px;background:var(--card);color:var(--text);box-shadow:0 14px 35px rgba(0,0,0,.14);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s ease,transform .18s ease,visibility .18s ease}
+        .language-menu.show{opacity:1;visibility:visible;transform:translateY(0)}
+        .language-menu button{display:block;width:100%;border:0;background:transparent;color:inherit;text-align:left;border-radius:9px;padding:9px 10px;cursor:pointer;font:inherit}
+        .language-menu button:hover,.language-menu button.selected-language{background:rgba(127,127,127,.12)}
+        @media(max-width:700px){.language-toggle{padding:8px}.language-toggle #languageCurrent{display:none}.language-menu{right:0}}
+    </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Explore Palette - Color Palettes & HEX Codes",
+  "url": "https://YOUR-DOMAIN.com/palettes.html",
+  "description": "Explore palette ideas for websites, branding, UI and creative projects, then copy HEX colors and use ColorPick tools to refine your choices.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ColorPick",
+    "url": "https://YOUR-DOMAIN.com/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ColorPick",
+      "item": "https://YOUR-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Explore Palette",
+      "item": "https://YOUR-DOMAIN.com/palettes.html"
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<nav class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <span class="logo-icon">🎨</span>
+
+        <span data-i18n="brand">ColorPick</span>
+
+    </a>
+
+
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="siteNavLinks">
+        <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-links" id="siteNavLinks">
+
+        <a href="index.html">
+            <span data-i18n="navPicker">Color Picker</span>
+        </a>
+
+        <a
+            href="palettes.html"
+            class="active-link"
+        >
+            <span data-i18n="navPalettes">Explore Palettes</span>
+        </a>
+
+        <a href="color-suggestions.html">
+            Color Suggestions
+        </a>
+
+        <a href="color-wheel.html">Color Wheel</a>
+
+        <!-- LANGUAGE SELECTOR -->
+        
+
+    </div>
+    <div class="nav-actions">
+<div class="language-selector">
+            <button id="languageBtn" class="language-toggle" type="button"
+                    aria-label="Choose language" aria-haspopup="true"
+                    aria-expanded="false" title="Choose language">
+                <span class="translate-icon" aria-hidden="true">文</span>
+                <span id="languageCurrent">English</span>
+                <span class="language-chevron" aria-hidden="true"></span>
+            </button>
+
+            <div id="languageMenu" class="language-menu" role="menu"
+                 aria-label="Language selection">
+                <button type="button" role="menuitem" data-language="en">English</button>
+                <button type="button" role="menuitem" data-language="hi">हिंदी</button>
+                <button type="button" role="menuitem" data-language="es">Español</button>
+                <button type="button" role="menuitem" data-language="fr">Français</button>
+                <button type="button" role="menuitem" data-language="de">Deutsch</button>
+                <button type="button" role="menuitem" data-language="ja">日本語</button>
+            </div>
+        </div>
+<button
+            id="themeBtn"
+            class="theme-toggle"
+            type="button"
+            aria-label="Toggle dark mode"
+            title="Toggle dark mode"
+        >
+            <span id="themeIcon">🌙</span>
+        </button>
+    </div>
+
+
+</nav>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="palette-hero">
+<h2 class="seo-page-heading">Explore Palette Ideas for Every Creative Project</h2>
+
+
+
+    <div class="badge">
+        <span data-i18n="paletteBadge">🎨 100+ Color Palettes</span>
+    </div>
+
+    <h1>
+        <span data-i18n="paletteHero1">Explore Beautiful</span><br>
+        <span data-i18n="paletteHero2">Color Palettes.</span>
+    </h1>
+
+    <p>
+        <span data-i18n="paletteHeroDescription">Find the perfect color combination for your website, logo, artwork or next creative project.</span>
+    </p>
+
+
+    <!-- SEARCH -->
+
+    <div class="large-search">
+
+        <span>🔎</span>
+
+        <input
+            id="paletteSearch"
+            type="search"
+            autocomplete="off"
+            data-i18n-placeholder="searchPalettes" placeholder="Search palettes..."
+            aria-label="Search palettes"
+        >
+
+    </div>
+
+
+<div class="legal-quick-links" aria-label="Company and legal pages">
+  <a href="about.html" data-i18n="aboutUs">About Us</a>
+  <a href="privacy-policy.html" data-i18n="privacyPolicy">Privacy Policy</a>
+  <a href="terms.html" data-i18n="termsConditions">Terms &amp; Conditions</a>
+  <a href="contact.html" data-i18n="contactUs">Contact Us</a>
+</div>
+</section>
+
+
+<!-- =====================================================
+     PALETTE EXPLORER
+===================================================== -->
+
+<section class="palette-explorer">
+
+    <!-- CATEGORY BUTTONS -->
+
+    <div class="palette-controls">
+
+        <div
+            id="categoryButtons"
+            class="category-buttons"
+        ></div>
+
+    </div>
+
+
+    <!-- PALETTE GRID -->
+
+    <div
+        id="paletteGrid"
+        class="palette-grid"
+    ></div>
+
+
+    <!-- LOAD MORE -->
+
+    <div id="loadMoreContainer" class="load-more-container">
+
+        <button
+            id="loadMoreBtn"
+            class="load-more-btn"
+            type="button"
+        >
+            <span data-i18n="loadMore">Load More Palettes</span>
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     INFO
+===================================================== -->
+
+<section class="palette-info-section">
+
+    <div>
+
+        <span class="small-title">
+            <span data-i18n="howToUse">HOW TO USE</span>
+        </span>
+
+        <h2>
+            <span data-i18n="findColor">Find a Color You Love?</span>
+        </h2>
+
+        <p>
+            <span data-i18n="howToUseDescription">Click any color inside a palette and its HEX code will automatically be copied to your clipboard.</span>
+        </p>
+
+    </div>
+
+
+    <a
+        href="index.html"
+        class="cta-button"
+    >
+        <span data-i18n="pickFromImage">Pick Colors From Image →</span>
+    </a>
+
+</section>
+
+
+
+<section class="seo-content" aria-labelledby="seo-content-title">
+  <div class="seo-content-inner">
+    <h2 id="seo-content-title">Explore Palette Combinations and Find the Right Colors</h2>
+    <p>ColorPick makes it easy to explore palette combinations when you need a starting point for a website, brand, app interface, illustration or other creative project. An explore palette workflow is useful when you know the mood or direction you want but have not chosen the exact colors yet. Browse combinations, search for useful palette ideas, and click individual colors to copy their HEX values. The goal is to turn color inspiration into practical values you can immediately use in a design.</p>
+    <p>Every palette can act as a starting reference for a broader color workflow. After finding a color you like, you can use ColorPick's color picker to compare it with a real image, or use the image color picker when you want to match a color from a photograph, logo or visual reference. This is helpful when a palette needs to connect with an existing brand asset rather than being created from scratch. A hex color picker can then give you a precise HEX value for CSS, design software or a style guide.</p>
+    <p>If your project uses different color formats, ColorPick also supports the wider workflow around RGB and HSL values. A palette may look right visually, but the exact RGB value can be useful for digital graphics and the HSL representation can help when adjusting hue, saturation or lightness. By combining palette exploration with an RGB color picker and image-based sampling tools, you can move from inspiration to measurable colors without repeatedly estimating values by eye.</p>
+    <p>The palette explorer is also useful when you are building UI systems. Designers can compare groups of colors before choosing primary, secondary, accent and background shades. Developers can copy HEX values and test them in CSS. Brand designers can use a palette as a reference while checking whether colors still match a logo or photograph. Artists and creators can browse combinations for a project and then refine individual shades with the Color Wheel or Color Suggestions tools.</p>
+    <p>ColorPick is built for people who want a practical browser-based color workflow rather than a complicated desktop application. You can explore palette options online, search the collection, and copy the colors you need. If you are searching for a color picker tool, an online color picker, or a color picker image workflow, the other ColorPick pages are available from the same navigation. For users searching for a color picker from screen, the image picker is focused on uploaded images instead of direct screen capture, but it provides a convenient way to sample a screenshot or saved visual.</p>
+    <p>A strong palette is more than a group of attractive colors. It should be easy to reproduce, easy to communicate and suitable for the context where it will be used. That is why ColorPick keeps HEX values close to the palette itself. You can discover a combination and immediately turn the visual idea into reusable color codes. You can then check related colors with the Color Suggestions page or study hue relationships with the Color Wheel.</p>
+    <p>Whether you are designing a landing page, selecting colors for a logo, preparing a social graphic, building a UI, or simply looking for inspiration, the Explore Palette page gives you a quick place to begin. Explore combinations, save the colors that fit your idea, copy their HEX codes, and use the other ColorPick tools when you need deeper color analysis or image matching.</p>
+    
+      <p>Palette exploration can also save time during the early stages of a project. Rather than choosing every color independently, start with a combination that already has a useful relationship and adjust only what needs to change. You can copy a HEX value from a palette, inspect it with the color tools, and then compare it against an image or another reference. This approach is especially practical for responsive websites, where a small, repeatable set of colors can make interfaces feel more consistent across pages and screen sizes.</p>
+  </div>
+</section>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-logo">
+        🎨 ColorPick
+    </div>
+
+
+    <div class="footer-links">
+        <a href="index.html"><span data-i18n="navPicker">Color Picker</span></a>
+        <a href="palettes.html"><span data-i18n="navPalettes">Explore Palettes</span></a>
+        <a href="color-suggestions.html"><span data-i18n="navSuggestions">Color Suggestions</span></a>
+        <a href="color-wheel.html"><span data-i18n="navWheel">Color Wheel</span></a>
+        <a href="color-code.html"><span data-i18n="navCode">Color Code</span></a>
+        <a href="about.html"><span data-i18n="aboutUs">About Us</span></a>
+        <a href="privacy-policy.html"><span data-i18n="privacyPolicy">Privacy Policy</span></a>
+        <a href="terms.html"><span data-i18n="termsConditions">Terms &amp; Conditions</span></a>
+        <a href="contact.html"><span data-i18n="contactUs">Contact Us</span></a>
+    </div>
+
+
+    <p>
+        © 2026 ColorPick. All rights reserved.
+    </p>
+
+</footer>
+
+
+<!-- =====================================================
+     TOAST
+===================================================== -->
+
+<div
+    id="toast"
+    class="toast"
+    role="status"
+    aria-live="polite"
+>
+
+    <span>✓</span>
+
+    <div>
+
+        <strong>
+            Color copied!
+        </strong>
+
+        <small id="toastColor">
+            #FFFFFF
+        </small>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="language.js"></script>
+<script src="palettes.js"></script>
+
+
+<script>(function(){if("serviceWorker" in navigator){navigator.serviceWorker.register("/ColorPick-Complete/service-worker.js?v=3",{scope:"/ColorPick-Complete/"}).catch(function(){});}})();</script>
+</body>
+
+</html>

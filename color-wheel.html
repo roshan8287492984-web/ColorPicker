@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+(function () {
+    try {
+        const savedTheme = localStorage.getItem("colorpick-theme");
+        if (savedTheme === "dark") {
+            document.documentElement.classList.add("dark-loading");
+            document.documentElement.style.colorScheme = "dark";
+        } else {
+            document.documentElement.style.colorScheme = "light";
+        }
+    } catch (e) {
+        document.documentElement.style.colorScheme = "light";
+    }
+})();
+</script>
+<style>
+html.dark-loading {
+  background:#101014 !important;
+  color:#f5f5f7;
+  color-scheme:dark;
+  --bg:#101014; --card:#19191f; --text:#f5f5f7; --muted:#a4a4ad;
+  --border:#303039; --primary:#9278ff; --primary-hover:#a38dff;
+  --primary-light:#292341; --input:#24242b;
+}
+html.dark-loading body { background:#101014 !important; color:#f5f5f7 !important; }
+html.dark-loading .navbar { background:#19191f !important; border-color:#303039 !important; }
+</style>
+
+
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Wheel - Interactive Color Wheel Picker | ColorPick</title>
+    <meta name="description" content="Use an interactive color wheel picker to explore complementary, triadic, analogous and monochromatic color harmonies and build palettes.">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta name="keywords" content="color wheel, color wheel picker, color wheel chart, complementary color wheel, the color wheel, rgb color wheel, primary color wheel, random color wheel, hex color wheel">
+    <link rel="canonical" href="https://YOUR-DOMAIN.com/color-wheel.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Color Wheel - Interactive Color Wheel Picker | ColorPick">
+    <meta property="og:description" content="Use an interactive color wheel picker to explore complementary, triadic, analogous and monochromatic color harmonies and build palettes.">
+    <meta property="og:url" content="https://YOUR-DOMAIN.com/color-wheel.html">
+    <meta property="og:site_name" content="ColorPick">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://YOUR-DOMAIN.com/og-image.png">
+    <meta property="og:image:alt" content="ColorPick color tools">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Color Wheel - Interactive Color Wheel Picker | ColorPick">
+    <meta name="twitter:description" content="Use an interactive color wheel picker to explore complementary, triadic, analogous and monochromatic color harmonies and build palettes.">
+    <meta name="twitter:image" content="https://YOUR-DOMAIN.com/og-image.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="color-wheel.css">
+  <style>
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Color Wheel - Interactive Color Wheel Picker",
+  "url": "https://YOUR-DOMAIN.com/color-wheel.html",
+  "description": "Use an interactive color wheel picker to explore complementary, triadic, analogous and monochromatic color harmonies and build palettes.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ColorPick",
+    "url": "https://YOUR-DOMAIN.com/"
+  },
+  "applicationCategory": "DesignApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ColorPick",
+      "item": "https://YOUR-DOMAIN.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Color Wheel",
+      "item": "https://YOUR-DOMAIN.com/color-wheel.html"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">🎨</span>
+      <span>ColorPick</span>
+    </a>
+
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="siteNavLinks">
+        <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-links" id="siteNavLinks">
+      <a href="index.html"><span data-i18n="navPicker">Color Picker</span></a>
+      <a href="palettes.html"><span data-i18n="navPalettes">Explore Palettes</span></a>
+      <a href="color-suggestions.html">Color Suggestions</a>
+      <a href="color-wheel.html" class="active-link">Color Wheel</a>
+
+      <!-- LANGUAGE SELECTOR -->
+      
+    </div>
+    <div class="nav-actions">
+<div class="language-selector">
+        <button id="languageBtn" class="language-toggle" type="button"
+                aria-label="Choose language" aria-haspopup="true"
+                aria-expanded="false" title="Choose language">
+          <span class="translate-icon" aria-hidden="true">文</span>
+          <span id="languageCurrent">English</span>
+          <span class="language-chevron" aria-hidden="true"></span>
+        </button>
+        <div id="languageMenu" class="language-menu" role="menu" aria-label="Language selection">
+          <button type="button" role="menuitem" data-language="en">English</button>
+          <button type="button" role="menuitem" data-language="hi">हिंदी</button>
+          <button type="button" role="menuitem" data-language="es">Español</button>
+          <button type="button" role="menuitem" data-language="fr">Français</button>
+          <button type="button" role="menuitem" data-language="de">Deutsch</button>
+          <button type="button" role="menuitem" data-language="ja">日本語</button>
+        </div>
+      </div>
+<button id="themeBtn" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+        <span id="themeIcon">🌙</span>
+      </button>
+    </div>
+
+  </nav>
+
+  <main class="wheel-page">
+<h2 class="seo-page-heading">Color Wheel: Explore Color Harmonies and Palettes</h2>
+
+
+    <section class="wheel-hero">
+      <div class="wheel-badge">🎨 Color Harmony Tool</div>
+      <h1>Create Your Perfect <span>Color Palette</span></h1>
+      <p>Choose a base color, select a harmony, and build a balanced palette with the interactive color wheel.</p>
+    
+<div class="legal-quick-links" aria-label="Company and legal pages">
+  <a href="about.html" data-i18n="aboutUs">About Us</a>
+  <a href="privacy-policy.html" data-i18n="privacyPolicy">Privacy Policy</a>
+  <a href="terms.html" data-i18n="termsConditions">Terms &amp; Conditions</a>
+  <a href="contact.html" data-i18n="contactUs">Contact Us</a>
+</div>
+</section>
+
+    <section class="wheel-app" aria-label="Interactive color wheel">
+      <aside class="wheel-controls">
+        <div class="control-card">
+          <label for="hexInput">Base Color</label>
+          <div class="hex-row">
+            <span class="color-dot" id="baseDot"></span>
+            <input id="hexInput" type="text" value="#6848E8" maxlength="7" aria-label="Base color HEX">
+            <input id="nativeColor" type="color" value="#6848E8" aria-label="Choose base color">
+          </div>
+          <div class="hsl-values">
+            <span>H <b id="hueValue">0°</b></span>
+            <span>S <b id="satValue">0%</b></span>
+            <span>L <b id="lightValue">0%</b></span>
+          </div>
+        </div>
+
+        <div class="control-card">
+          <label>Color Harmony</label>
+          <div class="harmony-grid" id="harmonyGrid">
+            <button data-harmony="analogous" class="harmony-btn active">Analogous</button>
+            <button data-harmony="monochromatic" class="harmony-btn">Monochromatic</button>
+            <button data-harmony="complementary" class="harmony-btn">Complementary</button>
+            <button data-harmony="triadic" class="harmony-btn">Triadic</button>
+            <button data-harmony="split" class="harmony-btn">Split Complementary</button>
+            <button data-harmony="square" class="harmony-btn">Square</button>
+            <button data-harmony="double" class="harmony-btn">Double Complementary</button>
+            <button data-harmony="custom" class="harmony-btn">Custom</button>
+          </div>
+        </div>
+
+        <div class="control-card sliders">
+          <label for="satRange">Saturation <span id="satRangeValue">78%</span></label>
+          <input id="satRange" type="range" min="10" max="100" value="78">
+          <label for="lightRange">Lightness <span id="lightRangeValue">53%</span></label>
+          <input id="lightRange" type="range" min="10" max="90" value="53">
+        </div>
+      </aside>
+
+      <div class="wheel-stage">
+        <div class="wheel-wrap" id="wheelWrap">
+          <div class="color-wheel" id="colorWheel" aria-label="Color wheel. Click or drag to choose a hue."></div>
+          <svg class="harmony-lines" id="harmonyLines" viewBox="0 0 500 500" aria-hidden="true"></svg>
+        </div>
+        <p class="wheel-tip">Click or drag any point on the wheel to change hue and saturation together. You can rotate and change the color in one continuous movement.</p>
+      </div>
+    </section>
+
+    <section class="palette-output">
+      <div class="output-heading">
+        <div>
+          <h2>Your Color Palette</h2>
+          <p id="harmonyDescription">Colors next to each other create a harmonious, cohesive palette.</p>
+        </div>
+        <button id="copyPalette" class="copy-all-btn" type="button">Copy Palette</button>
+      </div>
+      <div class="swatches" id="swatches"></div>
+    </section>
+  
+<section class="seo-content" aria-labelledby="seo-content-title">
+  <div class="seo-content-inner">
+    <h2 id="seo-content-title">Interactive Color Wheel Picker for Better Color Choices</h2>
+    <p>ColorPick's Color Wheel is an interactive way to explore how colors relate to one another. Instead of selecting shades only from a list, you can work visually with the wheel and see how different harmony rules change the colors around a chosen base. This makes the tool useful for designers, developers, artists, students and anyone who wants a clearer understanding of color relationships while building a palette.</p>
+    <p>A color wheel picker can be useful when you already have one color but need to decide what should accompany it. ColorPick provides common harmony approaches such as analogous, monochromatic, complementary and triadic relationships. These relationships give you a structured starting point for creating combinations that feel connected. The interactive wheel helps make the relationship visible, while the generated swatches turn the visual choice into practical color values you can copy and reuse.</p>
+    <p>Many people search for a color wheel chart when they want a quick reference for hue relationships. ColorPick combines that reference idea with an interactive tool. Instead of viewing a static chart, you can move around the wheel and update the selected color. The result is useful for experimenting with different starting hues and seeing how a harmony changes. If you are learning the color wheel, the interface can also help connect concepts such as hue, saturation and lightness with actual palette decisions.</p>
+    <p>A complementary color wheel is commonly used to understand opposite colors, while analogous combinations use nearby hues. Triadic schemes spread choices around the wheel, and monochromatic palettes stay within a single hue while changing its lightness or saturation. ColorPick brings these concepts together so you can compare approaches without switching to another application. The resulting palette can then be used as inspiration for a website, illustration, logo, interface or other visual project.</p>
+    <p>The tool also works well alongside the ColorPick image color picker. If a photograph or brand asset gives you a starting color, you can identify its HEX, RGB and HSL values with the image picker and then explore related choices here. This creates a practical bridge between real-world color sampling and palette construction. The wheel can also complement Explore Palettes and Color Suggestions when you need either ready-made inspiration or algorithmically generated supporting colors.</p>
+    <p>Searches for an RGB color wheel or HEX color wheel often come from users who want to connect a visual color relationship with a digital value. ColorPick keeps the digital values visible so the colors you explore can become usable design references. A primary color wheel can be helpful for learning basic relationships, while a random color wheel concept can inspire experimentation; however, ColorPick focuses on deliberate selection and harmony rather than generating colors without context. The page is designed to make color exploration understandable and actionable.</p>
+    <p>Whether you are studying the color wheel, choosing a brand accent, creating a UI palette, or testing combinations for artwork, ColorPick gives you an interactive browser-based workspace. Move around the wheel, compare harmony types, review the resulting swatches, and copy the colors you want to use. The responsive interface works across desktop and mobile devices, making the color wheel a convenient companion whenever you need to explore color relationships.</p>
+    
+      <p>The wheel is also useful as a learning aid because it turns abstract color terminology into something visual. When you change the base hue, the related positions move with it, making it easier to notice patterns between neighboring and opposing colors. This can help beginners build intuition and help experienced designers quickly test alternatives. After choosing a harmony, the generated swatches provide a practical reference that can be copied into a project or refined with the other ColorPick tools.</p>
+  </div>
+</section>
+
+</main>
+
+  <script src="color-wheel.js"></script>
+  <script src="language.js"></script>
+
+<script>(function(){if("serviceWorker" in navigator){navigator.serviceWorker.register("/ColorPick-Complete/service-worker.js?v=3",{scope:"/ColorPick-Complete/"}).catch(function(){});}})();</script>
+</body>
+</html>
