@@ -1,6 +1,6 @@
 COLORPICK SEO SETUP
 
-1. Replace every occurrence of https://YOUR-DOMAIN.com with your real HTTPS domain in all HTML files, sitemap.xml and robots.txt.
+1. Replace every occurrence of https://colorpikertool.com with your real HTTPS domain in all HTML files, sitemap.xml and robots.txt.
 2. Verify canonical URLs and Open Graph URLs after replacement.
 3. The site is an MPA: each tool and legal/company page is a separate crawlable HTML document.
 4. Submit sitemap.xml in Google Search Console and Bing Webmaster Tools.
