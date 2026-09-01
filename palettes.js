@@ -1411,6 +1411,8 @@ function createPaletteCard(
                         color
                     );
 
+                    if (window.colorPickTrack) window.colorPickTrack("palette_page_color_copied");
+
                 }
             );
 
@@ -1439,6 +1441,8 @@ function createPaletteCard(
                 colors
             );
 
+
+            if (window.colorPickTrack) window.colorPickTrack("palette_copied");
 
             showToast(
                 "Palette copied!",
@@ -1483,6 +1487,8 @@ function createPaletteCard(
 
             }
 
+            if (window.colorPickTrack) window.colorPickTrack("palette_favorite_toggled");
+
         }
     );
 
@@ -1507,6 +1513,8 @@ function createPaletteCard(
             navigator.clipboard.writeText(
                 colors
             );
+
+            if (window.colorPickTrack) window.colorPickTrack("palette_added_to_my_palette");
 
 
             showToast(

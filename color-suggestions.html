@@ -546,6 +546,8 @@ html.dark-loading .navbar { background:#19191f !important; border-color:#303039 
   ]
 }
 </script>
+    <script src="analytics.js"></script>
+
 </head>
 
 <body>
@@ -915,6 +917,7 @@ html.dark-loading .navbar { background:#19191f !important; border-color:#303039 
 
             const copyCardColor = async () => {
                 await copyText(code);
+                if (window.colorPickTrack) window.colorPickTrack("suggestion_hex_copied");
                 showCopyToast(code);
 
                 const btn=card.querySelector(".copy-suggestion");
@@ -949,7 +952,10 @@ html.dark-loading .navbar { background:#19191f !important; border-color:#303039 
         result.classList.add("show");
     }
 
-    generateBtn.addEventListener("click",generate);
+    generateBtn.addEventListener("click",()=>{
+        if (window.colorPickTrack) window.colorPickTrack("suggestions_generated");
+        generate();
+    });
     input.addEventListener("keydown",e=>{ if(e.key==="Enter") generate(); });
 
     generate();

@@ -642,6 +642,8 @@ function initializeColorPick() {
 
         }
 
+        return copied;
+
     }
 
 
@@ -980,6 +982,11 @@ function initializeColorPick() {
                                     100
                                 );
 
+                            }
+
+
+                            if (window.colorPickTrack) {
+                                window.colorPickTrack("image_upload");
                             }
 
 
@@ -1467,6 +1474,10 @@ function initializeColorPick() {
                         pixel[2]
                     );
 
+                    if (window.colorPickTrack) {
+                        window.colorPickTrack("color_picked");
+                    }
+
                 }
 
                 catch (error) {
@@ -1897,7 +1908,12 @@ function initializeColorPick() {
                         copyText(
                             input.value,
                             button
-                        );
+                        ).then(function (copied) {
+                            if (copied && window.colorPickTrack) {
+                                const format = inputId === "hexValue" ? "hex" : (inputId === "rgbValue" ? "rgb" : "hsl");
+                                window.colorPickTrack("color_value_copied", { format: format });
+                            }
+                        });
 
                     }
                 );
@@ -1955,6 +1971,10 @@ function initializeColorPick() {
                 myColors.push(
                     selectedColor
                 );
+
+                if (window.colorPickTrack) {
+                    window.colorPickTrack("palette_color_added");
+                }
 
 
                 renderMyPalette();
@@ -2177,6 +2197,10 @@ function initializeColorPick() {
         const removedColor =
             myColors[index];
 
+        if (window.colorPickTrack) {
+            window.colorPickTrack("palette_color_removed");
+        }
+
 
         myColors.splice(
             index,
@@ -2223,6 +2247,10 @@ function initializeColorPick() {
                 myColors =
                     [];
 
+                if (window.colorPickTrack) {
+                    window.colorPickTrack("palette_cleared");
+                }
+
 
                 renderMyPalette();
 
@@ -2247,6 +2275,10 @@ function initializeColorPick() {
         newImageBtn.addEventListener(
             "click",
             function () {
+
+                if (window.colorPickTrack) {
+                    window.colorPickTrack("new_image_started");
+                }
 
                 /*
                  * Reset file input.

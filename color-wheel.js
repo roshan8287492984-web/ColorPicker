@@ -221,7 +221,10 @@
            </div>
            <div class="swatch-copy">Copy</div>
          </div>`;
-      card.addEventListener("click",()=>copyText(hex,card.querySelector(".swatch-copy")));
+      card.addEventListener("click",()=>{
+        copyText(hex,card.querySelector(".swatch-copy"));
+        if (window.colorPickTrack) window.colorPickTrack("wheel_color_copied");
+      });
       swatches.appendChild(card);
     });
   }
@@ -393,6 +396,7 @@
       document.querySelectorAll(".harmony-btn").forEach(b=>b.classList.remove("active"));
       btn.classList.add("active");
       state.harmony=btn.dataset.harmony;
+      if (window.colorPickTrack) window.colorPickTrack("wheel_harmony_selected", { harmony: state.harmony });
       const count=HARMONIES[state.harmony].offsets.length;
       state.radii=Array.from({length:count},(_,i)=>state.radii[i] ?? .78);
       state.activeHandle=state.harmony==="monochromatic"?2:Math.min(state.activeHandle,count-1);
@@ -420,6 +424,7 @@
 
   $("copyPalette").addEventListener("click",async()=>{
     const button=$("copyPalette");
+    if (window.colorPickTrack) window.colorPickTrack("wheel_palette_copied");
     await copyText(getColors().join(", "),button);
     button.textContent="Copied!";
     setTimeout(()=>button.textContent="Copy Palette",1000);
