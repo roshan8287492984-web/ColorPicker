@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2325855184397322"></script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L56GJW02D0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L56GJW02D0');
+</script>
+<script>
+(function () {
+    try {
+        const savedTheme = localStorage.getItem("colorpick-theme");
+        if (savedTheme === "dark") {
+            document.documentElement.classList.add("dark-loading");
+            document.documentElement.style.colorScheme = "dark";
+        } else {
+            document.documentElement.style.colorScheme = "light";
+        }
+    } catch (e) {
+        document.documentElement.style.colorScheme = "light";
+    }
+})();
+</script>
+<style>
+html.dark-loading {
+  background:#101014 !important;
+  color:#f5f5f7;
+  color-scheme:dark;
+  --bg:#101014; --card:#19191f; --text:#f5f5f7; --muted:#a4a4ad;
+  --border:#303039; --primary:#9278ff; --primary-hover:#a38dff;
+  --primary-light:#292341; --input:#24242b;
+}
+html.dark-loading body { background:#101014 !important; color:#f5f5f7 !important; }
+html.dark-loading .navbar { background:#19191f !important; border-color:#303039 !important; }
+</style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Color Suggestions - Find Matching Colors | ColorPick</title>
+<meta content="Get practical color suggestions from a base color. Generate compatible combinations with HEX values for websites, UI, branding and design." name="description"/>
+<meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/>
+<meta content="color suggestions, color picker, hex color picker, color picker from image, rgb color picker, image color picker, hex code color picker, hex color picker from image, color picker wheel, online color picker, color picker tool, color picker image, color picker from screen" name="keywords"/>
+<link href="https://colorpikertool.com/de/color-suggestions.html" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="Color Suggestions - Find Matching Colors | ColorPick" property="og:title"/>
+<meta content="Get practical color suggestions from a base color. Generate compatible combinations with HEX values for websites, UI, branding and design." property="og:description"/>
+<meta content="https://colorpikertool.com/de/color-suggestions.html" property="og:url"/>
+<meta content="ColorPick" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="https://colorpikertool.com/og-image.png" property="og:image"/>
+<meta content="ColorPick color tools" property="og:image:alt"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Color Suggestions - Find Matching Colors | ColorPick" name="twitter:title"/>
+<meta content="Get practical color suggestions from a base color. Generate compatible combinations with HEX values for websites, UI, branding and design." name="twitter:description"/>
+<meta content="https://colorpikertool.com/og-image.png" name="twitter:image"/>
+<link href="../style.css" rel="stylesheet"/>
+<style>
+        .combo-page{
+            width:min(1120px,100%);
+            margin:0 auto;
+            padding:clamp(38px,6vw,72px) 20px 90px;
+        }
+
+        .combo-hero{
+            text-align:center;
+            margin-bottom:34px;
+        }
+
+        .combo-hero h1{
+            font-size:clamp(34px,5.2vw,64px);
+            line-height:1.05;
+            letter-spacing:-2.5px;
+            margin:12px 0;
+        }
+
+        .combo-hero h1 span{color:var(--primary)}
+
+        .combo-hero p{
+            width:min(720px,100%);
+            margin:auto;
+            color:var(--muted);
+            line-height:1.7;
+            font-size:17px;
+        }
+
+        .generator-card{
+            width:100%;
+            max-width:900px;
+            margin:0 auto;
+            background:var(--card);
+            border:1px solid var(--border);
+            border-radius:24px;
+            padding:clamp(18px,3vw,28px);
+            box-shadow:var(--shadow);
+        }
+
+        .input-label{
+            display:block;
+            font-weight:800;
+            margin-bottom:10px;
+        }
+
+        .input-row{
+            display:grid;
+            grid-template-columns:minmax(0,1fr) 190px;
+            gap:12px;
+            align-items:stretch;
+        }
+
+        #colorInput{
+            width:100%;
+            min-height:54px;
+            border:1px solid var(--border);
+            border-radius:13px;
+            background:var(--input);
+            color:var(--text);
+            padding:0 16px;
+            font:inherit;
+            font-size:17px;
+            outline:none;
+            transition:border-color .2s ease,box-shadow .2s ease;
+        }
+
+        #colorInput:focus{
+            border-color:var(--primary);
+            box-shadow:0 0 0 3px rgba(104,72,232,.12);
+        }
+
+        #generateBtn{
+            width:100%;
+            min-height:54px;
+            border:0;
+            border-radius:13px;
+            padding:0 22px;
+            background:var(--primary);
+            color:#fff;
+            font:inherit;
+            font-weight:800;
+            cursor:pointer;
+            transition:transform .2s ease,background .2s ease,box-shadow .2s ease;
+            box-shadow:0 8px 20px rgba(104,72,232,.18);
+        }
+
+        #generateBtn:hover{
+            background:var(--primary-hover);
+            transform:translateY(-2px);
+            box-shadow:0 12px 26px rgba(104,72,232,.25);
+        }
+
+        #generateBtn:active{
+            transform:translateY(0);
+        }
+
+        #generateBtn:focus-visible{
+            outline:3px solid rgba(104,72,232,.25);
+            outline-offset:3px;
+        }
+
+        .input-help{
+            margin-top:9px;
+            color:var(--muted);
+            font-size:13px;
+        }
+
+        .error{
+            display:none;
+            margin-top:12px;
+            padding:11px 13px;
+            border-radius:10px;
+            background:#ffe8e8;
+            color:#a11;
+            font-weight:700;
+        }
+
+        .error.show{display:block}
+
+        .result{
+            display:none;
+            margin-top:26px;
+        }
+
+        .result.show{display:block}
+
+        .base-card{
+            display:grid;
+            grid-template-columns:130px minmax(0,1fr);
+            gap:20px;
+            align-items:center;
+            padding:18px;
+            border:1px solid var(--border);
+            border-radius:18px;
+            background:var(--input);
+        }
+
+        .base-swatch{
+            width:100%;
+            height:105px;
+            border-radius:13px;
+            box-shadow:inset 0 0 0 1px rgba(0,0,0,.08);
+        }
+
+        .base-card h2{
+            font-size:20px;
+            margin-bottom:7px;
+        }
+
+        .base-code{
+            font-weight:900;
+            font-size:20px;
+            letter-spacing:.5px;
+            overflow-wrap:anywhere;
+        }
+
+        .base-meta{
+            color:var(--muted);
+            font-size:14px;
+            margin-top:7px;
+            line-height:1.5;
+        }
+
+        .results-heading{
+            text-align:center;
+            margin:38px 0 18px;
+        }
+
+        .results-heading h2{
+            font-size:clamp(23px,3vw,30px);
+        }
+
+        .results-heading p{
+            color:var(--muted);
+            margin-top:7px;
+        }
+
+        .suggestion-grid{
+            display:grid;
+            grid-template-columns:repeat(3,minmax(0,1fr));
+            gap:18px;
+        }
+
+        /* Entire card is clickable */
+        .suggestion{
+            min-width:0;
+            display:flex;
+            flex-direction:column;
+            overflow:hidden;
+            background:var(--card);
+            border:1px solid var(--border);
+            border-radius:18px;
+            box-shadow:var(--shadow);
+            cursor:pointer;
+            user-select:none;
+            transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+        }
+
+        .suggestion:hover{
+            transform:translateY(-5px);
+            border-color:var(--primary);
+            box-shadow:0 18px 42px rgba(0,0,0,.12);
+        }
+
+        body.dark .suggestion:hover{
+            box-shadow:0 18px 42px rgba(0,0,0,.42);
+        }
+
+        .suggestion:focus-visible{
+            outline:3px solid rgba(104,72,232,.25);
+            outline-offset:3px;
+        }
+
+        .suggestion-swatch{
+            height:clamp(145px,18vw,175px);
+            position:relative;
+            display:flex;
+            align-items:flex-end;
+            padding:14px;
+            flex-shrink:0;
+        }
+
+        .contrast-badge{
+            background:rgba(0,0,0,.68);
+            color:#fff;
+            border-radius:9px;
+            padding:7px 9px;
+            font-size:12px;
+            font-weight:800;
+        }
+
+        .suggestion-body{
+            display:flex;
+            flex-direction:column;
+            flex:1;
+            padding:17px;
+        }
+
+        .suggestion-body h3{
+            font-size:18px;
+            margin-bottom:6px;
+        }
+
+        .suggestion-code{
+            font-weight:900;
+            font-size:19px;
+            overflow-wrap:anywhere;
+        }
+
+        .suggestion-note{
+            color:var(--muted);
+            font-size:13px;
+            line-height:1.5;
+            margin-top:7px;
+        }
+
+        .copy-suggestion{
+            width:100%;
+            border:0;
+            border-radius:10px;
+            background:var(--primary);
+            color:#fff;
+            padding:11px 12px;
+            margin-top:auto;
+            padding-top:11px;
+            font-weight:800;
+            cursor:pointer;
+            transition:background .2s ease,transform .2s ease;
+        }
+
+        .copy-suggestion:hover{
+            background:var(--primary-hover);
+            transform:translateY(-1px);
+        }
+
+        .copy-suggestion:active{transform:translateY(0)}
+
+        .preview-strip{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            min-height:78px;
+            border-radius:14px;
+            overflow:hidden;
+            margin-top:25px;
+        }
+
+        .preview-strip span{
+            min-width:0;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            padding:8px;
+            color:#fff;
+            font-size:12px;
+            font-weight:900;
+            text-shadow:0 1px 3px rgba(0,0,0,.55);
+        }
+
+        .tips{
+            margin-top:25px;
+            padding:22px;
+            border:1px solid var(--border);
+            border-radius:18px;
+            background:var(--card);
+        }
+
+        .tips h3{margin-bottom:9px}
+
+        .tips p{
+            color:var(--muted);
+            line-height:1.65;
+            font-size:14px;
+        }
+
+        /* Toast */
+        .copy-toast{
+            position:fixed;
+            left:50%;
+            bottom:28px;
+            z-index:10000;
+            display:flex;
+            align-items:center;
+            gap:10px;
+            min-width:min(340px,calc(100vw - 32px));
+            max-width:calc(100vw - 32px);
+            padding:13px 17px;
+            border:1px solid var(--border);
+            border-radius:14px;
+            background:var(--card);
+            color:var(--text);
+            box-shadow:0 18px 45px rgba(0,0,0,.2);
+            transform:translate(-50%,20px);
+            opacity:0;
+            pointer-events:none;
+            transition:opacity .22s ease,transform .22s ease;
+        }
+
+        .copy-toast.show{
+            opacity:1;
+            transform:translate(-50%,0);
+        }
+
+        .copy-toast-icon{
+            width:30px;
+            height:30px;
+            flex:0 0 30px;
+            display:grid;
+            place-items:center;
+            border-radius:50%;
+            background:var(--primary);
+            color:#fff;
+            font-weight:900;
+        }
+
+        .copy-toast strong{display:block}
+        .copy-toast small{
+            display:block;
+            color:var(--muted);
+            margin-top:2px;
+        }
+
+        @media(max-width:900px){
+            .suggestion-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+        }
+
+        @media(max-width:700px){
+            .navbar{
+                height:auto;
+                min-height:72px;
+                padding:12px 20px;
+                gap:12px;
+            }
+
+            .nav-links{
+                gap:10px;
+                flex-wrap:wrap;
+                justify-content:flex-end;
+            }
+
+            .input-row{
+                grid-template-columns:1fr;
+            }
+
+            #generateBtn{
+                min-height:52px;
+            }
+
+            .suggestion-grid{
+                grid-template-columns:1fr;
+            }
+
+            .suggestion-swatch{
+                height:160px;
+            }
+        }
+
+        @media(max-width:520px){
+            .combo-page{
+                padding:34px 14px 65px;
+            }
+
+            .combo-hero h1{
+                letter-spacing:-1.5px;
+            }
+
+            .combo-hero p{
+                font-size:15px;
+            }
+
+            .generator-card{
+                border-radius:18px;
+            }
+
+            .base-card{
+                grid-template-columns:1fr;
+            }
+
+            .base-swatch{
+                height:125px;
+            }
+
+            .preview-strip{
+                grid-template-columns:repeat(2,1fr);
+            }
+
+            .preview-strip span{
+                min-height:68px;
+            }
+
+            .copy-toast{
+                bottom:18px;
+            }
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Color Suggestions - Find Matching Colors",
+  "url": "https://colorpikertool.com/de/color-suggestions.html",
+  "description": "Get practical color suggestions from a base color. Generate compatible combinations with HEX values for websites, UI, branding and design.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ColorPick",
+    "url": "https://colorpikertool.com/"
+  },
+  "applicationCategory": "DesignApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ColorPick",
+      "item": "https://colorpikertool.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Color Suggestions",
+      "item": "https://colorpikertool.com/de/color-suggestions.html"
+    }
+  ]
+}
+</script>
+<script src="../analytics.js"></script>
+<link href="https://colorpikertool.com/color-suggestions.html" hreflang="en" rel="alternate"/><link href="https://colorpikertool.com/hi/color-suggestions.html" hreflang="hi" rel="alternate"/><link href="https://colorpikertool.com/es/color-suggestions.html" hreflang="es" rel="alternate"/><link href="https://colorpikertool.com/fr/color-suggestions.html" hreflang="fr" rel="alternate"/><link href="https://colorpikertool.com/de/color-suggestions.html" hreflang="de" rel="alternate"/><link href="https://colorpikertool.com/ja/color-suggestions.html" hreflang="ja" rel="alternate"/><link href="https://colorpikertool.com/vi/color-suggestions.html" hreflang="vi" rel="alternate"/><link href="https://colorpikertool.com/fa/color-suggestions.html" hreflang="fa" rel="alternate"/><link href="https://colorpikertool.com/ru/color-suggestions.html" hreflang="ru" rel="alternate"/><link href="https://colorpikertool.com/pt-br/color-suggestions.html" hreflang="pt-br" rel="alternate"/><link href="https://colorpikertool.com/ko/color-suggestions.html" hreflang="ko" rel="alternate"/><link href="https://colorpikertool.com/sv/color-suggestions.html" hreflang="sv" rel="alternate"/><link href="https://colorpikertool.com/zh-tw/color-suggestions.html" hreflang="zh-tw" rel="alternate"/><link href="https://colorpikertool.com/ro/color-suggestions.html" hreflang="ro" rel="alternate"/><link href="https://colorpikertool.com/fil/color-suggestions.html" hreflang="fil" rel="alternate"/><link href="https://colorpikertool.com/id/color-suggestions.html" hreflang="id" rel="alternate"/><link href="https://colorpikertool.com/es-mx/color-suggestions.html" hreflang="es-mx" rel="alternate"/><link href="https://colorpikertool.com/tr/color-suggestions.html" hreflang="tr" rel="alternate"/><link href="https://colorpikertool.com/color-suggestions.html" hreflang="x-default" rel="alternate"/></head>
+<body>
+<nav class="navbar">
+<a class="logo" href="index.html">
+<span class="logo-icon">🎨</span><span>ColorPick</span>
+</a>
+<button aria-controls="siteNavLinks" aria-expanded="false" aria-label="Open navigation menu" class="mobile-menu-toggle" id="mobileMenuToggle" type="button">
+<span></span><span></span><span></span>
+</button>
+<div class="nav-links" id="siteNavLinks">
+<a href="index.html">Color Picker</a>
+<a href="palettes.html">Explore Palettes</a>
+<a class="active-link" href="color-suggestions.html">Color Suggestions</a>
+<a href="color-wheel.html">Color Wheel</a>
+</div>
+<div class="nav-actions">
+<div class="language-selector">
+<button aria-expanded="false" aria-haspopup="true" aria-label="Choose language" class="language-toggle" id="languageBtn" title="Choose language" type="button">
+<span aria-hidden="true" class="translate-icon">文</span>
+<span id="languageCurrent">English</span>
+<span aria-hidden="true" class="language-chevron"></span>
+</button>
+<div aria-label="Language selection" class="language-menu" id="languageMenu" role="menu"><button data-language="en" role="menuitem" type="button">English</button><button data-language="hi" role="menuitem" type="button">हिंदी</button><button data-language="es" role="menuitem" type="button">Español</button><button data-language="fr" role="menuitem" type="button">Français</button><button data-language="de" role="menuitem" type="button">Deutsch</button><button data-language="ja" role="menuitem" type="button">日本語</button><button data-language="vi" role="menuitem" type="button">Tiếng Việt</button><button data-language="fa" role="menuitem" type="button">فارسی</button><button data-language="ru" role="menuitem" type="button">Русский</button><button data-language="pt-BR" role="menuitem" type="button">Português (Brasil)</button><button data-language="ko" role="menuitem" type="button">한국어</button><button data-language="sv" role="menuitem" type="button">Svenska</button><button data-language="zh-TW" role="menuitem" type="button">繁體中文</button><button data-language="ro" role="menuitem" type="button">Română</button><button data-language="fil" role="menuitem" type="button">Filipino</button><button data-language="id" role="menuitem" type="button">Bahasa Indonesia</button><button data-language="es-MX" role="menuitem" type="button">Español (México)</button><button data-language="tr" role="menuitem" type="button">Türkçe</button></div>
+</div>
+<button aria-label="Toggle dark mode" class="theme-toggle" id="themeBtn" title="Toggle dark mode" type="button">
+<span id="themeIcon">🌙</span>
+</button>
+</div>
+</nav>
+<main class="combo-page">
+<h2 class="seo-page-heading">Color Suggestions: Find Colors That Work Together</h2>
+<section class="combo-hero">
+<span class="badge">🎨 COLOR COMBINATION TOOL</span>
+<h1>Find <span>3 Colors</span> That Work Together.</h1>
+<p>Paste a HEX color code and ColorPick will generate three visually compatible colors with strong contrast for websites, UI, branding and design.</p>
+<div aria-label="Company and legal pages" class="legal-quick-links">
+<a data-i18n="aboutUs" href="about.html">Über uns</a>
+<a data-i18n="privacyPolicy" href="privacy-policy.html">Datenschutz</a>
+<a data-i18n="termsConditions" href="terms.html">Nutzungsbedingungen</a>
+<a data-i18n="contactUs" href="contact.html">Kontakt</a>
+</div>
+</section>
+<section aria-label="Color combination generator" class="generator-card">
+<label class="input-label" for="colorInput">Enter your color code</label>
+<div class="input-row">
+<input aria-describedby="inputHelp" autocomplete="off" id="colorInput" placeholder="#6848E8, 6848E8, rgb(104,72,232) or hsl(255,75%,60%)" spellcheck="false" type="text" value="#6848E8"/>
+<button id="generateBtn" type="button">Generate Colors</button>
+</div>
+<div class="input-help" id="inputHelp">Supported: HEX (#RGB or #RRGGBB), RGB and HSL.</div>
+<div class="error" id="error" role="alert"></div>
+<div class="result" id="result">
+<div class="base-card">
+<div class="base-swatch" id="baseSwatch"></div>
+<div>
+<h2>Your Color</h2>
+<div class="base-code" id="baseCode">#6848E8</div>
+<div class="base-meta" id="baseMeta"></div>
+</div>
+</div>
+<div class="results-heading">
+<h2>3 Recommended Contrasting Colors</h2>
+<p>Click any color to copy its HEX code.</p>
+</div>
+<div class="suggestion-grid" id="suggestionGrid"></div>
+<div class="preview-strip" id="previewStrip"></div>
+<div class="tips">
+<h3>💡 How these colors are chosen</h3>
+<p>ColorPick uses hue relationships and lightness adjustments to create complementary and split-complementary options. The contrast ratio shown on each card is calculated against your original color, so you can quickly judge how strongly the two colors separate visually.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="seo-content-title" class="seo-content">
+<div class="seo-content-inner">
+<h2 id="seo-content-title">Color Suggestions for Matching and Contrasting Colors</h2>
+<p>ColorPick's Color Suggestions tool helps you move from one known color to a useful group of related colors. Instead of testing random values one by one, enter a base color and generate suggestions that are designed to work visually with it. The tool is useful for websites, user interfaces, branding, presentations, graphics and other projects where a small set of coordinated colors is easier to manage than a large collection of unrelated shades.</p>
+<p>A good color workflow often starts with a color picker. You might sample a color from a photograph, logo or screenshot with an image color picker, then bring that exact value into Color Suggestions. The base color can be entered as a HEX value, making the process straightforward for anyone already using a hex color picker. This combination is useful when you want to preserve a real-world reference color while finding supporting colors for a complete design system.</p>
+<p>Color suggestions are especially helpful when you need contrast without losing visual harmony. ColorPick uses hue relationships and lightness adjustments to generate options around the base color. The result can give you practical alternatives for backgrounds, accents, buttons, cards, borders and text. Because each suggestion has a precise HEX value, you can copy a result and test it directly in your design or code rather than manually translating a visual idea into a color code.</p>
+<p>The tool fits naturally with the other ColorPick utilities. If you start with an image, the color picker can provide HEX, RGB and HSL values. If you want broader inspiration, Explore Palettes offers ready-made combinations. If you want to understand the geometry behind color relationships, the Color Wheel gives you an interactive visual reference. Together, these tools provide a simple path from finding a color to building a usable palette.</p>
+<p>ColorPick is also useful when working across different color formats. A HEX code is convenient for web development, while RGB values are common in digital graphics and HSL can be helpful when adjusting a shade by hue, saturation and lightness. The Color Suggestions page focuses on generating practical combinations, while the color picker and color code tools can provide additional information when you need to inspect a particular value in more detail.</p>
+<p>If you are searching for an online color picker, ColorPick provides more than a single sampling function. You can use the image color picker to identify a color, then use Color Suggestions to develop supporting choices. If you are looking for a hex code color picker or a hex color picker from image, the workflow begins with selecting an exact color and then refining the surrounding palette. For the phrase color picker from screen, ColorPick is designed around uploaded images rather than direct desktop screen sampling; a screenshot can still be saved and uploaded when you need to sample a visible interface color.</p>
+<p>The responsive design makes the tool practical on phones, tablets and desktop computers. Language and theme preferences can stay consistent while you move between pages, and the interface keeps the essential controls close to the result. Whether you are a designer looking for an accent color, a developer testing UI combinations, a brand creator building a visual identity, or a beginner learning how colors relate, ColorPick provides a clear way to turn one color into several useful possibilities.</p>
+<p>For a practical design system, treat generated suggestions as starting points rather than rigid rules. A suggested color may work well for an accent but need a lighter or darker version for text or a background. You can inspect the resulting values, compare their contrast, and then move to the Color Wheel or palette explorer for further refinement. This flexible workflow lets you keep the original color recognizable while creating enough variation for interactive states, sections, buttons and supporting visual elements.</p>
+</div>
+</section>
+</main>
+<script>
+(function(){
+    "use strict";
+
+    const root = document.documentElement;
+    const body = document.body;
+    const themeBtn = document.getElementById("themeBtn");
+    const themeIcon = document.getElementById("themeIcon");
+
+    function setTheme(theme){
+        const dark = theme === "dark";
+        body.classList.toggle("dark", dark);
+        root.classList.remove("dark-loading");
+        root.style.colorScheme = dark ? "dark" : "light";
+        themeIcon.textContent = dark ? "☀️" : "🌙";
+    }
+
+    setTheme(localStorage.getItem("colorpick-theme") === "dark" ? "dark" : "light");
+
+    themeBtn.addEventListener("click", function(){
+        const next = body.classList.contains("dark") ? "light" : "dark";
+        localStorage.setItem("colorpick-theme", next);
+        setTheme(next);
+    });
+
+    const input = document.getElementById("colorInput");
+    const generateBtn = document.getElementById("generateBtn");
+    const errorBox = document.getElementById("error");
+    const result = document.getElementById("result");
+    const baseSwatch = document.getElementById("baseSwatch");
+    const baseCode = document.getElementById("baseCode");
+    const baseMeta = document.getElementById("baseMeta");
+    const suggestionGrid = document.getElementById("suggestionGrid");
+    const previewStrip = document.getElementById("previewStrip");
+
+    const clamp = (v,min=0,max=255) => Math.max(min, Math.min(max, v));
+
+    function toHex(r,g,b){
+        return "#" + [r,g,b].map(v => Math.round(clamp(v)).toString(16).padStart(2,"0")).join("").toUpperCase();
+    }
+
+    function parseHex(value){
+        let s = value.trim().replace(/^#/,"");
+        if (/^[0-9a-fA-F]{3}$/.test(s)) s = s.split("").map(x=>x+x).join("");
+        if (!/^[0-9a-fA-F]{6}$/.test(s)) return null;
+        return {
+            r: parseInt(s.slice(0,2),16),
+            g: parseInt(s.slice(2,4),16),
+            b: parseInt(s.slice(4,6),16)
+        };
+    }
+
+    function parseRgb(value){
+        const m = value.trim().match(/^rgba?\(\s*([\d.]+)\s*[, ]\s*([\d.]+)\s*[, ]\s*([\d.]+)(?:\s*[,/]\s*[\d.]+)?\s*\)$/i);
+        if (!m) return null;
+        const nums = m.slice(1,4).map(Number);
+        if (nums.some(n => n < 0 || n > 255)) return null;
+        return {r:nums[0],g:nums[1],b:nums[2]};
+    }
+
+    function hslToRgb(h,s,l){
+        h = ((h % 360) + 360) % 360;
+        s /= 100; l /= 100;
+        const c = (1 - Math.abs(2*l - 1)) * s;
+        const x = c * (1 - Math.abs((h/60) % 2 - 1));
+        const m = l - c/2;
+        let r=0,g=0,b=0;
+        if(h < 60) [r,g,b]=[c,x,0];
+        else if(h < 120) [r,g,b]=[x,c,0];
+        else if(h < 180) [r,g,b]=[0,c,x];
+        else if(h < 240) [r,g,b]=[0,x,c];
+        else if(h < 300) [r,g,b]=[x,0,c];
+        else [r,g,b]=[c,0,x];
+        return {r:(r+m)*255,g:(g+m)*255,b:(b+m)*255};
+    }
+
+    function rgbToHsl(r,g,b){
+        r/=255; g/=255; b/=255;
+        const max=Math.max(r,g,b), min=Math.min(r,g,b), d=max-min;
+        let h=0, s=0, l=(max+min)/2;
+        if(d){
+            s = d / (1 - Math.abs(2*l-1));
+            switch(max){
+                case r: h=((g-b)/d)%6; break;
+                case g: h=(b-r)/d+2; break;
+                default: h=(r-g)/d+4;
+            }
+            h*=60;
+            if(h<0) h+=360;
+        }
+        return {h,s:s*100,l:l*100};
+    }
+
+    function parseColor(value){
+        return parseHex(value) || parseRgb(value) || parseHsl(value);
+    }
+
+    function parseHsl(value){
+        const m = value.trim().match(/^hsla?\(\s*([\d.]+)\s*(?:deg)?\s*[, ]\s*([\d.]+)%\s*[, ]\s*([\d.]+)%/i);
+        if(!m) return null;
+        const h=Number(m[1]), s=Number(m[2]), l=Number(m[3]);
+        if(s<0 || s>100 || l<0 || l>100) return null;
+        return hslToRgb(h,s,l);
+    }
+
+    function relativeLuminance(c){
+        const channel = n => {
+            n/=255;
+            return n <= .03928 ? n/12.92 : Math.pow((n+.055)/1.055,2.4);
+        };
+        return .2126*channel(c.r)+.7152*channel(c.g)+.0722*channel(c.b);
+    }
+
+    function contrastRatio(a,b){
+        const l1=relativeLuminance(a), l2=relativeLuminance(b);
+        const light=Math.max(l1,l2), dark=Math.min(l1,l2);
+        return (light+.05)/(dark+.05);
+    }
+
+    function makeCandidate(baseHsl, hue, lightness, saturation){
+        return hslToRgb(hue, saturation, clamp(lightness,8,92));
+    }
+
+    function chooseCandidate(base, hue, saturation, startingL){
+        const candidates = [];
+        [startingL, 18, 25, 32, 68, 75, 82].forEach(l => {
+            candidates.push(makeCandidate(base,hue,l,saturation));
+        });
+        candidates.sort((a,b)=>contrastRatio(base,b)-contrastRatio(base,a));
+        return candidates[0];
+    }
+
+    function getSuggestions(base){
+        const hsl=rgbToHsl(base.r,base.g,base.b);
+        const h=hsl.h, s=Math.max(hsl.s, 58), l=hsl.l;
+
+        if(hsl.s < 8){
+            const dark = l > 50 ? {r:30,g:30,b:36} : {r:245,g:245,b:250};
+            const mid  = l > 50 ? {r:82,g:82,b:92} : {r:205,g:205,b:215};
+            const accentHue = 260;
+            const accent = chooseCandidate(base, accentHue, 70, l > 50 ? 38 : 70);
+            return [
+                {name:"Strong Contrast", color:dark, note:"High-luminance separation"},
+                {name:"Soft Contrast", color:mid, note:"Balanced neutral pairing"},
+                {name:"Accent Contrast", color:accent, note:"Adds a clear color accent"}
+            ];
+        }
+
+        const candidates = [
+            {name:"Complementary", hue:h+180, note:"Opposite hue for the strongest color contrast"},
+            {name:"Split Complementary", hue:h+150, note:"High contrast with a softer, more balanced feel"},
+            {name:"Split Complementary", hue:h+210, note:"Another high-contrast option with a different mood"}
+        ];
+
+        return candidates.map((item,index)=>{
+            const lightTarget = index === 0
+                ? (l > 55 ? 25 : 75)
+                : (l > 55 ? 32 : 68);
+            const color = chooseCandidate(base,item.hue,s,lightTarget);
+            return {name:item.name, color, note:item.note};
+        });
+    }
+
+    function showError(message){
+        errorBox.textContent=message;
+        errorBox.classList.add("show");
+        result.classList.remove("show");
+    }
+
+    function hideError(){
+        errorBox.classList.remove("show");
+    }
+
+    async function copyText(text){
+        try{
+            await navigator.clipboard.writeText(text);
+        }catch{
+            const ta=document.createElement("textarea");
+            ta.value=text; document.body.appendChild(ta);
+            ta.select(); document.execCommand("copy"); ta.remove();
+        }
+    }
+
+    let copyToastTimer = null;
+
+    function showCopyToast(code){
+        let toast = document.getElementById("copyToast");
+
+        if(!toast){
+            toast = document.createElement("div");
+            toast.id = "copyToast";
+            toast.className = "copy-toast";
+            toast.setAttribute("role","status");
+            toast.setAttribute("aria-live","polite");
+            toast.innerHTML = `
+                <span class="copy-toast-icon">✓</span>
+                <div>
+                    <strong>Your color is copied!</strong>
+                    <small id="copyToastColor"></small>
+                </div>
+            `;
+            document.body.appendChild(toast);
+        }
+
+        document.getElementById("copyToastColor").textContent = code;
+        toast.classList.remove("show");
+        void toast.offsetWidth;
+        toast.classList.add("show");
+
+        clearTimeout(copyToastTimer);
+        copyToastTimer = setTimeout(() => {
+            toast.classList.remove("show");
+        }, 2200);
+    }
+
+    function generate(){
+        const color=parseColor(input.value);
+        if(!color){
+            showError("Please enter a valid HEX, RGB or HSL color code.");
+            return;
+        }
+
+        hideError();
+        const hex=toHex(color.r,color.g,color.b);
+        const hsl=rgbToHsl(color.r,color.g,color.b);
+
+        baseSwatch.style.background=hex;
+        baseCode.textContent=hex;
+        baseMeta.textContent=`RGB ${Math.round(color.r)}, ${Math.round(color.g)}, ${Math.round(color.b)} · HSL ${Math.round(hsl.h)}°, ${Math.round(hsl.s)}%, ${Math.round(hsl.l)}%`;
+
+        const suggestions=getSuggestions(color);
+        suggestionGrid.innerHTML="";
+
+        suggestions.forEach((item,index)=>{
+            const code=toHex(item.color.r,item.color.g,item.color.b);
+            const ratio=contrastRatio(color,item.color).toFixed(2);
+
+            const card=document.createElement("article");
+            card.className="suggestion";
+            card.tabIndex=0;
+            card.setAttribute("role","button");
+            card.setAttribute("aria-label",`Copy ${code}`);
+            card.innerHTML=`
+                <div class="suggestion-swatch" style="background:${code}">
+                    <span class="contrast-badge">Contrast ${ratio}:1</span>
+                </div>
+                <div class="suggestion-body">
+                    <h3>${item.name} ${index+1}</h3>
+                    <div class="suggestion-code">${code}</div>
+                    <p class="suggestion-note">${item.note}</p>
+                    <button class="copy-suggestion" type="button">Copy HEX</button>
+                </div>
+            `;
+
+            const copyCardColor = async () => {
+                await copyText(code);
+                if (window.colorPickTrack) window.colorPickTrack("suggestion_hex_copied");
+                showCopyToast(code);
+
+                const btn=card.querySelector(".copy-suggestion");
+                const oldText=btn.textContent;
+                btn.textContent="✓ Copied!";
+                setTimeout(()=>btn.textContent=oldText,1200);
+            };
+
+            card.addEventListener("click", copyCardColor);
+
+            card.addEventListener("keydown", event => {
+                if(event.key === "Enter" || event.key === " "){
+                    event.preventDefault();
+                    copyCardColor();
+                }
+            });
+
+            card.querySelector(".copy-suggestion").addEventListener("click", event => {
+                event.stopPropagation();
+                copyCardColor();
+            });
+
+            suggestionGrid.appendChild(card);
+        });
+
+        previewStrip.innerHTML=`<span style="background:${hex}">YOUR COLOR<br>${hex}</span>` +
+            suggestions.map((item,i)=>{
+                const c=toHex(item.color.r,item.color.g,item.color.b);
+                return `<span style="background:${c}">COLOR ${i+1}<br>${c}</span>`;
+            }).join("");
+
+        result.classList.add("show");
+    }
+
+    generateBtn.addEventListener("click",()=>{
+        if (window.colorPickTrack) window.colorPickTrack("suggestions_generated");
+        generate();
+    });
+    input.addEventListener("keydown",e=>{ if(e.key==="Enter") generate(); });
+
+    generate();
+})();
+</script>
+<script src="../language.js"></script>
+<script>(function(){if("serviceWorker" in navigator){navigator.serviceWorker.register("/ColorPick-Complete/service-worker.js?v=3",{scope:"/ColorPick-Complete/"}).catch(function(){});}})();</script>
+</body>
+</html>
