@@ -23,3 +23,12 @@ COLORPICK SEO SETUP
    same domain. This avoids buying separate country/language domains.
 9. The sitemap includes all localized landing pages. Submit the updated
    sitemap.xml in Google Search Console and Bing Webmaster Tools.
+
+
+10. Localized SEO/AEO notes:
+   - Each language/page has a self-referencing canonical URL.
+   - Each language/page has localized title and meta description plus matching Open Graph/Twitter metadata.
+   - Each locale has reciprocal hreflang annotations and x-default.
+   - Tool pages include concise answer-first sections for common user questions.
+   - Do not mass-generate near-identical translated pages. Keep localized copy useful and culturally natural.
+   - Google does not require a special “AI/Geo” file or schema for AI Overviews/AI Mode; strong technical SEO, crawlable text, helpful original content, internal links and accurate structured data are the priority.

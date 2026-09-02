@@ -98,7 +98,7 @@
         const folder = LOCALE_PATHS[language] || "";
         const page = getCurrentPageFile();
         if (!folder) {
-            return SCRIPT_BASE + (page === "index.html" ? "index.html" : page);
+            return SCRIPT_BASE + (page === "index.html" ? "" : page);
         }
         return SCRIPT_BASE + folder + "/" + (page === "index.html" ? "" : page);
     }
@@ -2478,6 +2478,35 @@
     );
 
 
+
+
+
+    /* COLORPICK SEO/LANGUAGE OVERRIDES */
+    // Keep the existing translation system, but correct shared navigation labels
+    // that must remain consistent across every localized page.
+    const sharedLabelOverrides = {
+      en:{navSuggestions:'Color Suggestions',navWheel:'Color Wheel',navCode:'Color Code'},
+      hi:{navSuggestions:'कलर सुझाव',navWheel:'कलर व्हील',navCode:'कलर कोड'},
+      es:{navSuggestions:'Sugerencias de color',navWheel:'Rueda de color',navCode:'Código de color'},
+      fr:{navSuggestions:'Suggestions de couleur',navWheel:'Roue chromatique',navCode:'Code couleur'},
+      de:{navSuggestions:'Farbvorschläge',navWheel:'Farbrad',navCode:'Farbcode'},
+      ja:{navSuggestions:'カラー提案',navWheel:'カラーホイール',navCode:'カラーコード'},
+      vi:{navSuggestions:'Gợi ý màu',navWheel:'Bánh xe màu',navCode:'Mã màu'},
+      fa:{navSuggestions:'پیشنهاد رنگ',navWheel:'چرخ رنگ',navCode:'کد رنگ'},
+      ru:{navSuggestions:'Подбор цветов',navWheel:'Цветовое колесо',navCode:'Код цвета'},
+      'pt-BR':{navSuggestions:'Sugestões de cores',navWheel:'Roda de cores',navCode:'Código de cor'},
+      ko:{navSuggestions:'색상 추천',navWheel:'컬러 휠',navCode:'색상 코드'},
+      sv:{navSuggestions:'Färgtips',navWheel:'Färghjul',navCode:'Färgkod'},
+      'zh-TW':{navSuggestions:'色彩建議',navWheel:'色輪',navCode:'色碼'},
+      ro:{navSuggestions:'Sugestii de culori',navWheel:'Roata culorilor',navCode:'Cod de culoare'},
+      fil:{navSuggestions:'Mga mungkahi ng kulay',navWheel:'Color wheel',navCode:'Color code'},
+      id:{navSuggestions:'Saran warna',navWheel:'Roda warna',navCode:'Kode warna'},
+      'es-MX':{navSuggestions:'Sugerencias de color',navWheel:'Rueda de color',navCode:'Código de color'},
+      tr:{navSuggestions:'Renk önerileri',navWheel:'Renk çarkı',navCode:'Renk kodu'}
+    };
+    Object.keys(sharedLabelOverrides).forEach(function(lang){
+      if (translations[lang]) Object.assign(translations[lang], sharedLabelOverrides[lang]);
+    });
 
     /* =====================================================
        INITIALIZE
