@@ -1,0 +1,17 @@
+COLORPICK WEB3FORMS SETUP
+
+1. Log in to your Web3Forms account.
+2. Create/copy the Access Key for the email inbox where you want ColorPick feedback delivered.
+3. Open web3forms-config.js in the website root.
+4. Replace [CONFIGURED IN web3forms-config.js] with your real Access Key.
+   Example:
+   window.COLORPICK_WEB3FORMS_ACCESS_KEY = "your-real-access-key";
+5. Upload the updated website files.
+6. Test /contact.html and every localized /xx/contact.html page.
+
+The contact form submits to Web3Forms with JavaScript, so users stay on the ColorPick page. A localized success message appears after a successful submission.
+
+The Access Key is intentionally kept in one small config file so you only need to change it once. Web3Forms access keys are used by client-side forms, so do not treat this value as a server-side password.
+
+
+Status: The Web3Forms Access Key has been configured in web3forms-config.js.

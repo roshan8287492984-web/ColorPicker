@@ -4169,3 +4169,156 @@ html.dark-mode body{background:#0f1016;color:#f3f4f6}
 html.dark-mode .navbar{background:#111218;border-color:#292b36}
 html.dark-mode .legal-content{background:#171821;border-color:#2b2d38;box-shadow:none}
 html.dark-mode .legal-hero p{color:#c6c9d4}
+
+
+/* =========================================================
+   INTERNATIONAL / RTL SUPPORT
+========================================================= */
+html[dir="rtl"] {
+  direction: rtl;
+}
+html[dir="rtl"] .navbar,
+html[dir="rtl"] .nav-links,
+html[dir="rtl"] .nav-actions {
+  direction: rtl;
+}
+html[dir="rtl"] .hero,
+html[dir="rtl"] .picker-section {
+  text-align: right;
+}
+
+/* =========================================================
+   COMPACT LANGUAGE MENU + SEARCH
+========================================================= */
+.language-menu {
+    min-width: 220px;
+    min-height: 0;
+    max-height: min(360px, 70vh);
+    overflow: hidden;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+}
+
+.language-search-wrap {
+    position: relative;
+    z-index: 3;
+    flex: 0 0 auto;
+    padding: 2px 2px 7px;
+    background: var(--card);
+}
+
+.language-search {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(127,127,127,.25);
+    border-radius: 9px;
+    background: transparent;
+    color: inherit;
+    padding: 9px 10px;
+    font: inherit;
+    outline: none;
+}
+
+.language-search::placeholder {
+    color: currentColor;
+    opacity: .55;
+}
+
+.language-search:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(127,127,127,.10);
+}
+
+.language-options {
+    max-height: calc(min(360px, 70vh) - 58px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    scrollbar-width: auto;
+}
+
+.language-menu button[hidden] {
+    display: none !important;
+}
+
+.language-options::-webkit-scrollbar {
+    width: 8px;
+}
+
+.language-options::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: rgba(127,127,127,.45);
+}
+
+.language-options::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+@media(max-width:700px){
+    .language-menu {
+        min-width: 210px;
+        max-width: calc(100vw - 28px);
+        max-height: 60vh;
+    }
+
+    .language-options {
+        max-height: calc(60vh - 58px);
+    }
+}
+
+
+/* =====================================================
+   Original educational content / AdSense readiness
+   ===================================================== */
+.seo-guide{width:min(1120px,100%);margin:0 auto;padding:0 20px 72px;}
+.seo-guide-inner{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:clamp(22px,4vw,42px);box-shadow:var(--shadow);}
+.seo-guide h2{margin:0 0 18px;font-size:clamp(24px,3vw,34px);line-height:1.2;letter-spacing:-.6px;color:var(--text);}
+.seo-guide h3{margin:28px 0 10px;font-size:20px;line-height:1.35;color:var(--text);}
+.seo-guide p,.seo-guide li{color:var(--muted);font-size:16px;line-height:1.8;}
+.seo-guide p{margin:0 0 16px;}
+.seo-guide ul,.seo-guide ol{margin:8px 0 20px;padding-left:24px;}
+.seo-guide li{margin:7px 0;}
+.seo-faq{display:grid;gap:10px;margin-top:20px;}
+.seo-faq details{border:1px solid var(--border);border-radius:14px;background:var(--bg);padding:0 16px;}
+.seo-faq summary{cursor:pointer;list-style:none;padding:16px 28px 16px 0;font-weight:700;color:var(--text);position:relative;}
+.seo-faq summary::-webkit-details-marker{display:none;}
+.seo-faq summary::after{content:'+';position:absolute;right:2px;top:13px;font-size:22px;font-weight:400;color:var(--muted);}
+.seo-faq details[open] summary::after{content:'−';}
+.seo-faq p{padding:0 0 16px;margin:0;}
+.seo-note{border-left:4px solid var(--accent);padding:14px 18px;margin:20px 0;background:var(--bg);border-radius:0 12px 12px 0;}
+@media (max-width:700px){.seo-guide{padding:0 14px 48px;}.seo-guide-inner{padding:20px 18px;border-radius:18px;}.seo-guide p,.seo-guide li{font-size:15px;line-height:1.75;}}
+
+
+/* =====================================================
+   CONTACT FORM
+   ===================================================== */
+.contact-page{max-width:1050px;margin:0 auto;padding:42px 20px 70px}
+.contact-card{background:var(--card-bg,#fff);border:1px solid var(--border-color,#e5e7eb);border-radius:22px;padding:30px;box-shadow:0 12px 35px rgba(15,23,42,.06)}
+.contact-intro{max-width:760px;margin-bottom:24px}
+.contact-intro h2,.contact-info h2{margin:0 0 10px;font-size:clamp(1.45rem,3vw,2rem)}
+.contact-intro p,.contact-info p{margin:0;line-height:1.75;color:var(--text-secondary,#64748b)}
+.contact-form{display:flex;flex-direction:column;gap:18px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.contact-field{display:flex;flex-direction:column;gap:8px;font-weight:650;color:var(--text-primary,#0f172a)}
+.contact-field input,.contact-field select,.contact-field textarea{width:100%;box-sizing:border-box;border:1px solid var(--border-color,#dbe1ea);border-radius:12px;background:var(--input-bg,#fff);color:var(--text-primary,#0f172a);padding:13px 14px;font:inherit;outline:none;transition:border-color .2s,box-shadow .2s,background .2s}
+.contact-field textarea{resize:vertical;min-height:160px}
+.contact-field input:focus,.contact-field select:focus,.contact-field textarea:focus{border-color:#64748b;box-shadow:0 0 0 3px rgba(100,116,139,.16)}
+.contact-counter{display:block;text-align:right;margin-top:-2px;color:var(--text-secondary,#64748b);font-size:.85rem;font-weight:500}
+.contact-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.contact-submit{border:0;border-radius:12px;padding:12px 20px;background:#111827;color:#fff;font-weight:750;cursor:pointer;transition:transform .15s,opacity .15s}
+.contact-submit:hover{transform:translateY(-1px)}
+.contact-submit:disabled{opacity:.65;cursor:wait;transform:none}
+.contact-status{margin:0;min-height:24px;font-weight:650;color:#166534}
+.contact-status.error{color:#b91c1c}
+.contact-note{margin:0;color:var(--text-secondary,#64748b);font-size:.9rem;line-height:1.6}
+.contact-honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+.contact-info{padding-top:42px}
+.contact-info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+.contact-info-grid article{padding:22px;border:1px solid var(--border-color,#e5e7eb);border-radius:16px;background:var(--card-bg,#fff)}
+.contact-info-grid h3{margin:0 0 8px;font-size:1.05rem}
+@media (max-width:760px){.contact-grid,.contact-info-grid{grid-template-columns:1fr}.contact-card{padding:22px}.contact-page{padding-left:14px;padding-right:14px}}
+html.dark-mode .contact-card,html.dark-mode .contact-info-grid article,body.dark .contact-card,body.dark .contact-info-grid article{background:#111827;border-color:#263244}
+html.dark-mode .contact-field,body.dark .contact-field{color:#f8fafc}
+html.dark-mode .contact-field input,html.dark-mode .contact-field select,html.dark-mode .contact-field textarea,body.dark .contact-field input,body.dark .contact-field select,body.dark .contact-field textarea{background:#0b1220;border-color:#334155;color:#f8fafc}
+html.dark-mode .contact-submit,body.dark .contact-submit{background:#f8fafc;color:#0f172a}

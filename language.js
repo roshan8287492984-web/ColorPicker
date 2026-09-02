@@ -8,6 +8,103 @@
 
 
     /* =====================================================
+       LANGUAGE / URL CONFIGURATION
+    ===================================================== */
+
+    const LANGUAGE_STORAGE_KEY = "colorpick-language";
+    const DEFAULT_LANGUAGE = "en";
+
+    // Resolve the website root from language.js itself. This makes the language
+    // switcher work both when the site is deployed at the domain root and when
+    // it is tested locally inside a project subfolder (for example /ColorPick/).
+    const SCRIPT_BASE = (function () {
+        try {
+            const scripts = document.getElementsByTagName("script");
+            for (let i = scripts.length - 1; i >= 0; i--) {
+                const src = scripts[i].src || "";
+                if (src.indexOf("language.js") !== -1) {
+                    const url = new URL(src, window.location.href);
+                    return url.pathname.substring(0, url.pathname.lastIndexOf("/") + 1);
+                }
+            }
+        } catch (error) {}
+        return "/";
+    })();
+
+    const LOCALE_PATHS = {
+        en: "",
+        hi: "hi",
+        es: "es",
+        fr: "fr",
+        de: "de",
+        ja: "ja",
+        vi: "vi",
+        fa: "fa",
+        ru: "ru",
+        "pt-BR": "pt-br",
+        ko: "ko",
+        sv: "sv",
+        "zh-TW": "zh-tw",
+        ro: "ro",
+        fil: "fil",
+        id: "id",
+        "es-MX": "es-mx",
+        tr: "tr"
+    };
+
+    function getPathRelativeToSiteRoot() {
+        const path = window.location.pathname;
+        let relative = path;
+        if (SCRIPT_BASE !== "/" && path.indexOf(SCRIPT_BASE) === 0) {
+            relative = path.slice(SCRIPT_BASE.length);
+        } else if (SCRIPT_BASE === "/") {
+            relative = path.replace(/^\/+/, "");
+        }
+        return relative.replace(/^\/+|\/+$/g, "");
+    }
+
+    function languageFromPath() {
+        const relative = getPathRelativeToSiteRoot();
+        const parts = relative.split("/").filter(Boolean);
+        if (!parts.length) return null;
+        const first = parts[0].toLowerCase();
+        for (const language in LOCALE_PATHS) {
+            const folder = LOCALE_PATHS[language];
+            if (folder && folder.toLowerCase() === first) return language;
+        }
+        return null;
+    }
+
+    function getCurrentPageFile() {
+        const relative = getPathRelativeToSiteRoot();
+        const parts = relative.split("/").filter(Boolean);
+        if (!parts.length) return "index.html";
+        const first = parts[0].toLowerCase();
+        let last = parts[parts.length - 1].toLowerCase();
+        const isLocale = Object.values(LOCALE_PATHS).some(folder => folder && folder.toLowerCase() === first);
+        if (isLocale) {
+            if (parts.length === 1) return "index.html";
+            last = parts[1].toLowerCase();
+        }
+        return last.endsWith(".html") ? last : "index.html";
+    }
+
+    // Root pages are always English. A translated page is represented by its
+    // locale folder, e.g. /fr/palettes.html, so language state never needs to
+    // override an English root URL.
+    let currentLanguage = languageFromPath() || DEFAULT_LANGUAGE;
+
+    function buildLanguageUrl(language) {
+        const folder = LOCALE_PATHS[language] || "";
+        const page = getCurrentPageFile();
+        if (!folder) {
+            return SCRIPT_BASE + (page === "index.html" ? "index.html" : page);
+        }
+        return SCRIPT_BASE + folder + "/" + (page === "index.html" ? "" : page);
+    }
+
+
+    /* =====================================================
        LANGUAGE DATA
     ===================================================== */
 
@@ -950,6 +1047,635 @@
 
         }
 
+,
+
+
+        "vi": {
+                "aboutUs": "Giới thiệu",
+                "privacyPolicy": "Chính sách bảo mật",
+                "termsConditions": "Điều khoản & Điều kiện",
+                "contactUs": "Liên hệ",
+                "navSuggestions": "Gợi ý màu",
+                "navWheel": "Bánh xe màu",
+                "navCode": "Mã màu",
+                "brand": "ColorPick",
+                "navPicker": "Bộ chọn màu",
+                "navPalettes": "Khám phá bảng màu",
+                "badge": "✨ Công cụ màu trực tuyến miễn phí",
+                "heroTitle1": "Chọn bất kỳ màu nào",
+                "heroTitle2": "Từ bất kỳ hình ảnh nào.",
+                "heroDescription": "Tải hình ảnh lên, nhấp vào bất kỳ vị trí nào và nhận ngay giá trị HEX, RGB và HSL chính xác.",
+                "uploadTitle": "Tải hình ảnh của bạn",
+                "uploadDescription": "Kéo và thả hình ảnh vào đây",
+                "or": "hoặc",
+                "browse": "Chọn hình ảnh",
+                "imagePicker": "BỘ CHỌN MÀU TỪ HÌNH ẢNH",
+                "selectColor": "Chọn một màu",
+                "newImage": "↻ Hình ảnh mới",
+                "instruction": "🖱️ Di chuyển chuột trên hình ảnh và nhấp để chọn màu.",
+                "selectedColor": "MÀU ĐÃ CHỌN",
+                "colorInformation": "Thông tin màu",
+                "pickColor": "Chọn một màu",
+                "addPalette": "+ Thêm vào bảng màu",
+                "yourColors": "MÀU CỦA BẠN",
+                "myPalette": "Bảng màu của tôi",
+                "clearAll": "Xóa tất cả",
+                "emptyPalette": "Chọn màu từ hình ảnh để tạo bảng màu của bạn.",
+                "needInspiration": "CẦN CẢM HỨNG?",
+                "exploreTitle": "Khám phá các bảng màu đẹp",
+                "exploreDescription": "Khám phá hơn 100 kết hợp màu được tuyển chọn cho dự án tiếp theo của bạn.",
+                "exploreButton": "Khám phá bảng màu →",
+                "aboutTitleSmall": "VỀ COLORPICK",
+                "aboutTitle": "Công cụ đơn giản cho những màu sắc đẹp",
+                "aboutDescription": "ColorPick giúp nhà thiết kế, nhà phát triển, nghệ sĩ và người sáng tạo nhanh chóng lấy màu từ hình ảnh.",
+                "rights": "Bảo lưu mọi quyền.",
+                "paletteBadge": "🎨 Hơn 100 bảng màu",
+                "paletteHero1": "Khám phá những",
+                "paletteHero2": "bảng màu đẹp.",
+                "paletteHeroDescription": "Tìm sự kết hợp màu hoàn hảo cho website, logo, tác phẩm nghệ thuật hoặc dự án sáng tạo tiếp theo.",
+                "searchPalettes": "Tìm kiếm bảng màu...",
+                "loadMore": "Tải thêm bảng màu",
+                "howToUse": "CÁCH SỬ DỤNG",
+                "findColor": "Đã tìm thấy màu bạn thích?",
+                "howToUseDescription": "Chỉ cần nhấp vào bất kỳ màu nào trong bảng màu và mã HEX sẽ tự động được sao chép vào bộ nhớ tạm.",
+                "pickFromImage": "Chọn màu từ hình ảnh →",
+                "colorDetails": "Xem chi tiết màu →",
+                "colorCopied": "Đã sao chép màu!"
+        },
+        "fa": {
+                "aboutUs": "درباره ما",
+                "privacyPolicy": "سیاست حفظ حریم خصوصی",
+                "termsConditions": "شرایط و قوانین",
+                "contactUs": "تماس با ما",
+                "navSuggestions": "پیشنهادهای رنگ",
+                "navWheel": "چرخه رنگ",
+                "navCode": "کد رنگ",
+                "brand": "ColorPick",
+                "navPicker": "انتخابگر رنگ",
+                "navPalettes": "کاوش پالت‌ها",
+                "badge": "✨ ابزار آنلاین رایگان رنگ",
+                "heroTitle1": "هر رنگی را انتخاب کنید",
+                "heroTitle2": "از هر تصویری.",
+                "heroDescription": "یک تصویر آپلود کنید، روی هر نقطه کلیک کنید و مقادیر دقیق HEX، RGB و HSL را فوراً دریافت کنید.",
+                "uploadTitle": "تصویر خود را آپلود کنید",
+                "uploadDescription": "تصویر را اینجا بکشید و رها کنید",
+                "or": "یا",
+                "browse": "انتخاب تصویر",
+                "imagePicker": "انتخابگر رنگ تصویر",
+                "selectColor": "یک رنگ انتخاب کنید",
+                "newImage": "↻ تصویر جدید",
+                "instruction": "🖱️ نشانگر را روی تصویر حرکت دهید و برای انتخاب رنگ کلیک کنید.",
+                "selectedColor": "رنگ انتخاب‌شده",
+                "colorInformation": "اطلاعات رنگ",
+                "pickColor": "یک رنگ انتخاب کنید",
+                "addPalette": "+ افزودن به پالت من",
+                "yourColors": "رنگ‌های شما",
+                "myPalette": "پالت من",
+                "clearAll": "پاک کردن همه",
+                "emptyPalette": "برای ساخت پالت، رنگ‌هایی از تصویر خود انتخاب کنید.",
+                "needInspiration": "الهام می‌خواهید؟",
+                "exploreTitle": "پالت‌های رنگی زیبا را کاوش کنید",
+                "exploreDescription": "بیش از ۱۰۰ ترکیب رنگ منتخب برای پروژه بعدی خود پیدا کنید.",
+                "exploreButton": "کاوش پالت‌ها ←",
+                "aboutTitleSmall": "درباره COLORPICK",
+                "aboutTitle": "ابزاری ساده برای رنگ‌های زیبا",
+                "aboutDescription": "ColorPick به طراحان، توسعه‌دهندگان، هنرمندان و سازندگان کمک می‌کند رنگ‌ها را سریع از تصاویر استخراج کنند.",
+                "rights": "تمام حقوق محفوظ است.",
+                "paletteBadge": "🎨 بیش از ۱۰۰ پالت رنگ",
+                "paletteHero1": "پالت‌های رنگی زیبا را",
+                "paletteHero2": "کاوش کنید.",
+                "paletteHeroDescription": "ترکیب رنگ مناسب برای وب‌سایت، لوگو، اثر هنری یا پروژه خلاقانه بعدی خود را پیدا کنید.",
+                "searchPalettes": "جستجوی پالت‌ها...",
+                "loadMore": "بارگذاری پالت‌های بیشتر",
+                "howToUse": "نحوه استفاده",
+                "findColor": "رنگی را که دوست دارید پیدا کردید؟",
+                "howToUseDescription": "روی هر رنگ در یک پالت کلیک کنید تا کد HEX آن به‌طور خودکار در کلیپ‌بورد کپی شود.",
+                "pickFromImage": "انتخاب رنگ از تصویر ←",
+                "colorDetails": "مشاهده جزئیات رنگ ←",
+                "colorCopied": "رنگ کپی شد!"
+        },
+        "ru": {
+                "aboutUs": "О нас",
+                "privacyPolicy": "Политика конфиденциальности",
+                "termsConditions": "Условия использования",
+                "contactUs": "Контакты",
+                "navSuggestions": "Подбор цветов",
+                "navWheel": "Цветовой круг",
+                "navCode": "Код цвета",
+                "brand": "ColorPick",
+                "navPicker": "Пипетка цвета",
+                "navPalettes": "Исследовать палитры",
+                "badge": "✨ Бесплатный онлайн-инструмент для работы с цветом",
+                "heroTitle1": "Выберите любой цвет",
+                "heroTitle2": "Из любого изображения.",
+                "heroDescription": "Загрузите изображение, нажмите в любом месте и мгновенно получите точные значения HEX, RGB и HSL.",
+                "uploadTitle": "Загрузите изображение",
+                "uploadDescription": "Перетащите изображение сюда",
+                "or": "или",
+                "browse": "Выбрать изображение",
+                "imagePicker": "ПИПЕТКА ЦВЕТА ИЗ ИЗОБРАЖЕНИЯ",
+                "selectColor": "Выберите цвет",
+                "newImage": "↻ Новое изображение",
+                "instruction": "🖱️ Наведите курсор на изображение и нажмите, чтобы выбрать цвет.",
+                "selectedColor": "ВЫБРАННЫЙ ЦВЕТ",
+                "colorInformation": "Информация о цвете",
+                "pickColor": "Выберите цвет",
+                "addPalette": "+ Добавить в мою палитру",
+                "yourColors": "ВАШИ ЦВЕТА",
+                "myPalette": "Моя палитра",
+                "clearAll": "Очистить всё",
+                "emptyPalette": "Выбирайте цвета из изображения, чтобы создать свою палитру.",
+                "needInspiration": "НУЖНО ВДОХНОВЕНИЕ?",
+                "exploreTitle": "Исследуйте красивые цветовые палитры",
+                "exploreDescription": "Откройте более 100 тщательно подобранных цветовых сочетаний для следующего проекта.",
+                "exploreButton": "Исследовать палитры →",
+                "aboutTitleSmall": "О COLORPICK",
+                "aboutTitle": "Простой инструмент для красивых цветов",
+                "aboutDescription": "ColorPick помогает дизайнерам, разработчикам, художникам и создателям быстро извлекать цвета из изображений.",
+                "rights": "Все права защищены.",
+                "paletteBadge": "🎨 Более 100 цветовых палитр",
+                "paletteHero1": "Исследуйте красивые",
+                "paletteHero2": "цветовые палитры.",
+                "paletteHeroDescription": "Найдите идеальное сочетание цветов для сайта, логотипа, иллюстрации или следующего творческого проекта.",
+                "searchPalettes": "Поиск палитр...",
+                "loadMore": "Загрузить ещё палитры",
+                "howToUse": "КАК ИСПОЛЬЗОВАТЬ",
+                "findColor": "Нашли понравившийся цвет?",
+                "howToUseDescription": "Нажмите на любой цвет в палитре, и его HEX-код автоматически скопируется в буфер обмена.",
+                "pickFromImage": "Выбрать цвета из изображения →",
+                "colorDetails": "Посмотреть информацию о цвете →",
+                "colorCopied": "Цвет скопирован!"
+        },
+        "pt-BR": {
+                "aboutUs": "Sobre nós",
+                "privacyPolicy": "Política de privacidade",
+                "termsConditions": "Termos e condições",
+                "contactUs": "Contato",
+                "navSuggestions": "Sugestões de cores",
+                "navWheel": "Roda de cores",
+                "navCode": "Código de cor",
+                "brand": "ColorPick",
+                "navPicker": "Seletor de cores",
+                "navPalettes": "Explorar paletas",
+                "badge": "✨ Ferramenta de cores online grátis",
+                "heroTitle1": "Escolha qualquer cor",
+                "heroTitle2": "De qualquer imagem.",
+                "heroDescription": "Envie uma imagem, clique em qualquer ponto e obtenha instantaneamente os valores exatos HEX, RGB e HSL.",
+                "uploadTitle": "Envie sua imagem",
+                "uploadDescription": "Arraste e solte sua imagem aqui",
+                "or": "ou",
+                "browse": "Escolher imagem",
+                "imagePicker": "SELETOR DE CORES DE IMAGEM",
+                "selectColor": "Selecione uma cor",
+                "newImage": "↻ Nova imagem",
+                "instruction": "🖱️ Mova o mouse sobre a imagem e clique para selecionar uma cor.",
+                "selectedColor": "COR SELECIONADA",
+                "colorInformation": "Informações da cor",
+                "pickColor": "Escolha uma cor",
+                "addPalette": "+ Adicionar à minha paleta",
+                "yourColors": "SUAS CORES",
+                "myPalette": "Minha paleta",
+                "clearAll": "Limpar tudo",
+                "emptyPalette": "Escolha cores da sua imagem para criar sua paleta.",
+                "needInspiration": "PRECISA DE INSPIRAÇÃO?",
+                "exploreTitle": "Explore lindas paletas de cores",
+                "exploreDescription": "Descubra mais de 100 combinações de cores selecionadas para seu próximo projeto.",
+                "exploreButton": "Explorar paletas →",
+                "aboutTitleSmall": "SOBRE O COLORPICK",
+                "aboutTitle": "Uma ferramenta simples para cores incríveis",
+                "aboutDescription": "O ColorPick ajuda designers, desenvolvedores, artistas e criadores a extrair cores de imagens rapidamente.",
+                "rights": "Todos os direitos reservados.",
+                "paletteBadge": "🎨 Mais de 100 paletas de cores",
+                "paletteHero1": "Explore lindas",
+                "paletteHero2": "paletas de cores.",
+                "paletteHeroDescription": "Encontre a combinação de cores perfeita para seu site, logotipo, arte ou próximo projeto criativo.",
+                "searchPalettes": "Pesquisar paletas...",
+                "loadMore": "Carregar mais paletas",
+                "howToUse": "COMO USAR",
+                "findColor": "Encontrou uma cor que gostou?",
+                "howToUseDescription": "Clique em qualquer cor dentro de uma paleta e seu código HEX será copiado automaticamente para a área de transferência.",
+                "pickFromImage": "Escolher cores de uma imagem →",
+                "colorDetails": "Ver detalhes da cor →",
+                "colorCopied": "Cor copiada!"
+        },
+        "ko": {
+                "aboutUs": "소개",
+                "privacyPolicy": "개인정보처리방침",
+                "termsConditions": "이용약관",
+                "contactUs": "문의하기",
+                "navSuggestions": "색상 추천",
+                "navWheel": "컬러 휠",
+                "navCode": "색상 코드",
+                "brand": "ColorPick",
+                "navPicker": "컬러 피커",
+                "navPalettes": "팔레트 탐색",
+                "badge": "✨ 무료 온라인 색상 도구",
+                "heroTitle1": "어떤 색이든 선택하세요",
+                "heroTitle2": "어떤 이미지에서든.",
+                "heroDescription": "이미지를 업로드하고 원하는 곳을 클릭하면 정확한 HEX, RGB, HSL 색상 값을 즉시 확인할 수 있습니다.",
+                "uploadTitle": "이미지 업로드",
+                "uploadDescription": "여기에 이미지를 드래그 앤 드롭하세요",
+                "or": "또는",
+                "browse": "이미지 선택",
+                "imagePicker": "이미지 컬러 피커",
+                "selectColor": "색상 선택",
+                "newImage": "↻ 새 이미지",
+                "instruction": "🖱️ 이미지 위로 마우스를 움직이고 클릭하여 색상을 선택하세요.",
+                "selectedColor": "선택한 색상",
+                "colorInformation": "색상 정보",
+                "pickColor": "색상을 선택하세요",
+                "addPalette": "+ 내 팔레트에 추가",
+                "yourColors": "내 색상",
+                "myPalette": "내 팔레트",
+                "clearAll": "모두 지우기",
+                "emptyPalette": "이미지에서 색상을 선택하여 나만의 팔레트를 만들어 보세요.",
+                "needInspiration": "영감이 필요하신가요?",
+                "exploreTitle": "아름다운 색상 팔레트 탐색",
+                "exploreDescription": "다음 프로젝트를 위한 100개 이상의 엄선된 색상 조합을 찾아보세요.",
+                "exploreButton": "팔레트 탐색 →",
+                "aboutTitleSmall": "COLORPICK 소개",
+                "aboutTitle": "아름다운 색상을 위한 간단한 도구",
+                "aboutDescription": "ColorPick은 디자이너, 개발자, 아티스트 및 크리에이터가 이미지에서 색상을 빠르게 추출하도록 도와줍니다.",
+                "rights": "모든 권리 보유.",
+                "paletteBadge": "🎨 100개 이상의 색상 팔레트",
+                "paletteHero1": "아름다운",
+                "paletteHero2": "색상 팔레트를 탐색하세요.",
+                "paletteHeroDescription": "웹사이트, 로고, 작품 또는 다음 창작 프로젝트에 어울리는 완벽한 색상 조합을 찾아보세요.",
+                "searchPalettes": "팔레트 검색...",
+                "loadMore": "더 많은 팔레트 불러오기",
+                "howToUse": "사용 방법",
+                "findColor": "마음에 드는 색상을 찾으셨나요?",
+                "howToUseDescription": "팔레트의 색상을 클릭하면 HEX 코드가 자동으로 클립보드에 복사됩니다.",
+                "pickFromImage": "이미지에서 색상 선택 →",
+                "colorDetails": "색상 세부정보 보기 →",
+                "colorCopied": "색상이 복사되었습니다!"
+        },
+        "sv": {
+                "aboutUs": "Om oss",
+                "privacyPolicy": "Integritetspolicy",
+                "termsConditions": "Villkor",
+                "contactUs": "Kontakt",
+                "navSuggestions": "Färgtips",
+                "navWheel": "Färghjul",
+                "navCode": "Färgkod",
+                "brand": "ColorPick",
+                "navPicker": "Färgväljare",
+                "navPalettes": "Utforska paletter",
+                "badge": "✨ Gratis färgverktyg online",
+                "heroTitle1": "Välj valfri färg",
+                "heroTitle2": "Från vilken bild som helst.",
+                "heroDescription": "Ladda upp en bild, klicka var som helst och få exakta HEX-, RGB- och HSL-värden direkt.",
+                "uploadTitle": "Ladda upp din bild",
+                "uploadDescription": "Dra och släpp din bild här",
+                "or": "eller",
+                "browse": "Välj bild",
+                "imagePicker": "FÄRGVÄLJARE FRÅN BILD",
+                "selectColor": "Välj en färg",
+                "newImage": "↻ Ny bild",
+                "instruction": "🖱️ Flytta muspekaren över bilden och klicka för att välja en färg.",
+                "selectedColor": "VALD FÄRG",
+                "colorInformation": "Färginformation",
+                "pickColor": "Välj en färg",
+                "addPalette": "+ Lägg till i min palett",
+                "yourColors": "DINA FÄRGER",
+                "myPalette": "Min palett",
+                "clearAll": "Rensa allt",
+                "emptyPalette": "Välj färger från din bild för att skapa din palett.",
+                "needInspiration": "BEHÖVER DU INSPIRATION?",
+                "exploreTitle": "Utforska vackra färgpaletter",
+                "exploreDescription": "Upptäck över 100 noggrant utvalda färgkombinationer för ditt nästa projekt.",
+                "exploreButton": "Utforska paletter →",
+                "aboutTitleSmall": "OM COLORPICK",
+                "aboutTitle": "Ett enkelt verktyg för vackra färger",
+                "aboutDescription": "ColorPick hjälper designers, utvecklare, konstnärer och kreatörer att snabbt hämta färger från bilder.",
+                "rights": "Med ensamrätt.",
+                "paletteBadge": "🎨 Över 100 färgpaletter",
+                "paletteHero1": "Utforska vackra",
+                "paletteHero2": "färgpaletter.",
+                "paletteHeroDescription": "Hitta den perfekta färgkombinationen för din webbplats, logotyp, konst eller nästa kreativa projekt.",
+                "searchPalettes": "Sök paletter...",
+                "loadMore": "Ladda fler paletter",
+                "howToUse": "SÅ HÄR GÖR DU",
+                "findColor": "Hittade du en färg du gillar?",
+                "howToUseDescription": "Klicka på valfri färg i en palett så kopieras HEX-koden automatiskt till urklipp.",
+                "pickFromImage": "Välj färger från bild →",
+                "colorDetails": "Visa färginformation →",
+                "colorCopied": "Färgen har kopierats!"
+        },
+        "zh-TW": {
+                "aboutUs": "關於我們",
+                "privacyPolicy": "隱私權政策",
+                "termsConditions": "條款與條件",
+                "contactUs": "聯絡我們",
+                "navSuggestions": "色彩建議",
+                "navWheel": "色輪",
+                "navCode": "色碼",
+                "brand": "ColorPick",
+                "navPicker": "取色器",
+                "navPalettes": "探索配色",
+                "badge": "✨ 免費線上色彩工具",
+                "heroTitle1": "選擇任何顏色",
+                "heroTitle2": "從任何圖片中。",
+                "heroDescription": "上傳圖片、點擊任意位置，即時取得精確的 HEX、RGB 與 HSL 色彩值。",
+                "uploadTitle": "上傳圖片",
+                "uploadDescription": "將圖片拖曳到這裡",
+                "or": "或",
+                "browse": "選擇圖片",
+                "imagePicker": "圖片取色器",
+                "selectColor": "選擇顏色",
+                "newImage": "↻ 新圖片",
+                "instruction": "🖱️ 將滑鼠移到圖片上並點擊即可選擇顏色。",
+                "selectedColor": "已選顏色",
+                "colorInformation": "色彩資訊",
+                "pickColor": "選擇顏色",
+                "addPalette": "+ 加入我的配色",
+                "yourColors": "你的顏色",
+                "myPalette": "我的配色",
+                "clearAll": "全部清除",
+                "emptyPalette": "從圖片中選擇顏色來建立你的配色。",
+                "needInspiration": "需要靈感嗎？",
+                "exploreTitle": "探索美麗的色彩配色",
+                "exploreDescription": "探索 100+ 組精選配色，為你的下一個專案尋找靈感。",
+                "exploreButton": "探索配色 →",
+                "aboutTitleSmall": "關於 COLORPICK",
+                "aboutTitle": "簡單好用的美麗色彩工具",
+                "aboutDescription": "ColorPick 協助設計師、開發者、藝術家與創作者快速從圖片擷取顏色。",
+                "rights": "版權所有。",
+                "paletteBadge": "🎨 100+ 組色彩配色",
+                "paletteHero1": "探索美麗的",
+                "paletteHero2": "色彩配色。",
+                "paletteHeroDescription": "為網站、Logo、藝術作品或下一個創意專案找到完美的色彩組合。",
+                "searchPalettes": "搜尋配色...",
+                "loadMore": "載入更多配色",
+                "howToUse": "使用方式",
+                "findColor": "找到喜歡的顏色了嗎？",
+                "howToUseDescription": "點擊配色中的任何顏色，其 HEX 色碼會自動複製到剪貼簿。",
+                "pickFromImage": "從圖片選擇顏色 →",
+                "colorDetails": "查看色彩詳細資訊 →",
+                "colorCopied": "顏色已複製！"
+        },
+        "ro": {
+                "aboutUs": "Despre noi",
+                "privacyPolicy": "Politica de confidențialitate",
+                "termsConditions": "Termeni și condiții",
+                "contactUs": "Contact",
+                "navSuggestions": "Sugestii de culori",
+                "navWheel": "Roata culorilor",
+                "navCode": "Cod de culoare",
+                "brand": "ColorPick",
+                "navPicker": "Selector de culori",
+                "navPalettes": "Explorează paletele",
+                "badge": "✨ Instrument online gratuit pentru culori",
+                "heroTitle1": "Alege orice culoare",
+                "heroTitle2": "Din orice imagine.",
+                "heroDescription": "Încarcă o imagine, fă clic oriunde și obține instantaneu valorile exacte HEX, RGB și HSL.",
+                "uploadTitle": "Încarcă imaginea",
+                "uploadDescription": "Trage și plasează imaginea aici",
+                "or": "sau",
+                "browse": "Alege imaginea",
+                "imagePicker": "SELECTOR DE CULORI DIN IMAGINE",
+                "selectColor": "Alege o culoare",
+                "newImage": "↻ Imagine nouă",
+                "instruction": "🖱️ Mută mouse-ul peste imagine și fă clic pentru a selecta o culoare.",
+                "selectedColor": "CULOAREA SELECTATĂ",
+                "colorInformation": "Informații despre culoare",
+                "pickColor": "Alege o culoare",
+                "addPalette": "+ Adaugă la paleta mea",
+                "yourColors": "CULORILE TALE",
+                "myPalette": "Paleta mea",
+                "clearAll": "Șterge tot",
+                "emptyPalette": "Alege culori din imagine pentru a crea paleta ta.",
+                "needInspiration": "AI NEVOIE DE INSPIRAȚIE?",
+                "exploreTitle": "Explorează palete de culori frumoase",
+                "exploreDescription": "Descoperă peste 100 de combinații de culori alese cu grijă pentru următorul tău proiect.",
+                "exploreButton": "Explorează paletele →",
+                "aboutTitleSmall": "DESPRE COLORPICK",
+                "aboutTitle": "Un instrument simplu pentru culori frumoase",
+                "aboutDescription": "ColorPick ajută designerii, dezvoltatorii, artiștii și creatorii să extragă rapid culori din imagini.",
+                "rights": "Toate drepturile rezervate.",
+                "paletteBadge": "🎨 Peste 100 de palete de culori",
+                "paletteHero1": "Explorează palete",
+                "paletteHero2": "de culori frumoase.",
+                "paletteHeroDescription": "Găsește combinația perfectă de culori pentru site-ul, logo-ul, lucrarea sau următorul proiect creativ.",
+                "searchPalettes": "Caută palete...",
+                "loadMore": "Încarcă mai multe palete",
+                "howToUse": "CUM SE FOLOSEȘTE",
+                "findColor": "Ai găsit o culoare care îți place?",
+                "howToUseDescription": "Fă clic pe orice culoare dintr-o paletă, iar codul HEX va fi copiat automat în clipboard.",
+                "pickFromImage": "Alege culori din imagine →",
+                "colorDetails": "Vezi detaliile culorii →",
+                "colorCopied": "Culoarea a fost copiată!"
+        },
+        "fil": {
+                "aboutUs": "Tungkol sa amin",
+                "privacyPolicy": "Patakaran sa privacy",
+                "termsConditions": "Mga tuntunin at kondisyon",
+                "contactUs": "Makipag-ugnayan",
+                "navSuggestions": "Mga mungkahi sa kulay",
+                "navWheel": "Color wheel",
+                "navCode": "Color code",
+                "brand": "ColorPick",
+                "navPicker": "Color Picker",
+                "navPalettes": "Tuklasin ang mga palette",
+                "badge": "✨ Libreng online color tool",
+                "heroTitle1": "Pumili ng kahit anong kulay",
+                "heroTitle2": "Mula sa kahit anong larawan.",
+                "heroDescription": "Mag-upload ng larawan, mag-click kahit saan, at agad makuha ang eksaktong HEX, RGB at HSL values.",
+                "uploadTitle": "I-upload ang iyong larawan",
+                "uploadDescription": "I-drag at i-drop ang larawan dito",
+                "or": "o",
+                "browse": "Pumili ng larawan",
+                "imagePicker": "IMAGE COLOR PICKER",
+                "selectColor": "Pumili ng kulay",
+                "newImage": "↻ Bagong larawan",
+                "instruction": "🖱️ Igalaw ang mouse sa larawan at mag-click para pumili ng kulay.",
+                "selectedColor": "NAPILING KULAY",
+                "colorInformation": "Impormasyon ng kulay",
+                "pickColor": "Pumili ng kulay",
+                "addPalette": "+ Idagdag sa aking palette",
+                "yourColors": "IYONG MGA KULAY",
+                "myPalette": "Aking palette",
+                "clearAll": "I-clear lahat",
+                "emptyPalette": "Pumili ng mga kulay mula sa larawan para gumawa ng palette.",
+                "needInspiration": "KAILANGAN NG INSPIRASYON?",
+                "exploreTitle": "Tuklasin ang magagandang color palette",
+                "exploreDescription": "Tuklasin ang 100+ piling kombinasyon ng kulay para sa iyong susunod na proyekto.",
+                "exploreButton": "Tuklasin ang mga palette →",
+                "aboutTitleSmall": "TUNGKOL SA COLORPICK",
+                "aboutTitle": "Simpleng tool para sa magagandang kulay",
+                "aboutDescription": "Tinutulungan ng ColorPick ang mga designer, developer, artist at creator na mabilis kumuha ng mga kulay mula sa larawan.",
+                "rights": "Nakalaan ang lahat ng karapatan.",
+                "paletteBadge": "🎨 100+ color palette",
+                "paletteHero1": "Tuklasin ang magagandang",
+                "paletteHero2": "color palette.",
+                "paletteHeroDescription": "Hanapin ang perpektong kombinasyon ng kulay para sa website, logo, artwork o susunod mong creative project.",
+                "searchPalettes": "Maghanap ng palette...",
+                "loadMore": "Mag-load ng higit pang palette",
+                "howToUse": "PAANO GAMITIN",
+                "findColor": "May nakita kang kulay na gusto mo?",
+                "howToUseDescription": "I-click ang anumang kulay sa palette at awtomatikong makokopya ang HEX code nito sa clipboard.",
+                "pickFromImage": "Pumili ng mga kulay mula sa larawan →",
+                "colorDetails": "Tingnan ang detalye ng kulay →",
+                "colorCopied": "Nakopya ang kulay!"
+        },
+        "id": {
+                "aboutUs": "Tentang kami",
+                "privacyPolicy": "Kebijakan privasi",
+                "termsConditions": "Syarat & ketentuan",
+                "contactUs": "Kontak",
+                "navSuggestions": "Saran warna",
+                "navWheel": "Roda warna",
+                "navCode": "Kode warna",
+                "brand": "ColorPick",
+                "navPicker": "Pemilih warna",
+                "navPalettes": "Jelajahi palet",
+                "badge": "✨ Alat warna online gratis",
+                "heroTitle1": "Pilih warna apa pun",
+                "heroTitle2": "Dari gambar apa pun.",
+                "heroDescription": "Unggah gambar, klik di mana saja, dan dapatkan nilai HEX, RGB, dan HSL yang tepat secara instan.",
+                "uploadTitle": "Unggah gambar Anda",
+                "uploadDescription": "Seret dan lepas gambar Anda di sini",
+                "or": "atau",
+                "browse": "Pilih gambar",
+                "imagePicker": "PEMILIH WARNA DARI GAMBAR",
+                "selectColor": "Pilih warna",
+                "newImage": "↻ Gambar baru",
+                "instruction": "🖱️ Gerakkan mouse di atas gambar lalu klik untuk memilih warna.",
+                "selectedColor": "WARNA TERPILIH",
+                "colorInformation": "Informasi warna",
+                "pickColor": "Pilih warna",
+                "addPalette": "+ Tambahkan ke palet saya",
+                "yourColors": "WARNA ANDA",
+                "myPalette": "Palet saya",
+                "clearAll": "Hapus semua",
+                "emptyPalette": "Pilih warna dari gambar untuk membuat palet Anda.",
+                "needInspiration": "BUTUH INSPIRASI?",
+                "exploreTitle": "Jelajahi palet warna yang indah",
+                "exploreDescription": "Temukan 100+ kombinasi warna pilihan untuk proyek Anda berikutnya.",
+                "exploreButton": "Jelajahi palet →",
+                "aboutTitleSmall": "TENTANG COLORPICK",
+                "aboutTitle": "Alat sederhana untuk warna yang indah",
+                "aboutDescription": "ColorPick membantu desainer, developer, seniman, dan kreator mengekstrak warna dari gambar dengan cepat.",
+                "rights": "Hak cipta dilindungi.",
+                "paletteBadge": "🎨 100+ palet warna",
+                "paletteHero1": "Jelajahi",
+                "paletteHero2": "palet warna yang indah.",
+                "paletteHeroDescription": "Temukan kombinasi warna yang sempurna untuk situs web, logo, karya seni, atau proyek kreatif Anda berikutnya.",
+                "searchPalettes": "Cari palet...",
+                "loadMore": "Muat lebih banyak palet",
+                "howToUse": "CARA MENGGUNAKAN",
+                "findColor": "Menemukan warna yang Anda suka?",
+                "howToUseDescription": "Klik warna apa pun dalam palet dan kode HEX-nya akan otomatis disalin ke clipboard.",
+                "pickFromImage": "Pilih warna dari gambar →",
+                "colorDetails": "Lihat detail warna →",
+                "colorCopied": "Warna disalin!"
+        },
+        "es-MX": {
+                "aboutUs": "Acerca de nosotros",
+                "privacyPolicy": "Política de privacidad",
+                "termsConditions": "Términos y condiciones",
+                "contactUs": "Contacto",
+                "navSuggestions": "Sugerencias de color",
+                "navWheel": "Rueda de color",
+                "navCode": "Código de color",
+                "brand": "ColorPick",
+                "navPicker": "Selector de color",
+                "navPalettes": "Explorar paletas",
+                "badge": "✨ Herramienta de color en línea gratis",
+                "heroTitle1": "Elige cualquier color",
+                "heroTitle2": "De cualquier imagen.",
+                "heroDescription": "Sube una imagen, haz clic en cualquier parte y obtén al instante los valores exactos HEX, RGB y HSL.",
+                "uploadTitle": "Sube tu imagen",
+                "uploadDescription": "Arrastra y suelta tu imagen aquí",
+                "or": "o",
+                "browse": "Buscar imagen",
+                "imagePicker": "SELECTOR DE COLOR DE IMAGEN",
+                "selectColor": "Selecciona un color",
+                "newImage": "↻ Nueva imagen",
+                "instruction": "🖱️ Mueve el mouse sobre la imagen y haz clic para seleccionar un color.",
+                "selectedColor": "COLOR SELECCIONADO",
+                "colorInformation": "Información del color",
+                "pickColor": "Selecciona un color",
+                "addPalette": "+ Agregar a mi paleta",
+                "yourColors": "TUS COLORES",
+                "myPalette": "Mi paleta",
+                "clearAll": "Borrar todo",
+                "emptyPalette": "Selecciona colores de tu imagen para crear tu paleta.",
+                "needInspiration": "¿NECESITAS INSPIRACIÓN?",
+                "exploreTitle": "Explora hermosas paletas de colores",
+                "exploreDescription": "Descubre más de 100 combinaciones de colores seleccionadas para tu próximo proyecto.",
+                "exploreButton": "Explorar paletas →",
+                "aboutTitleSmall": "ACERCA DE COLORPICK",
+                "aboutTitle": "Una herramienta sencilla para colores increíbles",
+                "aboutDescription": "ColorPick ayuda a diseñadores, desarrolladores, artistas y creadores a extraer colores de imágenes rápidamente.",
+                "rights": "Todos los derechos reservados.",
+                "paletteBadge": "🎨 Más de 100 paletas de colores",
+                "paletteHero1": "Explora hermosas",
+                "paletteHero2": "paletas de colores.",
+                "paletteHeroDescription": "Encuentra la combinación de colores perfecta para tu sitio web, logotipo, arte o próximo proyecto creativo.",
+                "searchPalettes": "Buscar paletas...",
+                "loadMore": "Cargar más paletas",
+                "howToUse": "CÓMO USAR",
+                "findColor": "¿Encontraste un color que te gusta?",
+                "howToUseDescription": "Haz clic en cualquier color dentro de una paleta y su código HEX se copiará automáticamente al portapapeles.",
+                "pickFromImage": "Elegir colores de una imagen →",
+                "colorDetails": "Ver detalles del color →",
+                "colorCopied": "¡Color copiado!"
+        },
+        "tr": {
+                "aboutUs": "Hakkımızda",
+                "privacyPolicy": "Gizlilik politikası",
+                "termsConditions": "Şartlar ve koşullar",
+                "contactUs": "İletişim",
+                "navSuggestions": "Renk önerileri",
+                "navWheel": "Renk çarkı",
+                "navCode": "Renk kodu",
+                "brand": "ColorPick",
+                "navPicker": "Renk seçici",
+                "navPalettes": "Paletleri keşfet",
+                "badge": "✨ Ücretsiz çevrimiçi renk aracı",
+                "heroTitle1": "Herhangi bir rengi seçin",
+                "heroTitle2": "Herhangi bir görselden.",
+                "heroDescription": "Bir görsel yükleyin, herhangi bir noktaya tıklayın ve doğru HEX, RGB ve HSL renk değerlerini anında alın.",
+                "uploadTitle": "Görselinizi yükleyin",
+                "uploadDescription": "Görselinizi buraya sürükleyip bırakın",
+                "or": "veya",
+                "browse": "Görsel seç",
+                "imagePicker": "GÖRSEL RENK SEÇİCİ",
+                "selectColor": "Bir renk seçin",
+                "newImage": "↻ Yeni görsel",
+                "instruction": "🖱️ Renk seçmek için fareyi görsel üzerinde hareket ettirin ve tıklayın.",
+                "selectedColor": "SEÇİLEN RENK",
+                "colorInformation": "Renk bilgisi",
+                "pickColor": "Bir renk seçin",
+                "addPalette": "+ Paletime ekle",
+                "yourColors": "RENKLERİNİZ",
+                "myPalette": "Paletim",
+                "clearAll": "Tümünü temizle",
+                "emptyPalette": "Paletinizi oluşturmak için görselinizden renkler seçin.",
+                "needInspiration": "İLHAM MI ARIYORSUNUZ?",
+                "exploreTitle": "Güzel renk paletlerini keşfedin",
+                "exploreDescription": "Sonraki projeniz için özenle seçilmiş 100'den fazla renk kombinasyonunu keşfedin.",
+                "exploreButton": "Paletleri keşfet →",
+                "aboutTitleSmall": "COLORPICK HAKKINDA",
+                "aboutTitle": "Güzel renkler için basit bir araç",
+                "aboutDescription": "ColorPick; tasarımcıların, geliştiricilerin, sanatçıların ve içerik üreticilerinin görsellerden hızlıca renk çıkarmasına yardımcı olur.",
+                "rights": "Tüm hakları saklıdır.",
+                "paletteBadge": "🎨 100+ renk paleti",
+                "paletteHero1": "Güzel renk",
+                "paletteHero2": "paletlerini keşfedin.",
+                "paletteHeroDescription": "Web siteniz, logonuz, sanat eseriniz veya sonraki yaratıcı projeniz için mükemmel renk kombinasyonunu bulun.",
+                "searchPalettes": "Paletlerde ara...",
+                "loadMore": "Daha fazla palet yükle",
+                "howToUse": "NASIL KULLANILIR",
+                "findColor": "Beğendiğiniz bir renk buldunuz mu?",
+                "howToUseDescription": "Bir paletteki herhangi bir renge tıklayın; HEX kodu otomatik olarak panoya kopyalanır.",
+                "pickFromImage": "Görselden renk seç →",
+                "colorDetails": "Renk ayrıntılarını görüntüle →",
+                "colorCopied": "Renk kopyalandı!"
+        }
+
+
     };
 
 
@@ -959,76 +1685,47 @@
     ===================================================== */
 
     const languageNames = {
-
         en: "English",
-
         hi: "हिंदी",
-
         es: "Español",
-
         fr: "Français",
-
         de: "Deutsch",
-
-        ja: "日本語"
-
+        ja: "日本語",
+        vi: "Tiếng Việt",
+        fa: "فارسی",
+        ru: "Русский",
+        "pt-BR": "Português (Brasil)",
+        ko: "한국어",
+        sv: "Svenska",
+        "zh-TW": "繁體中文",
+        ro: "Română",
+        fil: "Filipino",
+        id: "Bahasa Indonesia",
+        "es-MX": "Español (México)",
+        tr: "Türkçe",
     };
 
 
 
     /* =====================================================
-       LANGUAGE INITIAL STATE
-       Keep the visitor's selected language across every page
-       and browser refresh using localStorage.
-    ===================================================== */
-
-    const LANGUAGE_STORAGE_KEY = "colorpick-language";
-
-    let currentLanguage = "en";
-
-    try {
-        const savedLanguage = localStorage.getItem(LANGUAGE_STORAGE_KEY);
-        if (savedLanguage && translations[savedLanguage]) {
-            currentLanguage = savedLanguage;
-        }
-    } catch (error) {
-        currentLanguage = "en";
-    }
-
-    /* =====================================================
        TRANSLATE PAGE
     ===================================================== */
 
-    function translatePage(
-        language
-    ) {
+    function translatePage(language) {
 
-        if (
-            !translations[language]
-        ) {
-
-            language =
-                "en";
-
+        if (!translations[language]) {
+            language = "en";
         }
 
+        currentLanguage = language;
 
-        currentLanguage =
-            language;
-
-        // Keep the selected language as the single source of truth across pages.
         try {
             localStorage.setItem(LANGUAGE_STORAGE_KEY, currentLanguage);
         } catch (error) {
             // Continue without persistence if storage is unavailable.
         }
 
-
-        const dictionary =
-            translations[
-                currentLanguage
-            ];
-
+        const dictionary = translations[currentLanguage];
 
 
         /* ================================================
@@ -1129,6 +1826,10 @@
 
         applyPageTranslations(currentLanguage);
         applyLegalTranslations(currentLanguage);
+
+        if (languageMenu && languageMenu._updateLanguageOptions) {
+            languageMenu._updateLanguageOptions();
+        }
 
     }
 
@@ -1286,6 +1987,74 @@
       }
     };
 
+    const WEB3FORMS_ACCESS_KEY = window.COLORPICK_WEB3FORMS_ACCESS_KEY || "YOUR_WEB3FORMS_ACCESS_KEY";
+    const contactFormTranslations = {
+      en:{formTitle:'Send us your feedback',formDesc:'Use this form to ask a question, report a bug, suggest an improvement, or share feedback about ColorPick.',nameLabel:'Name',namePlaceholder:'Your name (optional)',emailLabel:'Email',emailPlaceholder:'you@example.com (optional)',typeLabel:'Feedback type',typeBug:'Bug report',typeFeature:'Feature suggestion',typeAccessibility:'Accessibility feedback',typeQuestion:'Question',typeOther:'Other feedback',messageLabel:'Your feedback',messagePlaceholder:'Tell us what you would like us to know...',submit:'Send Feedback',note:'Please do not include passwords, payment information, or other sensitive information.',tipsTitle:'Helpful feedback gets a faster response',bugTitle:'Reporting a bug',bugText:'Tell us which ColorPick page you used, what device and browser you were using, what you expected, and what happened instead.',featureTitle:'Suggesting a feature',featureText:'Describe the problem you are trying to solve and how a new feature would make the color workflow easier.',accessTitle:'Accessibility',accessText:'If a control, menu, contrast choice, or layout is difficult to use with a keyboard, screen reader, zoom, or mobile device, let us know.',sending:'Sending...',success:'Thank you for submitting your feedback!',error:'Sorry, your message could not be sent. Please try again.'},
+      hi:{formTitle:'अपना फीडबैक भेजें',formDesc:'सवाल पूछने, बग रिपोर्ट करने, सुधार सुझाने या ColorPick के बारे में फीडबैक साझा करने के लिए इस फॉर्म का उपयोग करें।',nameLabel:'नाम',namePlaceholder:'आपका नाम (वैकल्पिक)',emailLabel:'ईमेल',emailPlaceholder:'you@example.com (वैकल्पिक)',typeLabel:'फीडबैक प्रकार',typeBug:'बग रिपोर्ट',typeFeature:'फीचर सुझाव',typeAccessibility:'एक्सेसिबिलिटी फीडबैक',typeQuestion:'सवाल',typeOther:'अन्य फीडबैक',messageLabel:'आपका फीडबैक',messagePlaceholder:'हमें बताएं कि आप क्या साझा करना चाहते हैं...',submit:'फीडबैक भेजें',note:'पासवर्ड, भुगतान जानकारी या अन्य संवेदनशील जानकारी न भेजें।',tipsTitle:'स्पष्ट फीडबैक से बेहतर जवाब मिलता है',bugTitle:'बग रिपोर्ट करना',bugText:'बताएं कि आपने ColorPick का कौन सा पेज इस्तेमाल किया, कौन सा डिवाइस और ब्राउज़र था, क्या होना चाहिए था और वास्तव में क्या हुआ।',featureTitle:'फीचर सुझाएं',featureText:'बताएं कि आप किस समस्या को हल करना चाहते हैं और नया फीचर आपके काम को कैसे आसान बनाएगा।',accessTitle:'एक्सेसिबिलिटी',accessText:'अगर कोई बटन, मेनू, कंट्रास्ट या लेआउट कीबोर्ड, स्क्रीन रीडर, ज़ूम या मोबाइल पर कठिन है, तो हमें बताएं।',sending:'भेजा जा रहा है...',success:'फीडबैक भेजने के लिए धन्यवाद!',error:'माफ़ कीजिए, आपका संदेश नहीं भेजा जा सका। कृपया फिर कोशिश करें।'},
+      es:{formTitle:'Envíanos tus comentarios',formDesc:'Usa este formulario para hacer una pregunta, informar de un error, sugerir una mejora o compartir comentarios sobre ColorPick.',nameLabel:'Nombre',namePlaceholder:'Tu nombre (opcional)',emailLabel:'Correo electrónico',emailPlaceholder:'you@example.com (opcional)',typeLabel:'Tipo de comentario',typeBug:'Informe de error',typeFeature:'Sugerencia de función',typeAccessibility:'Comentarios de accesibilidad',typeQuestion:'Pregunta',typeOther:'Otros comentarios',messageLabel:'Tus comentarios',messagePlaceholder:'Cuéntanos qué te gustaría compartir...',submit:'Enviar comentarios',note:'No incluyas contraseñas, información de pago ni otros datos sensibles.',tipsTitle:'Los comentarios claros ayudan a responder mejor',bugTitle:'Informar de un error',bugText:'Indica qué página de ColorPick usabas, qué dispositivo y navegador tenías, qué esperabas y qué ocurrió.',featureTitle:'Sugerir una función',featureText:'Describe el problema que quieres resolver y cómo una nueva función haría más fácil tu flujo de trabajo.',accessTitle:'Accesibilidad',accessText:'Si un control, menú, contraste o diseño es difícil de usar con teclado, lector de pantalla, zoom o móvil, cuéntanoslo.',sending:'Enviando...',success:'¡Gracias por enviar tus comentarios!',error:'No se pudo enviar el mensaje. Inténtalo de nuevo.'},
+      fr:{formTitle:'Envoyez-nous vos commentaires',formDesc:'Utilisez ce formulaire pour poser une question, signaler un bug, suggérer une amélioration ou partager vos commentaires sur ColorPick.',nameLabel:'Nom',namePlaceholder:'Votre nom (facultatif)',emailLabel:'E-mail',emailPlaceholder:'you@example.com (facultatif)',typeLabel:'Type de commentaire',typeBug:'Signaler un bug',typeFeature:'Suggestion de fonctionnalité',typeAccessibility:'Retour sur l’accessibilité',typeQuestion:'Question',typeOther:'Autre commentaire',messageLabel:'Votre commentaire',messagePlaceholder:'Dites-nous ce que vous souhaitez partager...',submit:'Envoyer le commentaire',note:'N’incluez pas de mots de passe, d’informations de paiement ou d’autres données sensibles.',tipsTitle:'Des commentaires précis facilitent la réponse',bugTitle:'Signaler un bug',bugText:'Indiquez la page ColorPick utilisée, votre appareil et navigateur, ce que vous attendiez et ce qui s’est produit.',featureTitle:'Suggérer une fonctionnalité',featureText:'Décrivez le problème à résoudre et expliquez comment une nouvelle fonctionnalité faciliterait votre travail.',accessTitle:'Accessibilité',accessText:'Si un contrôle, un menu, un contraste ou une mise en page est difficile à utiliser au clavier, avec un lecteur d’écran, le zoom ou un mobile, dites-le-nous.',sending:'Envoi...',success:'Merci d’avoir envoyé vos commentaires !',error:'Impossible d’envoyer le message. Veuillez réessayer.'},
+      de:{formTitle:'Feedback senden',formDesc:'Nutzen Sie dieses Formular für Fragen, Fehlerberichte, Verbesserungsvorschläge oder Feedback zu ColorPick.',nameLabel:'Name',namePlaceholder:'Ihr Name (optional)',emailLabel:'E-Mail',emailPlaceholder:'you@example.com (optional)',typeLabel:'Feedback-Typ',typeBug:'Fehlerbericht',typeFeature:'Funktionsvorschlag',typeAccessibility:'Feedback zur Barrierefreiheit',typeQuestion:'Frage',typeOther:'Sonstiges',messageLabel:'Ihr Feedback',messagePlaceholder:'Teilen Sie uns mit, was Sie uns mitteilen möchten...',submit:'Feedback senden',note:'Bitte senden Sie keine Passwörter, Zahlungsdaten oder andere vertrauliche Informationen.',tipsTitle:'Klare Rückmeldungen helfen bei einer schnellen Antwort',bugTitle:'Fehler melden',bugText:'Nennen Sie die verwendete ColorPick-Seite, Gerät und Browser, das erwartete Verhalten und was tatsächlich passiert ist.',featureTitle:'Funktion vorschlagen',featureText:'Beschreiben Sie das Problem und wie eine neue Funktion Ihren Farb-Workflow verbessern würde.',accessTitle:'Barrierefreiheit',accessText:'Wenn ein Bedienelement, Menü, Kontrast oder Layout mit Tastatur, Screenreader, Zoom oder Mobilgerät schwer nutzbar ist, teilen Sie es uns mit.',sending:'Wird gesendet...',success:'Vielen Dank für Ihr Feedback!',error:'Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.'},
+      ja:{formTitle:'フィードバックを送る',formDesc:'質問、バグ報告、改善提案、ColorPickへのご意見をこのフォームからお送りください。',nameLabel:'名前',namePlaceholder:'お名前（任意）',emailLabel:'メール',emailPlaceholder:'you@example.com（任意）',typeLabel:'フィードバックの種類',typeBug:'バグ報告',typeFeature:'機能提案',typeAccessibility:'アクセシビリティ',typeQuestion:'質問',typeOther:'その他',messageLabel:'フィードバック',messagePlaceholder:'お知らせになりたい内容を入力してください...',submit:'フィードバックを送信',note:'パスワード、支払い情報、その他の機密情報は入力しないでください。',tipsTitle:'具体的なフィードバックは確認しやすくなります',bugTitle:'バグを報告する',bugText:'使用したColorPickのページ、端末とブラウザ、期待した結果、実際に起きたことを教えてください。',featureTitle:'機能を提案する',featureText:'解決したい問題と、新機能によって作業がどう楽になるかを説明してください。',accessTitle:'アクセシビリティ',accessText:'キーボード、スクリーンリーダー、ズーム、モバイル端末などで操作しにくい部分があればお知らせください。',sending:'送信中...',success:'フィードバックを送信していただきありがとうございます！',error:'メッセージを送信できませんでした。もう一度お試しください。'}
+    };
+    const contactFallback = contactFormTranslations.en;
+    const contactOther = {
+      vi:['Gửi phản hồi','Sử dụng biểu mẫu này để đặt câu hỏi, báo lỗi, đề xuất cải tiến hoặc chia sẻ ý kiến về ColorPick.','Tên','Tên của bạn (tùy chọn)','Email','you@example.com (tùy chọn)','Loại phản hồi','Báo lỗi','Đề xuất tính năng','Phản hồi về khả năng tiếp cận','Câu hỏi','Phản hồi khác','Phản hồi của bạn','Hãy cho chúng tôi biết điều bạn muốn chia sẻ...','Gửi phản hồi','Vui lòng không gửi mật khẩu, thông tin thanh toán hoặc dữ liệu nhạy cảm khác.','Gửi...','Cảm ơn bạn đã gửi phản hồi!','Không thể gửi tin nhắn. Vui lòng thử lại.'],
+      fa:['ارسال بازخورد','برای پرسش، گزارش خطا، پیشنهاد بهبود یا ارسال نظر درباره ColorPick از این فرم استفاده کنید.','نام','نام شما (اختیاری)','ایمیل','you@example.com (اختیاری)','نوع بازخورد','گزارش خطا','پیشنهاد قابلیت','بازخورد دسترس‌پذیری','سؤال','بازخورد دیگر','بازخورد شما','پیام خود را بنویسید...','ارسال بازخورد','لطفاً رمز عبور، اطلاعات پرداخت یا اطلاعات حساس دیگر را ارسال نکنید.','در حال ارسال...','از ارسال بازخورد شما متشکریم!','ارسال پیام ممکن نشد. دوباره تلاش کنید.'],
+      ru:['Отправить отзыв','Используйте форму, чтобы задать вопрос, сообщить об ошибке, предложить улучшение или оставить отзыв о ColorPick.','Имя','Ваше имя (необязательно)','Эл. почта','you@example.com (необязательно)','Тип отзыва','Сообщение об ошибке','Предложение функции','Доступность','Вопрос','Другое','Ваш отзыв','Расскажите, что вы хотите сообщить...','Отправить отзыв','Не указывайте пароли, платёжные данные или другую конфиденциальную информацию.','Отправка...','Спасибо за ваш отзыв!','Не удалось отправить сообщение. Попробуйте ещё раз.'],
+      'pt-BR':['Envie seu feedback','Use este formulário para fazer uma pergunta, relatar um erro, sugerir uma melhoria ou enviar comentários sobre o ColorPick.','Nome','Seu nome (opcional)','E-mail','you@example.com (opcional)','Tipo de feedback','Relatório de erro','Sugestão de recurso','Acessibilidade','Pergunta','Outro feedback','Seu feedback','Conte o que você gostaria de compartilhar...','Enviar feedback','Não inclua senhas, informações de pagamento ou outros dados sensíveis.','Enviando...','Obrigado por enviar seu feedback!','Não foi possível enviar a mensagem. Tente novamente.'],
+      ko:['피드백 보내기','질문, 버그 신고, 개선 제안 또는 ColorPick에 대한 의견을 이 양식으로 보내주세요.','이름','이름 (선택 사항)','이메일','you@example.com (선택 사항)','피드백 유형','버그 신고','기능 제안','접근성 의견','질문','기타 의견','피드백','알리고 싶은 내용을 입력하세요...','피드백 보내기','비밀번호, 결제 정보 또는 기타 민감한 정보를 입력하지 마세요.','전송 중...','피드백을 보내주셔서 감사합니다!','메시지를 보내지 못했습니다. 다시 시도해 주세요.'],
+      sv:['Skicka feedback','Använd formuläret för frågor, felrapporter, förbättringsförslag eller feedback om ColorPick.','Namn','Ditt namn (valfritt)','E-post','you@example.com (valfritt)','Typ av feedback','Felrapport','Funktionsförslag','Tillgänglighetsfeedback','Fråga','Övrig feedback','Din feedback','Berätta vad du vill dela med oss...','Skicka feedback','Skicka inte lösenord, betalningsuppgifter eller annan känslig information.','Skickar...','Tack för din feedback!','Meddelandet kunde inte skickas. Försök igen.'],
+      'zh-TW':['送出意見','使用此表單提問、回報錯誤、提出改進建議或分享對 ColorPick 的意見。','姓名','您的姓名（選填）','電子郵件','you@example.com（選填）','意見類型','錯誤回報','功能建議','無障礙意見','問題','其他意見','您的意見','請告訴我們您想分享的內容...','送出意見','請勿提供密碼、付款資訊或其他敏感資料。','傳送中...','感謝您提交意見！','訊息無法送出，請再試一次。'],
+      ro:['Trimite feedback','Folosește formularul pentru întrebări, raportarea erorilor, sugestii sau feedback despre ColorPick.','Nume','Numele dvs. (opțional)','E-mail','you@example.com (opțional)','Tip feedback','Raport de eroare','Sugestie de funcție','Feedback despre accesibilitate','Întrebare','Alt feedback','Feedbackul dvs.','Spuneți-ne ce doriți să transmiteți...','Trimite feedback','Nu includeți parole, informații de plată sau alte date sensibile.','Se trimite...','Vă mulțumim pentru feedback!','Mesajul nu a putut fi trimis. Încercați din nou.'],
+      fil:['Ipadala ang feedback','Gamitin ang form para magtanong, mag-ulat ng bug, magmungkahi ng pagpapabuti, o magbigay ng feedback tungkol sa ColorPick.','Pangalan','Iyong pangalan (opsyonal)','Email','you@example.com (opsyonal)','Uri ng feedback','Ulat ng bug','Mungkahi ng feature','Feedback sa accessibility','Tanong','Iba pang feedback','Iyong feedback','Sabihin sa amin kung ano ang gusto mong ibahagi...','Ipadala ang feedback','Huwag magsama ng password, impormasyon sa pagbabayad, o iba pang sensitibong impormasyon.','Ipinapadala...','Salamat sa iyong feedback!','Hindi naipadala ang mensahe. Subukan muli.'],
+      id:['Kirim masukan','Gunakan formulir ini untuk bertanya, melaporkan bug, menyarankan perbaikan, atau memberi masukan tentang ColorPick.','Nama','Nama Anda (opsional)','Email','you@example.com (opsional)','Jenis masukan','Laporan bug','Saran fitur','Masukan aksesibilitas','Pertanyaan','Masukan lainnya','Masukan Anda','Beri tahu kami apa yang ingin Anda sampaikan...','Kirim masukan','Jangan sertakan kata sandi, informasi pembayaran, atau data sensitif lainnya.','Mengirim...','Terima kasih telah mengirim masukan!','Pesan tidak dapat dikirim. Silakan coba lagi.'],
+      'es-MX':['Envíanos tus comentarios','Usa este formulario para hacer una pregunta, reportar un error, sugerir una mejora o compartir comentarios sobre ColorPick.','Nombre','Tu nombre (opcional)','Correo electrónico','you@example.com (opcional)','Tipo de comentario','Reporte de error','Sugerencia de función','Comentarios de accesibilidad','Pregunta','Otro comentario','Tus comentarios','Cuéntanos qué quieres compartir...','Enviar comentarios','No incluyas contraseñas, información de pago ni otros datos sensibles.','Enviando...','¡Gracias por enviar tus comentarios!','No se pudo enviar el mensaje. Inténtalo de nuevo.'],
+      tr:['Geri bildirim gönder','Soru sormak, hata bildirmek, iyileştirme önermek veya ColorPick hakkında görüş paylaşmak için bu formu kullanın.','Ad','Adınız (isteğe bağlı)','E-posta','you@example.com (isteğe bağlı)','Geri bildirim türü','Hata bildirimi','Özellik önerisi','Erişilebilirlik geri bildirimi','Soru','Diğer geri bildirim','Geri bildiriminiz','Paylaşmak istediğiniz şeyi yazın...','Geri bildirim gönder','Lütfen şifre, ödeme bilgileri veya diğer hassas bilgileri göndermeyin.','Gönderiliyor...','Geri bildiriminizi gönderdiğiniz için teşekkürler!','Mesaj gönderilemedi. Lütfen tekrar deneyin.']
+    };
+    Object.entries(contactOther).forEach(([lang,a])=>{contactFormTranslations[lang]={formTitle:a[0],formDesc:a[1],nameLabel:a[2],namePlaceholder:a[3],emailLabel:a[4],emailPlaceholder:a[5],typeLabel:a[6],typeBug:a[7],typeFeature:a[8],typeAccessibility:a[9],typeQuestion:a[10],typeOther:a[11],messageLabel:a[12],messagePlaceholder:a[13],submit:a[14],note:a[15],tipsTitle:contactFallback.tipsTitle,bugTitle:contactFallback.bugTitle,bugText:contactFallback.bugText,featureTitle:contactFallback.featureTitle,featureText:contactFallback.featureText,accessTitle:contactFallback.accessTitle,accessText:contactFallback.accessText,sending:a[16],success:a[17],error:a[18]};});
+
+    function applyContactFormTranslations(language){
+      const t=contactFormTranslations[language]||contactFallback;
+      document.querySelectorAll('[data-contact-i18n]').forEach(el=>{const key=el.getAttribute('data-contact-i18n');if(t[key]!==undefined)el.textContent=t[key];});
+      document.querySelectorAll('[data-contact-placeholder]').forEach(el=>{const key=el.getAttribute('data-contact-placeholder');if(t[key]!==undefined)el.setAttribute('placeholder',t[key]);});
+      const keyInput=document.querySelector('[data-web3-access-key]'); if(keyInput) keyInput.value=WEB3FORMS_ACCESS_KEY;
+      const status=document.getElementById('contactStatus'); if(status) status.textContent='';
+    }
+
+    function initContactForm(language){
+      const form=document.getElementById('colorpickContactForm'); if(!form) return;
+      applyContactFormTranslations(language);
+      const hero={
+        en:['Contact Us','Contact Us','Have a question, found a bug, or have an idea that could make ColorPick better? Get in touch.'],
+        hi:['संपर्क करें','संपर्क करें','कोई सवाल है, बग मिला है या ColorPick को बेहतर बनाने का विचार है? हमसे संपर्क करें।'],
+        es:['Contacto','Contacto','¿Tienes una pregunta, encontraste un error o tienes una idea para mejorar ColorPick? Escríbenos.'],
+        fr:['Nous contacter','Nous contacter','Une question, un bug ou une idée pour améliorer ColorPick ? Contactez-nous.'],
+        de:['Kontakt','Kontakt','Eine Frage, ein Fehler oder eine Idee, die ColorPick verbessern könnte? Kontaktieren Sie uns.'],
+        ja:['お問い合わせ','お問い合わせ','質問、バグ報告、ColorPickを改善するアイデアがあれば、ぜひご連絡ください。'],
+        vi:['Liên hệ','Liên hệ','Bạn có câu hỏi, phát hiện lỗi hoặc ý tưởng giúp ColorPick tốt hơn? Hãy liên hệ với chúng tôi.'],
+        fa:['تماس با ما','تماس با ما','سؤال، گزارش خطا یا ایده‌ای برای بهتر شدن ColorPick دارید؟ با ما در تماس باشید.'],
+        ru:['Контакты','Контакты','Есть вопрос, ошибка или идея, которая поможет улучшить ColorPick? Напишите нам.'],
+        'pt-BR':['Contato','Contato','Tem uma pergunta, encontrou um erro ou tem uma ideia para melhorar o ColorPick? Fale conosco.'],
+        ko:['문의하기','문의하기','질문, 버그 신고 또는 ColorPick을 개선할 아이디어가 있다면 알려주세요.'],
+        sv:['Kontakt','Kontakt','Har du en fråga, hittat ett fel eller en idé som kan förbättra ColorPick? Hör av dig.'],
+        'zh-TW':['聯絡我們','聯絡我們','如果您有問題、發現錯誤或有改善 ColorPick 的想法，歡迎與我們聯絡。'],
+        ro:['Contact','Contact','Ai o întrebare, ai găsit o eroare sau ai o idee pentru îmbunătățirea ColorPick? Scrie-ne.'],
+        fil:['Makipag-ugnayan','Makipag-ugnayan','May tanong, nakakita ng bug, o may ideya para mapahusay ang ColorPick? Makipag-ugnayan sa amin.'],
+        id:['Kontak','Kontak','Punya pertanyaan, menemukan bug, atau punya ide untuk meningkatkan ColorPick? Hubungi kami.'],
+        'es-MX':['Contacto','Contacto','¿Tienes una pregunta, encontraste un error o tienes una idea para mejorar ColorPick? Escríbenos.'],
+        tr:['İletişim','İletişim','Bir sorunuz, hata bildiriminiz veya ColorPick’i geliştirmek için bir fikriniz mi var? Bize ulaşın.']
+      }[language]||['Contact Us','Contact Us','Have a question, found a bug, or have an idea that could make ColorPick better? Get in touch.'];
+      setText('.legal-hero .eyebrow',hero[0]);setText('.legal-hero h1',hero[1]);setText('.legal-hero p',hero[2]);
+      const t=contactFormTranslations[language]||contactFallback;
+      const msg=document.getElementById('contactMessage'), count=document.getElementById('contactCount'), submit=document.getElementById('contactSubmit'), status=document.getElementById('contactStatus');
+      const updateCount=()=>{if(msg&&count)count.textContent=String(msg.value.length);}; updateCount(); msg?.addEventListener('input',updateCount);
+      form.addEventListener('submit',async(e)=>{e.preventDefault(); if(!form.reportValidity()) return; const access=form.querySelector('[name="access_key"]')?.value; if(!access || access==='YOUR_WEB3FORMS_ACCESS_KEY'){status.textContent='Add your Web3Forms access key in language.js before testing this form.';status.classList.add('error');return;} submit.disabled=true;status.classList.remove('error');status.textContent=t.sending;
+        try{const data=Object.fromEntries(new FormData(form).entries()); const response=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)}); const result=await response.json(); if(response.ok && result.success!==false){form.reset();updateCount();status.textContent=t.success;} else {throw new Error(result.message||'Submission failed');}}
+        catch(err){status.textContent=t.error;status.classList.add('error');}
+        finally{submit.disabled=false;}
+      });
+    }
+
     function applyLegalTranslations(language) {
       const path = window.location.pathname.toLowerCase();
       let page = null;
@@ -1295,11 +2064,12 @@
       else if (path.includes('contact.html')) page = 'contact';
       if (!page) return;
       const t = (legalTranslations[language] || legalTranslations.en)[page];
-      const backLabels={en:'← Back',hi:'← वापस',es:'← Volver',fr:'← Retour',de:'← Zurück',ja:'← 戻る'}; setText('.legal-back', backLabels[language] || backLabels.en);
+      const backLabels={en:'← Back',hi:'← वापस',es:'← Volver',fr:'← Retour',de:'← Zurück',ja:'← 戻る',vi:'← Quay lại',fa:'← بازگشت',ru:'← Назад','pt-BR':'← Voltar',ko:'← 뒤로',sv:'← Tillbaka','zh-TW':'← 返回',ro:'← Înapoi',fil:'← Bumalik',id:'← Kembali','es-MX':'← Volver',tr:'← Geri'}; setText('.legal-back', backLabels[language] || backLabels.en);
       setText('.legal-hero .eyebrow', t.badge);
       setText('.legal-hero h1', t.title);
       setText('.legal-hero p', t.desc);
       document.querySelectorAll('.legal-content h2').forEach((el,i)=>{ if(t.h[i]) el.textContent=t.h[i]; });
+      if(page==='contact') initContactForm(language);
     }
 
     function setText(selector, text) {
@@ -1308,7 +2078,12 @@
     }
 
     function applyPageTranslations(language) {
-        const t = pageTranslations[language] || pageTranslations.en;
+        const t = Object.assign({}, pageTranslations.en, pageTranslations[language] || {}, {
+            navPicker: (translations[language] || translations.en).navPicker,
+            navPalettes: (translations[language] || translations.en).navPalettes,
+            navSuggestions: (translations[language] || translations.en).navSuggestions,
+            navWheel: (translations[language] || translations.en).navWheel
+        });
         const path = window.location.pathname.toLowerCase();
         const isSuggestions = path.includes("color-suggestions");
         const isWheel = path.includes("color-wheel");
@@ -1403,6 +2178,81 @@
 
 
     /* =====================================================
+       LANGUAGE SEARCH / COMPACT MENU
+    ===================================================== */
+
+    const INITIAL_LANGUAGE_COUNT = 6;
+
+    function setupLanguageSearch() {
+
+        if (!languageMenu || languageMenu.dataset.searchReady === "true") {
+            return;
+        }
+
+        const buttons = Array.from(
+            languageMenu.querySelectorAll("[data-language]")
+        );
+
+        const searchWrap = document.createElement("div");
+        searchWrap.className = "language-search-wrap";
+
+        const searchInput = document.createElement("input");
+        searchInput.type = "search";
+        searchInput.className = "language-search";
+        searchInput.placeholder = "Search language...";
+        searchInput.setAttribute("aria-label", "Search language");
+        searchInput.setAttribute("autocomplete", "off");
+
+        searchWrap.appendChild(searchInput);
+        languageMenu.insertBefore(searchWrap, languageMenu.firstChild);
+
+        // Keep the search field fixed while only the language options scroll.
+        // This prevents language items from sliding underneath/over the search bar.
+        const optionsWrap = document.createElement("div");
+        optionsWrap.className = "language-options";
+        buttons.forEach(function(button) {
+            optionsWrap.appendChild(button);
+        });
+        languageMenu.appendChild(optionsWrap);
+
+        function updateLanguageOptions() {
+            const query = searchInput.value.trim().toLowerCase();
+            const selected = currentLanguage;
+
+            buttons.forEach(function(button, index) {
+                const language = button.dataset.language || "";
+                const label = button.textContent.trim().toLowerCase();
+                const matches = !query || language.toLowerCase().includes(query) || label.includes(query);
+                const isSelected = language === selected;
+                // Keep every language in the scrollable list when there is no search query.
+                // The menu's max-height + overflow-y:auto makes only a few visible at once,
+                // while still allowing the user to scroll through all 18 languages.
+                const shouldShow = query ? matches : true;
+
+                button.hidden = !shouldShow;
+                button.setAttribute("aria-hidden", shouldShow ? "false" : "true");
+            });
+        }
+
+        searchInput.addEventListener("input", updateLanguageOptions);
+        searchInput.addEventListener("click", function(event) {
+            event.stopPropagation();
+        });
+        searchInput.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                closeLanguageMenu();
+            }
+        });
+
+        languageMenu.dataset.searchReady = "true";
+        languageMenu._updateLanguageOptions = updateLanguageOptions;
+        languageMenu._languageSearchInput = searchInput;
+        languageMenu._languageOptions = optionsWrap;
+        updateLanguageOptions();
+    }
+
+
+    /* =====================================================
        OPEN / CLOSE MENU
     ===================================================== */
 
@@ -1441,11 +2291,24 @@
 
         }
 
+        setupLanguageSearch();
+
+        if (languageMenu._languageSearchInput) {
+            languageMenu._languageSearchInput.value = "";
+        }
+
+        if (languageMenu._updateLanguageOptions) {
+            languageMenu._updateLanguageOptions();
+        }
 
         languageMenu.classList.add(
             "show"
         );
 
+        // Always start at the top when the menu is opened.
+        if (languageMenu._languageOptions) {
+            languageMenu._languageOptions.scrollTop = 0;
+        }
 
         if (languageBtn) {
 
@@ -1531,13 +2394,15 @@
                         try {
                             localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
                         } catch (error) {
-                            // Translation still works if browser storage is unavailable.
+                            // Continue without persistence.
                         }
 
-                        translatePage(
-                            language
-                        );
-
+                        // Every language switch now uses a crawlable URL for the
+                        // same page. Example: /palettes.html -> /fr/palettes.html.
+                        // English returns to the root page URL.
+                        const targetUrl = buildLanguageUrl(language);
+                        window.location.href = targetUrl;
+                        return;
 
                         /*
                          * Mark selected language.

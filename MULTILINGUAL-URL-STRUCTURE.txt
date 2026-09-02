@@ -1,0 +1,9 @@
+Multilingual URL structure
+
+English: /palettes.html
+French: /fr/palettes.html
+Vietnamese: /vi/palettes.html
+Persian: /fa/palettes.html
+...and the same pattern for all supported languages.
+
+The language selector always switches to the same page in the selected language. English uses the root URL; other languages use /<locale>/<page>.html.

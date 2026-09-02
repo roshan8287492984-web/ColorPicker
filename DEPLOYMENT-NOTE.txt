@@ -1,0 +1,14 @@
+MULTILINGUAL SEO / LAYOUT FIX
+
+The localized landing pages (/vi/, /fa/, /ru/, etc.) now load shared CSS and JS
+from the site root:
+  /style.css
+  /analytics.js
+  /language.js
+  /script.js
+
+This fixes the unstyled/plain-HTML appearance when opening a locale URL.
+
+Upload the contents of this folder to your web root, preserving the locale
+folders. Keep the existing Google Search Console verification file if you use
+HTML-file verification.
