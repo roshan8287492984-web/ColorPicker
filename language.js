@@ -2011,7 +2011,7 @@
       'es-MX':['Envíanos tus comentarios','Usa este formulario para hacer una pregunta, reportar un error, sugerir una mejora o compartir comentarios sobre ColorPick.','Nombre','Tu nombre (opcional)','Correo electrónico','you@example.com (opcional)','Tipo de comentario','Reporte de error','Sugerencia de función','Comentarios de accesibilidad','Pregunta','Otro comentario','Tus comentarios','Cuéntanos qué quieres compartir...','Enviar comentarios','No incluyas contraseñas, información de pago ni otros datos sensibles.','Enviando...','¡Gracias por enviar tus comentarios!','No se pudo enviar el mensaje. Inténtalo de nuevo.'],
       tr:['Geri bildirim gönder','Soru sormak, hata bildirmek, iyileştirme önermek veya ColorPick hakkında görüş paylaşmak için bu formu kullanın.','Ad','Adınız (isteğe bağlı)','E-posta','you@example.com (isteğe bağlı)','Geri bildirim türü','Hata bildirimi','Özellik önerisi','Erişilebilirlik geri bildirimi','Soru','Diğer geri bildirim','Geri bildiriminiz','Paylaşmak istediğiniz şeyi yazın...','Geri bildirim gönder','Lütfen şifre, ödeme bilgileri veya diğer hassas bilgileri göndermeyin.','Gönderiliyor...','Geri bildiriminizi gönderdiğiniz için teşekkürler!','Mesaj gönderilemedi. Lütfen tekrar deneyin.']
     };
-    Object.entries(contactOther).forEach(([lang,a])=>{contactFormTranslations[lang]={formTitle:a[0],formDesc:a[1],nameLabel:a[2],namePlaceholder:a[3],emailLabel:a[4],emailPlaceholder:a[5],typeLabel:a[6],typeBug:a[7],typeFeature:a[8],typeAccessibility:a[9],typeQuestion:a[10],typeOther:a[11],messageLabel:a[12],messagePlaceholder:a[13],submit:a[14],note:a[15],tipsTitle:contactFallback.tipsTitle,bugTitle:contactFallback.bugTitle,bugText:contactFallback.bugText,featureTitle:contactFallback.featureTitle,featureText:contactFallback.featureText,accessTitle:contactFallback.accessTitle,accessText:contactFallback.accessText,sending:a[16],success:a[17],error:a[18]};});
+    Object.entries(contactOther).forEach(([lang,a])=>{contactFormTranslations[lang]={formTitle:a[0],formDesc:a[1],nameLabel:a[2],namePlaceholder:a[3],emailLabel:a[4],emailPlaceholder:a[5],typeLabel:a[6],typeBug:a[7],typeFeature:a[8],typeAccessibility:a[9],typeQuestion:a[10],typeOther:a[11],messageLabel:a[12],messagePlaceholder:a[13],submit:a[14],note:a[15],tipsTitle:undefined,bugTitle:undefined,bugText:undefined,featureTitle:undefined,featureText:undefined,accessTitle:undefined,accessText:undefined,sending:a[16],success:a[17],error:a[18]};});
 
     function applyContactFormTranslations(language){
       const t=contactFormTranslations[language]||contactFallback;
@@ -2063,7 +2063,7 @@
       else if (path.includes('terms.html')) page = 'terms';
       else if (path.includes('contact.html')) page = 'contact';
       if (!page) return;
-      const t = (legalTranslations[language] || legalTranslations.en)[page];
+      const localeTranslations = legalTranslations[language]; if (!localeTranslations || !localeTranslations[page]) return; const t = localeTranslations[page];
       const backLabels={en:'← Back',hi:'← वापस',es:'← Volver',fr:'← Retour',de:'← Zurück',ja:'← 戻る',vi:'← Quay lại',fa:'← بازگشت',ru:'← Назад','pt-BR':'← Voltar',ko:'← 뒤로',sv:'← Tillbaka','zh-TW':'← 返回',ro:'← Înapoi',fil:'← Bumalik',id:'← Kembali','es-MX':'← Volver',tr:'← Geri'}; setText('.legal-back', backLabels[language] || backLabels.en);
       setText('.legal-hero .eyebrow', t.badge);
       setText('.legal-hero h1', t.title);
