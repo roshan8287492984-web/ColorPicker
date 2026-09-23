@@ -119,7 +119,12 @@ html.dark-loading .navbar { background:#19191f !important; border-color:#303039 
 }
 </script>
 <script src="analytics.js"></script><link rel="alternate" hreflang="en" href="https://colorpikertool.com/palettes.html"/><link rel="alternate" hreflang="hi" href="https://colorpikertool.com/hi/palettes.html"/><link rel="alternate" hreflang="es" href="https://colorpikertool.com/es/palettes.html"/><link rel="alternate" hreflang="fr" href="https://colorpikertool.com/fr/palettes.html"/><link rel="alternate" hreflang="de" href="https://colorpikertool.com/de/palettes.html"/><link rel="alternate" hreflang="ja" href="https://colorpikertool.com/ja/palettes.html"/><link rel="alternate" hreflang="vi" href="https://colorpikertool.com/vi/palettes.html"/><link rel="alternate" hreflang="fa" href="https://colorpikertool.com/fa/palettes.html"/><link rel="alternate" hreflang="ru" href="https://colorpikertool.com/ru/palettes.html"/><link rel="alternate" hreflang="pt-BR" href="https://colorpikertool.com/pt-br/palettes.html"/><link rel="alternate" hreflang="ko" href="https://colorpikertool.com/ko/palettes.html"/><link rel="alternate" hreflang="sv" href="https://colorpikertool.com/sv/palettes.html"/><link rel="alternate" hreflang="zh-TW" href="https://colorpikertool.com/zh-tw/palettes.html"/><link rel="alternate" hreflang="ro" href="https://colorpikertool.com/ro/palettes.html"/><link rel="alternate" hreflang="fil" href="https://colorpikertool.com/fil/palettes.html"/><link rel="alternate" hreflang="id" href="https://colorpikertool.com/id/palettes.html"/><link rel="alternate" hreflang="es-MX" href="https://colorpikertool.com/es-mx/palettes.html"/><link rel="alternate" hreflang="tr" href="https://colorpikertool.com/tr/palettes.html"/><link rel="alternate" hreflang="x-default" href="https://colorpikertool.com/palettes.html"/>
-</head>
+<style id="palette-depth-styles">
+.palette-depth{max-width:1100px;margin:24px auto 0;padding:0 20px}.palette-depth-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:26px;box-shadow:var(--shadow)}
+.palette-depth-card h2{margin:0 0 10px;font-size:26px}.palette-depth-intro{max-width:800px;color:var(--muted);line-height:1.75;margin:0 0 20px}.palette-role-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.palette-role{border:1px solid var(--border);border-radius:13px;background:var(--input);padding:15px}.palette-role strong{display:block;margin-bottom:6px}.palette-role span{display:block;color:var(--muted);line-height:1.55;font-size:14px}
+.palette-depth-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}.palette-depth-grid article{border:1px solid var(--border);border-radius:15px;background:var(--input);padding:18px}.palette-depth-grid h3{margin:0 0 8px}.palette-depth-grid p{color:var(--muted);line-height:1.7;margin:0}.palette-depth-faq{display:grid;gap:10px;margin-top:16px}.palette-depth-faq details{border:1px solid var(--border);border-radius:12px;background:var(--input);padding:14px 16px}.palette-depth-faq summary{cursor:pointer;font-weight:800}.palette-depth-faq p{color:var(--muted);line-height:1.7;margin:10px 0 0}
+@media(max-width:900px){.palette-role-grid{grid-template-columns:repeat(2,1fr)}.palette-depth-grid{grid-template-columns:1fr}}@media(max-width:520px){.palette-role-grid{grid-template-columns:1fr}.palette-depth{padding:0 14px}.palette-depth-card{padding:20px}}
+</style></head>
 <body>
 <!-- =====================================================
      NAVBAR
@@ -199,6 +204,30 @@ html.dark-loading .navbar { background:#19191f !important; border-color:#303039 
 <!-- =====================================================
      INFO
 ===================================================== -->
+
+<section class="palette-depth" aria-labelledby="palette-depth-title">
+<div class="palette-depth-card">
+<h2 id="palette-depth-title">How to use a color palette</h2>
+<p class="palette-depth-intro">A palette becomes easier to apply when each color has a clear job. Start with the visual role you need, then adjust the number of colors instead of trying to use every swatch at once.</p>
+<h3>Build a simple UI color system</h3>
+<p class="palette-depth-intro">Use one color for the main action or brand accent, one or two supporting colors, and separate surface, background and text colors. Keep repeated roles consistent so buttons, links and states feel related.</p>
+<div class="palette-role-grid">
+<div class="palette-role"><strong>Background</strong><span>Large areas and page framing</span></div><div class="palette-role"><strong>Surface</strong><span>Cards, panels and controls</span></div><div class="palette-role"><strong>Text</strong><span>Primary and secondary reading content</span></div><div class="palette-role"><strong>Primary</strong><span>Main action or brand color</span></div><div class="palette-role"><strong>Accent</strong><span>Small highlights and supporting states</span></div>
+</div>
+<div class="palette-depth-grid">
+<article><h3>Choose by project</h3><p>For a website or app, look for palettes with enough separation between surfaces and text. For branding, prioritize a small set that can be repeated across logos and marketing. For illustration, a larger palette can be useful when you need more expressive variation.</p></article>
+<article><h3>From image to palette</h3><p>If you already have a reference image, start with the Color Picker to sample important colors. Then compare those colors with nearby combinations and ready-made alternatives here.</p></article>
+<article><h3>Working with HEX codes</h3><p>Each swatch exposes its HEX value and can be copied individually; the palette action can copy the full set. Treat the HEX values as reusable building blocks for CSS, design tokens, mockups and handoff notes.</p></article>
+<article><h3>A quick accessibility check</h3><p>A palette can look harmonious and still produce weak text contrast. Before shipping a UI, check the contrast of actual text/background pairs and make sure interactive states remain distinguishable.</p></article>
+</div>
+<div class="palette-depth-faq">
+<details><summary>What makes a palette useful?</summary><p>A useful palette gives you related colors with distinct roles, so you can build a consistent interface or visual system without choosing every color from scratch.</p></details>
+<details><summary>How should I start using a palette in a website?</summary><p>Assign roles first: background, surface, text, primary action and accent. Then test those roles on real components such as buttons, cards, links and form fields.</p></details>
+<details><summary>Can I copy colors from a palette?</summary><p>Yes. Click a color to copy its HEX value, or use the palette action to copy the complete set.</p></details>
+<details><summary>Can I make a palette from a photo?</summary><p>Yes. Use ColorPick image image picker to sample colors from a photo or reference image, then compare those colors with the ready-made palettes here.</p></details>
+</div>
+</div></section>
+
 <section class="palette-info-section">
 <div>
 <span class="small-title">

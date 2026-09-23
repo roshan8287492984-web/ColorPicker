@@ -154,7 +154,16 @@ html.dark-loading .navbar { background:#19191f !important; border-color:#303039 
 }
 </script>
 <script src="analytics.js"></script><link rel="alternate" hreflang="en" href="https://colorpikertool.com/color-code.html"/><link rel="alternate" hreflang="hi" href="https://colorpikertool.com/hi/color-code.html"/><link rel="alternate" hreflang="es" href="https://colorpikertool.com/es/color-code.html"/><link rel="alternate" hreflang="fr" href="https://colorpikertool.com/fr/color-code.html"/><link rel="alternate" hreflang="de" href="https://colorpikertool.com/de/color-code.html"/><link rel="alternate" hreflang="ja" href="https://colorpikertool.com/ja/color-code.html"/><link rel="alternate" hreflang="vi" href="https://colorpikertool.com/vi/color-code.html"/><link rel="alternate" hreflang="fa" href="https://colorpikertool.com/fa/color-code.html"/><link rel="alternate" hreflang="ru" href="https://colorpikertool.com/ru/color-code.html"/><link rel="alternate" hreflang="pt-BR" href="https://colorpikertool.com/pt-br/color-code.html"/><link rel="alternate" hreflang="ko" href="https://colorpikertool.com/ko/color-code.html"/><link rel="alternate" hreflang="sv" href="https://colorpikertool.com/sv/color-code.html"/><link rel="alternate" hreflang="zh-TW" href="https://colorpikertool.com/zh-tw/color-code.html"/><link rel="alternate" hreflang="ro" href="https://colorpikertool.com/ro/color-code.html"/><link rel="alternate" hreflang="fil" href="https://colorpikertool.com/fil/color-code.html"/><link rel="alternate" hreflang="id" href="https://colorpikertool.com/id/color-code.html"/><link rel="alternate" hreflang="es-MX" href="https://colorpikertool.com/es-mx/color-code.html"/><link rel="alternate" hreflang="tr" href="https://colorpikertool.com/tr/color-code.html"/><link rel="alternate" hreflang="x-default" href="https://colorpikertool.com/color-code.html"/>
-</head>
+<style id="color-code-depth-styles">
+.code-depth{margin-top:24px;background:var(--card);border:1px solid var(--border);border-radius:20px;padding:26px;box-shadow:var(--shadow)}
+.code-depth h2{margin:0 0 10px;font-size:26px}.code-depth-intro{max-width:780px;color:var(--muted);line-height:1.75;margin:0 0 20px}
+.format-guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.format-guide{border:1px solid var(--border);background:var(--input);border-radius:15px;padding:18px}.format-guide h3{margin:0 0 8px}.format-guide p{color:var(--muted);line-height:1.7;margin:0}
+.workflow-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.workflow-step{border:1px solid var(--border);border-radius:14px;padding:16px;background:var(--input);line-height:1.65;color:var(--muted)}.workflow-step strong{display:block;color:var(--text);margin-bottom:7px}
+.code-example{margin-top:18px;padding:16px;border:1px dashed var(--border);border-radius:14px;background:var(--input);color:var(--text);overflow:auto}.code-example code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.depth-note{margin:18px 0 0;color:var(--muted);line-height:1.75}.depth-faq{display:grid;gap:10px;margin-top:16px}.depth-faq details{border:1px solid var(--border);border-radius:12px;background:var(--input);padding:14px 16px}.depth-faq summary{cursor:pointer;font-weight:800}.depth-faq p{color:var(--muted);line-height:1.7;margin:10px 0 0}
+.copy-format-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.copy-format-row button{border:1px solid var(--border);background:var(--input);color:var(--text);border-radius:9px;padding:8px 11px;cursor:pointer;font-weight:700}.copy-format-row button:hover{border-color:var(--primary)}
+@media(max-width:850px){.format-guide-grid{grid-template-columns:1fr}.workflow-grid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.workflow-grid{grid-template-columns:1fr}.code-depth{padding:20px}}
+</style></head>
 <body>
 <nav class="navbar">
 <a class="logo" href="index.html"><span class="logo-icon">🎨</span><span>ColorPick</span></a>
@@ -199,7 +208,7 @@ html.dark-loading .navbar { background:#19191f !important; border-color:#303039 
 <span class="color-swatch-code" id="swatchCode">#FFFFFF</span>
 </div>
 <div class="swatch-footer">
-<button id="copyHex" type="button">Copy HEX</button>
+<button id="copyHex" type="button">Copy HEX</button><div class="copy-format-row"><button id="copyRgbValueTop" type="button">Copy RGB</button><button id="copyHslValueTop" type="button">Copy HSL</button></div>
 </div>
 </div>
 <div class="info-card">
@@ -223,6 +232,34 @@ html.dark-loading .navbar { background:#19191f !important; border-color:#303039 
 <h2>Color Combinations</h2>
 <p class="faq">Use these simple color harmonies to build balanced palettes around your selected color.</p>
 <div class="harmony-grid" id="harmonies" style="margin-top:18px"></div>
+</section>
+
+
+<section class="code-depth" aria-labelledby="format-guide-title">
+<h2 id="format-guide-title">How to choose a color format</h2>
+<p class="code-depth-intro">The same digital color can be written in several formats. The useful choice depends on where you will use the value: web styles, graphics code, or color adjustments.</p>
+<div class="format-guide-grid">
+<article class="format-guide"><h3>HEX</h3><p>Best for CSS, design tokens and compact web color values. A six-digit value stores red, green and blue channels; the three-digit form is shorthand when each pair repeats.</p></article>
+<article class="format-guide"><h3>RGB</h3><p>Useful when you need the individual red, green and blue channels, such as canvas work, image processing or JavaScript. Each channel normally ranges from 0 to 255.</p></article>
+<article class="format-guide"><h3>HSL</h3><p>Useful when you want to reason about hue, saturation and lightness. It can make changes such as lightening a color or reducing saturation easier to describe.</p></article>
+</div>
+</section>
+<section class="code-depth" aria-labelledby="workflow-title">
+<h2 id="workflow-title">From a picked color to CSS</h2>
+<div class="workflow-grid">
+<article class="workflow-step"><strong>1. Pick</strong>Choose or enter a color and confirm that the swatch matches the color you want.</article>
+<article class="workflow-step"><strong>2. Compare</strong>Compare HEX, RGB and HSL so you know which representation fits the task.</article>
+<article class="workflow-step"><strong>3. Explore</strong>Use the generated shades, tints and harmonies to explore related choices without losing the original color.</article>
+<article class="workflow-step"><strong>4. Reuse</strong>Copy the value into CSS, a design token, a graphics tool or another project.</article>
+</div>
+<div class="code-example"><code>color: <span id="cssExampleHex">#FFFFFF</span>;</code><div class="copy-format-row"><button type="button" id="copyRgbValue">Copy RGB</button><button type="button" id="copyHslValue">Copy HSL</button><button type="button" id="copyCssValue">Copy CSS</button></div></div>
+<p class="depth-note"><strong>A practical note about color values</strong><br>HEX, RGB and HSL are different representations of the same digital color for ordinary opaque colors. They do not automatically create three different colors. For accessibility work, check the contrast between the final foreground and background colors rather than relying on the color format itself.</p>
+<div class="depth-faq">
+<details><summary>What is the difference between HEX and RGB?</summary><p>HEX expresses the red, green and blue channels in hexadecimal notation, while RGB writes the same channels as decimal numbers from 0 to 255.</p></details>
+<details><summary>When is HSL useful?</summary><p>HSL is convenient when adjusting hue, saturation or lightness because those properties are exposed directly instead of being encoded as three hexadecimal pairs.</p></details>
+<details><summary>Can I use these values in CSS?</summary><p>Yes. HEX values such as #3366CC and RGB values can be used directly in CSS. HSL can also be used in modern CSS when you want hue, saturation and lightness controls.</p></details>
+<details><summary>Why check shades and tints?</summary><p>They provide controlled lighter and darker variations that can help with hover states, surfaces, borders and secondary UI elements.</p></details>
+</div>
 </section>
 
 <section class="seo-local-guide" aria-labelledby="localized-guide-title">
@@ -339,7 +376,7 @@ html.dark-loading .navbar { background:#19191f !important; border-color:#303039 
     });
 })();
 </script>
-<script src="language.js"></script>
+<script id="color-code-extra-copy">(function(){const rgb=document.getElementById('rgb'),hsl=document.getElementById('hsl'),hex=document.getElementById('hex');const copy=(id,fn)=>{const b=document.getElementById(id);if(!b)return;b.addEventListener('click',()=>navigator.clipboard?.writeText(fn()));};copy('copyRgbValueTop',()=>rgb?.textContent?.trim()||'');copy('copyHslValueTop',()=>hsl?.textContent?.trim()||'');copy('copyRgbValue',()=>rgb?.textContent?.trim()||'');copy('copyHslValue',()=>hsl?.textContent?.trim()||'');copy('copyCssValue',()=>`color: ${hex?.textContent?.trim()||'#FFFFFF'};`);const sync=()=>{const e=document.getElementById('cssExampleHex');if(e)e.textContent=hex?.textContent?.trim()||'#FFFFFF'};sync();if(hex)new MutationObserver(sync).observe(hex,{childList:true,subtree:true,characterData:true});})();</script><script src="language.js"></script>
 <script id="colorpick-localized-tool-ui">
 (function(){
  const T={"head": "Color Code: HEX, RGB and HSL Color Information", "badge": "🎨 COLOR INFORMATION", "desc": "Explore color formats, shades, tints and harmonious combinations for your selected color.", "back": "← Back to Color Picker", "copy": "Copy HEX", "conversion": "Color Conversion", "shades": "Shades & Tints", "shade": "Shades", "tint": "Tints", "sdesc": "Shades are created by mixing the selected color with black. Tints are created by mixing it with white.", "comb": "Color Combinations", "combdesc": "Use these simple color harmonies to build balanced palettes around your selected color."};
