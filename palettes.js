@@ -1063,6 +1063,30 @@ let visibleCount =
     24;
 
 
+/* Localized category labels. Palette names remain proper names, while
+   generic category labels are translated for each locale. */
+const categoryLabels = {
+    en:{All:'All',Sunset:'Sunset',Ocean:'Ocean',Pastel:'Pastel',Dark:'Dark',Nature:'Nature',Neon:'Neon',Summer:'Summer',Holiday:'Holiday',Autumn:'Autumn',Food:'Food',Creative:'Creative',Business:'Business'},
+    hi:{All:'सभी',Sunset:'सनसेट',Ocean:'समुद्र',Pastel:'पेस्टल',Dark:'डार्क',Nature:'प्रकृति',Neon:'नियॉन',Summer:'गर्मी',Holiday:'त्योहार',Autumn:'पतझड़',Food:'भोजन',Creative:'क्रिएटिव',Business:'बिज़नेस'},
+    es:{All:'Todas',Sunset:'Atardecer',Ocean:'Océano',Pastel:'Pastel',Dark:'Oscuro',Nature:'Naturaleza',Neon:'Neón',Summer:'Verano',Holiday:'Fiesta',Autumn:'Otoño',Food:'Comida',Creative:'Creativo',Business:'Negocios'},
+    fr:{All:'Toutes',Sunset:'Coucher de soleil',Ocean:'Océan',Pastel:'Pastel',Dark:'Sombre',Nature:'Nature',Neon:'Néon',Summer:'Été',Holiday:'Fête',Autumn:'Automne',Food:'Cuisine',Creative:'Créatif',Business:'Entreprise'},
+    de:{All:'Alle',Sunset:'Sonnenuntergang',Ocean:'Ozean',Pastel:'Pastell',Dark:'Dunkel',Nature:'Natur',Neon:'Neon',Summer:'Sommer',Holiday:'Feiertag',Autumn:'Herbst',Food:'Essen',Creative:'Kreativ',Business:'Business'},
+    ja:{All:'すべて',Sunset:'夕焼け',Ocean:'海',Pastel:'パステル',Dark:'ダーク',Nature:'自然',Neon:'ネオン',Summer:'夏',Holiday:'ホリデー',Autumn:'秋',Food:'食べ物',Creative:'クリエイティブ',Business:'ビジネス'},
+    vi:{All:'Tất cả',Sunset:'Hoàng hôn',Ocean:'Đại dương',Pastel:'Pastel',Dark:'Tối',Nature:'Thiên nhiên',Neon:'Neon',Summer:'Mùa hè',Holiday:'Lễ hội',Autumn:'Mùa thu',Food:'Ẩm thực',Creative:'Sáng tạo',Business:'Kinh doanh'},
+    fa:{All:'همه',Sunset:'غروب',Ocean:'اقیانوس',Pastel:'پاستلی',Dark:'تیره',Nature:'طبیعت',Neon:'نئون',Summer:'تابستان',Holiday:'جشن',Autumn:'پاییز',Food:'غذا',Creative:'خلاقانه',Business:'کسب‌وکار'},
+    ru:{All:'Все',Sunset:'Закат',Ocean:'Океан',Pastel:'Пастель',Dark:'Тёмные',Nature:'Природа',Neon:'Неон',Summer:'Лето',Holiday:'Праздник',Autumn:'Осень',Food:'Еда',Creative:'Креатив',Business:'Бизнес'},
+    'pt-BR':{All:'Todas',Sunset:'Pôr do sol',Ocean:'Oceano',Pastel:'Pastel',Dark:'Escuro',Nature:'Natureza',Neon:'Neon',Summer:'Verão',Holiday:'Festa',Autumn:'Outono',Food:'Comida',Creative:'Criativo',Business:'Negócios'},
+    ko:{All:'전체',Sunset:'노을',Ocean:'바다',Pastel:'파스텔',Dark:'어두운 색',Nature:'자연',Neon:'네온',Summer:'여름',Holiday:'휴일',Autumn:'가을',Food:'음식',Creative:'크리에이티브',Business:'비즈니스'},
+    sv:{All:'Alla',Sunset:'Solnedgång',Ocean:'Hav',Pastel:'Pastell',Dark:'Mörk',Nature:'Natur',Neon:'Neon',Summer:'Sommar',Holiday:'Högtid',Autumn:'Höst',Food:'Mat',Creative:'Kreativ',Business:'Företag'},
+    'zh-TW':{All:'全部',Sunset:'夕陽',Ocean:'海洋',Pastel:'粉彩',Dark:'深色',Nature:'自然',Neon:'霓虹',Summer:'夏日',Holiday:'節慶',Autumn:'秋季',Food:'美食',Creative:'創意',Business:'商務'},
+    ro:{All:'Toate',Sunset:'Apus',Ocean:'Ocean',Pastel:'Pastel',Dark:'Închis',Nature:'Natură',Neon:'Neon',Summer:'Vară',Holiday:'Sărbătoare',Autumn:'Toamnă',Food:'Mâncare',Creative:'Creativ',Business:'Afaceri'},
+    fil:{All:'Lahat',Sunset:'Takipsilim',Ocean:'Karagatan',Pastel:'Pastel',Dark:'Madilim',Nature:'Kalikasan',Neon:'Neon',Summer:'Tag-init',Holiday:'Pista',Autumn:'Taglagas',Food:'Pagkain',Creative:'Malikhain',Business:'Negosyo'},
+    id:{All:'Semua',Sunset:'Matahari terbenam',Ocean:'Laut',Pastel:'Pastel',Dark:'Gelap',Nature:'Alam',Neon:'Neon',Summer:'Musim panas',Holiday:'Liburan',Autumn:'Musim gugur',Food:'Makanan',Creative:'Kreatif',Business:'Bisnis'},
+    'es-MX':{All:'Todas',Sunset:'Atardecer',Ocean:'Océano',Pastel:'Pastel',Dark:'Oscuro',Nature:'Naturaleza',Neon:'Neón',Summer:'Verano',Holiday:'Fiesta',Autumn:'Otoño',Food:'Comida',Creative:'Creativo',Business:'Negocios'},
+    tr:{All:'Tümü',Sunset:'Gün batımı',Ocean:'Okyanus',Pastel:'Pastel',Dark:'Koyu',Nature:'Doğa',Neon:'Neon',Summer:'Yaz',Holiday:'Tatil',Autumn:'Sonbahar',Food:'Yemek',Creative:'Yaratıcı',Business:'İş'}
+};
+const currentCategoryLabels = categoryLabels[document.documentElement.lang] || categoryLabels.en;
+
 /* =====================================================
    CATEGORIES
 ===================================================== */
@@ -1103,7 +1127,7 @@ categories.forEach(
 
 
         button.textContent =
-            category;
+            currentCategoryLabels[category] || category;
 
 
         button.addEventListener(
@@ -1356,7 +1380,7 @@ function createPaletteCard(
 
             <div class="explore-category">
 
-                ${paletteData.category}
+                ${currentCategoryLabels[paletteData.category] || paletteData.category}
 
             </div>
 

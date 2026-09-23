@@ -17,7 +17,7 @@
 <meta content="#ffffff" name="theme-color"/>
 <title>ColorPickへのお問い合わせ | サポート</title>
 <meta name="description" content="質問、バグ報告、アクセシビリティに関する意見、改善提案などをColorPickへお寄せください。"/>
-<meta content="index, follow" name="robots"/>
+<meta name="robots" content="noindex,follow">
 <link rel="canonical" href="https://colorpikertool.com/ja/contact.html"/>
 <meta content="website" property="og:type"/>
 <meta property="og:title" content="ColorPickへのお問い合わせ | サポート"/>
@@ -68,7 +68,7 @@
       <p data-contact-i18n="formDesc">Use this form to ask a question, report a bug, suggest an improvement, or share feedback about ColorPick.</p>
     </div>
     <form id="colorpickContactForm" class="contact-form" method="POST" novalidate>
-      <input type="hidden" name="access_key" data-web3-access-key value="YOUR_WEB3FORMS_ACCESS_KEY">
+      <input type="hidden" name="access_key" data-web3-access-key value="">
       <input type="hidden" name="subject" value="New ColorPick feedback">
       <input type="hidden" name="from_name" value="ColorPick Contact Form">
       <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" class="contact-honeypot" aria-hidden="true">
@@ -79,7 +79,7 @@
         </label>
         <label class="contact-field">
           <span data-contact-i18n="emailLabel">Email</span>
-          <input type="email" name="email" maxlength="200" autocomplete="email" data-contact-placeholder="emailPlaceholder" placeholder="you@example.com (optional)">
+          <input type="email" name="email" maxlength="200" autocomplete="email" data-contact-placeholder="emailPlaceholder" placeholder="you@example.com（任意）">
         </label>
       </div>
       <label class="contact-field">
