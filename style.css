@@ -4377,3 +4377,47 @@ html.dark-mode .contact-submit,body.dark .contact-submit{background:#f8fafc;colo
 
 /* Additional original, tool-specific guidance */
 .palette-workflow-guide{margin:24px auto;max-width:1100px}.palette-workflow-guide h3{margin:24px 0 8px}.palette-workflow-guide p{line-height:1.75}
+
+.page-seo-topics .seo-keyword-list{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0 0;padding:0;list-style:none}.page-seo-topics .seo-keyword-list li{border:1px solid var(--border);background:var(--input);border-radius:999px;padding:7px 11px;color:var(--muted);font-size:.94rem}.page-seo-topics,.page-seo-faq{margin-top:22px}.page-seo-faq .seo-answer-card{margin-top:10px}
+
+/* =====================================================
+   SEO content polish
+   Keep supporting content visually separate from the tool
+   and present keyword guidance as useful editorial content.
+===================================================== */
+.seo-keyword-support{
+  width:min(1100px,calc(100% - 40px));
+  margin:42px auto 0;
+  padding:30px 32px;
+  box-sizing:border-box;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:22px;
+  box-shadow:var(--shadow);
+}
+.seo-keyword-support + .seo-keyword-support{margin-top:18px;}
+.seo-keyword-support h3{
+  margin:0 0 12px;
+  color:var(--text);
+  font-size:clamp(20px,2.2vw,28px);
+  line-height:1.25;
+  letter-spacing:-.3px;
+}
+.seo-keyword-support p{
+  margin:0;
+  max-width:920px;
+  color:var(--muted);
+  font-size:16px;
+  line-height:1.8;
+}
+.seo-local-guide{margin-top:42px !important;}
+.seo-answer-section{margin-top:48px;}
+.page-seo-topics + .page-seo-faq{margin-top:28px;}
+#seo-tool-links{margin-top:28px;}
+@media(max-width:700px){
+  .seo-keyword-support{width:calc(100% - 28px);padding:22px 20px;border-radius:18px;margin-top:32px;}
+  .seo-keyword-support + .seo-keyword-support{margin-top:14px;}
+  .seo-keyword-support p{font-size:15px;line-height:1.75;}
+  .seo-local-guide{margin-top:32px !important;}
+  .seo-answer-section{margin-top:38px;}
+}
