@@ -4421,3 +4421,20 @@ html.dark-mode .contact-submit,body.dark .contact-submit{background:#f8fafc;colo
   .seo-local-guide{margin-top:32px !important;}
   .seo-answer-section{margin-top:38px;}
 }
+
+
+/* Polished homepage SEO feature panel */
+.seo-keyword-explore{margin-top:28px;padding:30px 32px;}
+.seo-keyword-explore .seo-explore-eyebrow{margin:0 0 8px;color:var(--muted);font-size:12px;font-weight:800;letter-spacing:1.3px;line-height:1.4;text-transform:uppercase;}
+.seo-keyword-explore h3{margin-bottom:10px;}
+.seo-keyword-explore > p:not(.seo-explore-eyebrow){max-width:1000px;}
+.seo-keyword-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px;}
+.seo-keyword-tags span{display:inline-flex;align-items:center;padding:8px 12px;border:1px solid var(--border);border-radius:999px;background:var(--background,rgba(127,127,127,.08));color:var(--text);font-size:13px;line-height:1.35;}
+@media(max-width:700px){.seo-keyword-explore{padding:22px 20px;margin-top:24px;}.seo-keyword-tags{gap:7px;margin-top:16px;}.seo-keyword-tags span{padding:7px 10px;font-size:12px;}}
+
+
+/* Shared polished design for localized homepage keyword panels */
+.seo-keyword-explore h2{margin:0 0 10px;color:var(--text);font-size:clamp(20px,2.2vw,28px);line-height:1.25;letter-spacing:-.3px;}
+.seo-keyword-explore .seo-keyword-tags{max-width:100%;}
+.seo-keyword-explore .seo-keyword-tags span{transition:background .18s ease,border-color .18s ease;}
+.seo-keyword-explore .seo-keyword-tags span:hover{border-color:var(--accent, #8b5cf6);background:rgba(139,92,246,.10);}
