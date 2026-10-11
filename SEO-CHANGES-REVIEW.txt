@@ -1,0 +1,18 @@
+ColorPick SEO update — review before publishing
+
+Updated English-language pages:
+- index.html: refined title/description/social metadata, clearer H1, contextual link to the HEX/code tool, and an accurate note about closest CSS color-name matching.
+- color-code.html: refined title/description/social metadata for HEX code lookup and color conversion.
+- color-suggestions.html: aligned title and social metadata around matching color combinations.
+- color-wheel.html: refined title/description/social metadata around color harmony.
+- palettes.html: refined title/description/social metadata around palettes and HEX values.
+- blog/how-to-pick-colors-from-images.html: improved title/description/social metadata and added contextual links to the relevant tools.
+- blog/understanding-hex-color-codes.html: improved title/description/social metadata and added relevant tool links.
+- blog/how-to-create-color-palette.html: improved title/description/social metadata.
+
+Notes:
+- Existing URLs and canonical URLs were preserved. No existing tool JavaScript or CSS was intentionally changed.
+- Translated pages were left unchanged to avoid overwriting localized copy. Review translated metadata separately if desired.
+- Search volume and ranking improvements are not guaranteed. Google Trends values are relative interest, not absolute monthly search counts.
+- Before deployment, test the tool interactions, validate titles/descriptions and structured data, check mobile layout, and monitor Google Search Console.
+- A separate color-name-from-image URL was not created because the existing homepage already provides the closest CSS color name for a selected pixel; avoid duplicating the same tool/page intent.

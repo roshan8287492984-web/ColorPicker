@@ -1684,6 +1684,11 @@ function initializeColorPick() {
 
         }
 
+        const colorNameValue = document.getElementById("colorNameValue");
+        if (colorNameValue) {
+            colorNameValue.value = getClosestCssColorName(r, g, b);
+        }
+
         // Open a dedicated, shareable color-detail page.
         if (colorDetailsBtn) {
             colorDetailsBtn.href =
@@ -1693,6 +1698,55 @@ function initializeColorPick() {
 
     }
 
+
+
+    /* =====================================================
+       CLOSEST CSS COLOR NAME
+       Names are labels for orientation, not exact color values.
+    ===================================================== */
+
+    function getClosestCssColorName(r, g, b) {
+        const namedColors = {
+            "Black": [0, 0, 0], "White": [255, 255, 255],
+            "Red": [255, 0, 0], "Green": [0, 128, 0],
+            "Blue": [0, 0, 255], "Yellow": [255, 255, 0],
+            "Cyan": [0, 255, 255], "Aqua": [0, 255, 255],
+            "Magenta": [255, 0, 255], "Fuchsia": [255, 0, 255],
+            "Orange": [255, 165, 0], "Purple": [128, 0, 128],
+            "Pink": [255, 192, 203], "Hot Pink": [255, 105, 180],
+            "Brown": [165, 42, 42], "Gray": [128, 128, 128],
+            "Grey": [128, 128, 128], "Silver": [192, 192, 192],
+            "Navy": [0, 0, 128], "Teal": [0, 128, 128],
+            "Olive": [128, 128, 0], "Maroon": [128, 0, 0],
+            "Lime": [0, 255, 0], "Sky Blue": [135, 206, 235],
+            "Deep Sky Blue": [0, 191, 255], "Royal Blue": [65, 105, 225],
+            "Indigo": [75, 0, 130], "Violet": [238, 130, 238],
+            "Gold": [255, 215, 0], "Coral": [255, 127, 80],
+            "Tomato": [255, 99, 71], "Salmon": [250, 128, 114],
+            "Khaki": [240, 230, 140], "Beige": [245, 245, 220],
+            "Ivory": [255, 255, 240], "Chocolate": [210, 105, 30],
+            "Crimson": [220, 20, 60], "Turquoise": [64, 224, 208],
+            "Aquamarine": [127, 255, 212], "Forest Green": [34, 139, 34],
+            "Sea Green": [46, 139, 87], "Dark Green": [0, 100, 0],
+            "Light Blue": [173, 216, 230], "Steel Blue": [70, 130, 180],
+            "Slate Blue": [106, 90, 205], "Orchid": [218, 112, 214],
+            "Plum": [221, 160, 221], "Tan": [210, 180, 140],
+            "Wheat": [245, 222, 179], "Lavender": [230, 230, 250],
+            "Mint Cream": [245, 255, 250], "Firebrick": [178, 34, 34],
+            "Dark Orange": [255, 140, 0], "Peach Puff": [255, 218, 185]
+        };
+
+        let closestName = "White";
+        let smallestDistance = Infinity;
+        for (const [name, rgb] of Object.entries(namedColors)) {
+            const distance = (r - rgb[0]) ** 2 + (g - rgb[1]) ** 2 + (b - rgb[2]) ** 2;
+            if (distance < smallestDistance) {
+                smallestDistance = distance;
+                closestName = name;
+            }
+        }
+        return closestName;
+    }
 
 
     /* =====================================================
