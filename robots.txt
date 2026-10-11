@@ -4,5 +4,9 @@ User-agent: *
 Allow: /
 Allow: /blog.html
 Allow: /blog/
+Allow: /blog/understanding-hex-color-codes.html
+Allow: /blog/how-to-pick-colors-from-images.html
+Allow: /blog/how-to-create-color-palette.html
+Allow: /blog/color-theory-graphic-design.html
 
 Sitemap: https://colorpikertool.com/sitemap.xml
