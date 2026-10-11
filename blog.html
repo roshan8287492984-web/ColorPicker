@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ColorPick Blog | Color Tips, Design Guides & Tutorials</title>
+<meta name="description" content="Read ColorPick articles about color theory, color palettes, HEX codes, UI design and practical color-picking tips.">
+<link rel="canonical" href="https://colorpikertool.com/blog.html">
+<link href="style.css" rel="stylesheet">
+<link href="favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+<script>
+(function () {
+    try {
+        const savedTheme = localStorage.getItem("colorpick-theme");
+        if (savedTheme === "dark") {
+            document.documentElement.classList.add("dark-loading");
+            document.documentElement.style.colorScheme = "dark";
+        } else {
+            document.documentElement.style.colorScheme = "light";
+        }
+    } catch (e) {
+        document.documentElement.style.colorScheme = "light";
+    }
+})();
+</script>
+<style>
+html.dark-loading { background:#101014 !important; color:#f5f5f7; color-scheme:dark; }
+html.dark-loading body { background:#101014 !important; color:#f5f5f7 !important; }
+html.dark-loading .navbar { background:#19191f !important; border-color:#303039 !important; }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+<a class="logo" href="index.html">
+<span class="logo-icon">🎨</span>
+<span>ColorPick</span>
+</a>
+<button aria-controls="siteNavLinks" aria-expanded="false" aria-label="Open navigation menu" class="mobile-menu-toggle" id="mobileMenuToggle" type="button">
+<span></span><span></span><span></span>
+</button>
+<div class="nav-links" id="siteNavLinks">
+<a href="index.html"><span>Color Picker</span></a>
+<a href="palettes.html"><span>Explore Palettes</span></a>
+<a href="color-suggestions.html"><span>Color Suggestions</span></a>
+<a href="color-wheel.html"><span>Color Wheel</span></a>
+<a class="active-link" href="blog.html"><span>Blog</span></a>
+</div>
+<div class="nav-actions">
+<div class="language-selector">
+<button aria-expanded="false" aria-haspopup="true" aria-label="Choose language" class="language-toggle" id="languageBtn" title="Choose language" type="button">
+<span aria-hidden="true" class="translate-icon">文</span>
+<span id="languageCurrent">English</span>
+<span aria-hidden="true" class="language-chevron"></span>
+</button>
+<div aria-label="Language selection" class="language-menu" id="languageMenu" role="menu">
+<button data-language="en" role="menuitem" type="button">English</button>
+<button data-language="hi" role="menuitem" type="button">हिंदी</button>
+<button data-language="es" role="menuitem" type="button">Español</button>
+<button data-language="fr" role="menuitem" type="button">Français</button>
+<button data-language="de" role="menuitem" type="button">Deutsch</button>
+<button data-language="ja" role="menuitem" type="button">日本語</button>
+<button data-language="vi" role="menuitem" type="button">Tiếng Việt</button>
+<button data-language="fa" role="menuitem" type="button">فارسی</button>
+<button data-language="ru" role="menuitem" type="button">Русский</button>
+<button data-language="pt-BR" role="menuitem" type="button">Português (Brasil)</button>
+<button data-language="ko" role="menuitem" type="button">한국어</button>
+<button data-language="sv" role="menuitem" type="button">Svenska</button>
+<button data-language="zh-TW" role="menuitem" type="button">繁體中文</button>
+<button data-language="ro" role="menuitem" type="button">Română</button>
+<button data-language="fil" role="menuitem" type="button">Filipino</button>
+<button data-language="id" role="menuitem" type="button">Bahasa Indonesia</button>
+<button data-language="es-MX" role="menuitem" type="button">Español (México)</button>
+<button data-language="tr" role="menuitem" type="button">Türkçe</button>
+</div>
+</div>
+<button aria-label="Toggle dark mode" class="theme-toggle" id="themeBtn" type="button">
+<span id="themeIcon">🌙</span>
+</button>
+</div>
+</nav>
+
+<main class="blog-page">
+<section class="blog-hero">
+<div class="blog-eyebrow">ColorPick Blog</div>
+<h1>Color ideas, guides &amp; inspiration.</h1>
+<p>Learn how to choose better colors, build beautiful palettes, understand HEX codes, and use color effectively in websites and creative projects.</p>
+</section>
+
+<section class="blog-grid" aria-label="Latest blog posts">
+<a class="blog-card" href="blog/color-theory-graphic-design.html">
+<div class="blog-card-icon">🎨</div>
+<div class="blog-meta">Design Basics</div>
+<h2>What Is Color Theory in Graphic Design?</h2>
+<p>Learn the color wheel, simple harmonies, contrast and practical rules for making better design decisions.</p>
+<span class="blog-read-more">Read article →</span>
+</a>
+
+<a class="blog-card" href="blog/how-to-pick-colors-from-images.html">
+<div class="blog-card-icon">🎨</div>
+<div class="blog-meta">Color Tools</div>
+<h2>How to Pick the Perfect Color From Any Image</h2>
+<p>A practical guide to sampling colors from photos, screenshots and designs with accurate HEX, RGB and HSL values.</p>
+<span class="blog-read-more">Read article →</span>
+</a>
+
+<a class="blog-card" href="blog/understanding-hex-color-codes.html">
+<div class="blog-card-icon">🔢</div>
+<div class="blog-meta">Color Basics</div>
+<h2>Understanding HEX Color Codes: A Simple Guide</h2>
+<p>Learn what six-digit HEX codes mean and how each pair controls the red, green and blue components of a color.</p>
+<span class="blog-read-more">Read article →</span>
+</a>
+
+<a class="blog-card" href="blog/how-to-create-color-palette.html">
+<div class="blog-card-icon">🖌️</div>
+<div class="blog-meta">Design Tips</div>
+<h2>How to Create a Beautiful Color Palette</h2>
+<p>Discover simple techniques for choosing primary, secondary and accent colors that work together.</p>
+<span class="blog-read-more">Read article →</span>
+</a>
+</section>
+
+<section class="blog-cta">
+<h2>Need a color right now?</h2>
+<p>Use ColorPick to sample a color from an image and instantly copy its HEX, RGB or HSL value.</p>
+</section>
+</main>
+
+<footer>
+<div class="footer-logo">🎨 ColorPick</div>
+<div class="footer-links">
+<a href="index.html">Color Picker</a>
+<a href="palettes.html">Explore Palettes</a>
+<a href="color-suggestions.html">Color Suggestions</a>
+<a href="color-wheel.html">Color Wheel</a>
+<a href="blog.html">Blog</a>
+<a href="about.html">About Us</a>
+<a href="privacy-policy.html">Privacy Policy</a>
+<a href="terms.html">Terms &amp; Conditions</a>
+<a href="contact.html">Contact Us</a>
+</div>
+<p>© 2026 ColorPick. All rights reserved.</p>
+</footer>
+
+<script src="language.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

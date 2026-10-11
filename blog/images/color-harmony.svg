@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img" aria-labelledby="title desc">
+<title>Examples of color harmony</title><desc>Three examples: complementary, analogous and triadic color combinations.</desc>
+<rect width="900" height="500" rx="28" fill="#f7f7fb"/>
+<text x="450" y="52" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#17171c">Three Useful Color Harmonies</text>
+<g font-family="Arial,sans-serif" fill="#333" text-anchor="middle">
+<text x="150" y="108" font-size="20" font-weight="700">Complementary</text><circle cx="105" cy="180" r="55" fill="#264653"/><circle cx="195" cy="180" r="55" fill="#e76f51"/><text x="150" y="280" font-size="15">High contrast • strong accents</text>
+<text x="450" y="108" font-size="20" font-weight="700">Analogous</text><circle cx="385" cy="180" r="55" fill="#2a9d8f"/><circle cx="450" cy="180" r="55" fill="#e9c46a"/><circle cx="515" cy="180" r="55" fill="#f4a261"/><text x="450" y="280" font-size="15">Smooth • cohesive • calm</text>
+<text x="750" y="108" font-size="20" font-weight="700">Triadic</text><circle cx="750" cy="145" r="55" fill="#e63946"/><circle cx="695" cy="235" r="55" fill="#2a9d8f"/><circle cx="805" cy="235" r="55" fill="#457b9d"/><text x="750" y="330" font-size="15">Balanced • energetic • playful</text>
+</g>
+<rect x="120" y="380" width="660" height="58" rx="29" fill="#fff" stroke="#ddd"/>
+<text x="450" y="416" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#555">Tip: start with one dominant color, then add supporting colors.</text>
+</svg>

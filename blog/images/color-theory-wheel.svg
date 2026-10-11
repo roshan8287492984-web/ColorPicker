@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+<title>Color wheel showing primary, secondary and tertiary colors</title><desc>A simple color theory wheel with labeled primary and secondary colors.</desc>
+<rect width="900" height="520" rx="28" fill="#f7f7fb"/>
+<text x="450" y="58" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#17171c">The Color Wheel</text>
+<g transform="translate(270 275)">
+<path d="M0 0 L0-150 A150 150 0 0 1 130-75 Z" fill="#e63946"/><path d="M0 0 L130-75 A150 150 0 0 1 130 75 Z" fill="#f4a261"/><path d="M0 0 L130 75 A150 150 0 0 1 0 150 Z" fill="#e9c46a"/><path d="M0 0 L0 150 A150 150 0 0 1 -130 75 Z" fill="#2a9d8f"/><path d="M0 0 L-130 75 A150 150 0 0 1 -130-75 Z" fill="#457b9d"/><path d="M0 0 L-130-75 A150 150 0 0 1 0-150 Z" fill="#7b2cbf"/>
+<circle r="58" fill="#fff"/>
+<text y="7" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#333">HUE</text>
+</g>
+<g font-family="Arial,sans-serif" fill="#333"><text x="500" y="170" font-size="22" font-weight="700">Primary colors</text><text x="500" y="202" font-size="17">Red • Yellow • Blue</text><text x="500" y="258" font-size="22" font-weight="700">Secondary colors</text><text x="500" y="290" font-size="17">Orange • Green • Violet</text><text x="500" y="346" font-size="22" font-weight="700">Why it matters</text><text x="500" y="378" font-size="17">The wheel helps you spot relationships</text><text x="500" y="405" font-size="17">before choosing a palette.</text></g>
+</svg>

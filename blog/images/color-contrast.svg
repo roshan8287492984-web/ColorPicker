@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-labelledby="title desc">
+<title>Color contrast in graphic design</title><desc>Examples showing readable and weak text contrast and a visual hierarchy using accent colors.</desc>
+<rect width="900" height="470" rx="28" fill="#f7f7fb"/>
+<text x="450" y="52" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#17171c">Contrast Creates Hierarchy</text>
+<rect x="70" y="100" width="360" height="150" rx="18" fill="#17202a"/>
+<text x="100" y="150" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">Primary heading</text><text x="100" y="190" font-family="Arial,sans-serif" font-size="17" fill="#dce3ea">Strong contrast makes content easy to scan.</text><text x="100" y="220" font-family="Arial,sans-serif" font-size="14" fill="#9ee6cf">GOOD READABILITY</text>
+<rect x="470" y="100" width="360" height="150" rx="18" fill="#f3e7d3"/>
+<text x="500" y="150" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#d5b98a">Weak heading</text><text x="500" y="190" font-family="Arial,sans-serif" font-size="17" fill="#d5b98a">Low contrast makes reading harder.</text><text x="500" y="220" font-family="Arial,sans-serif" font-size="14" fill="#b98b52">AVOID LOW CONTRAST</text>
+<g font-family="Arial,sans-serif"><text x="80" y="315" font-size="19" font-weight="700" fill="#333">A simple hierarchy</text><rect x="80" y="345" width="260" height="45" rx="10" fill="#264653"/><text x="210" y="374" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Main color</text><rect x="360" y="345" width="200" height="45" rx="10" fill="#e76f51"/><text x="460" y="374" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Accent</text><rect x="580" y="345" width="180" height="45" rx="10" fill="#eef1f4"/><text x="670" y="374" text-anchor="middle" font-size="16" fill="#333">Neutral</text></g>
+</svg>
