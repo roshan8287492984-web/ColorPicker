@@ -1,0 +1,18 @@
+ColorPick indexing audit — 12 October 2026
+
+Changes made:
+- Removed the `noindex,follow` robots meta directive from all 18 contact pages (English + 17 localized versions).
+- These contact pages are included in sitemap.xml and have self-referencing canonical URLs, so allowing indexing is consistent with the sitemap and their purpose as useful site trust/contact pages.
+- Left noindex directives on standalone HTTP error pages (400/401/403/404/408/429/500/502/503/504), which should not appear in search results.
+- Did not change the website's tools, JavaScript, CSS, translated page copy, analytics, or AdSense integration.
+
+Validation performed:
+- All 167 sitemap URLs map to existing HTML files.
+- All 167 sitemap URLs have matching self-referencing canonical tags.
+- No sitemap-listed page retains a noindex directive.
+- Local href/src file references in HTML were checked; no missing local files were found.
+
+Important:
+- This corrects the site-side inconsistency related to contact pages being both sitemap-listed and marked noindex.
+- It cannot instantly change Google's existing index. Deploy the updated files, then use Search Console URL Inspection on https://colorpikertool.com/contact.html and request indexing if you want Google to recrawl it.
+- Other reported reasons (especially "Duplicate, Google chose different canonical than user", "Discovered - currently not indexed", and "Crawled - currently not indexed") need URL-by-URL review and are not automatically fixed by this change.
