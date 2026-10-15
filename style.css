@@ -213,6 +213,27 @@ a {
 }
 
 
+
+/* Consistent Contact Us call-to-action in the primary navigation */
+.nav-links a.nav-contact-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 13px;
+    border: 1px solid var(--primary);
+    border-radius: 9px;
+    color: var(--primary);
+    font-weight: 700;
+    white-space: nowrap;
+    transition: background .2s, color .2s, border-color .2s;
+}
+.nav-links a.nav-contact-link:hover,
+.nav-links a.nav-contact-link.active-link {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
 /* =====================================================
    DAY / NIGHT TOGGLE
 ===================================================== */

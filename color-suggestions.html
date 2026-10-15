@@ -540,7 +540,29 @@ html.dark-loading .navbar { background:#19191f !important; border-color:#303039 
 }
 </script>
 <script src="analytics.js"></script><link href="https://colorpikertool.com/color-suggestions.html" hreflang="en" rel="alternate"/><link href="https://colorpikertool.com/hi/color-suggestions.html" hreflang="hi" rel="alternate"/><link href="https://colorpikertool.com/es/color-suggestions.html" hreflang="es" rel="alternate"/><link href="https://colorpikertool.com/fr/color-suggestions.html" hreflang="fr" rel="alternate"/><link href="https://colorpikertool.com/de/color-suggestions.html" hreflang="de" rel="alternate"/><link href="https://colorpikertool.com/ja/color-suggestions.html" hreflang="ja" rel="alternate"/><link href="https://colorpikertool.com/vi/color-suggestions.html" hreflang="vi" rel="alternate"/><link href="https://colorpikertool.com/fa/color-suggestions.html" hreflang="fa" rel="alternate"/><link href="https://colorpikertool.com/ru/color-suggestions.html" hreflang="ru" rel="alternate"/><link href="https://colorpikertool.com/pt-br/color-suggestions.html" hreflang="pt-BR" rel="alternate"/><link href="https://colorpikertool.com/ko/color-suggestions.html" hreflang="ko" rel="alternate"/><link href="https://colorpikertool.com/sv/color-suggestions.html" hreflang="sv" rel="alternate"/><link href="https://colorpikertool.com/zh-tw/color-suggestions.html" hreflang="zh-TW" rel="alternate"/><link href="https://colorpikertool.com/ro/color-suggestions.html" hreflang="ro" rel="alternate"/><link href="https://colorpikertool.com/fil/color-suggestions.html" hreflang="fil" rel="alternate"/><link href="https://colorpikertool.com/id/color-suggestions.html" hreflang="id" rel="alternate"/><link href="https://colorpikertool.com/es-mx/color-suggestions.html" hreflang="es-MX" rel="alternate"/><link href="https://colorpikertool.com/tr/color-suggestions.html" hreflang="tr" rel="alternate"/><link href="https://colorpikertool.com/color-suggestions.html" hreflang="x-default" rel="alternate"/>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does the color combination tool work?","acceptedAnswer":{"@type":"Answer","text":"Enter a base HEX, RGB or HSL color and the tool calculates related colors using hue relationships and lightness adjustments."}},{"@type":"Question","name":"How do I find colors that match a specific color?","acceptedAnswer":{"@type":"Answer","text":"Enter the color you already have. The tool returns compatible options that can be tested as accents, backgrounds, buttons or supporting colors."}},{"@type":"Question","name":"What color formats can I enter?","acceptedAnswer":{"@type":"Answer","text":"You can enter HEX, RGB or HSL values. The tool accepts common formats such as #6848E8, rgb(104,72,232) and hsl(255,75%,60%)."}},{"@type":"Question","name":"Can this tool create a website color scheme?","acceptedAnswer":{"@type":"Answer","text":"Yes. Use the generated colors as a starting point, then check contrast, hierarchy and accessibility in the actual interface."}}]}</script></head>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does the color combination tool work?","acceptedAnswer":{"@type":"Answer","text":"Enter a base HEX, RGB or HSL color and the tool calculates related colors using hue relationships and lightness adjustments."}},{"@type":"Question","name":"How do I find colors that match a specific color?","acceptedAnswer":{"@type":"Answer","text":"Enter the color you already have. The tool returns compatible options that can be tested as accents, backgrounds, buttons or supporting colors."}},{"@type":"Question","name":"What color formats can I enter?","acceptedAnswer":{"@type":"Answer","text":"You can enter HEX, RGB or HSL values. The tool accepts common formats such as #6848E8, rgb(104,72,232) and hsl(255,75%,60%)."}},{"@type":"Question","name":"Can this tool create a website color scheme?","acceptedAnswer":{"@type":"Answer","text":"Yes. Use the generated colors as a starting point, then check contrast, hierarchy and accessibility in the actual interface."}}]}</script>
+<style id="colorpick-extension-nudge-styles">
+#cp-ext-nudge-backdrop{position:fixed;inset:0;z-index:99980;background:rgba(10,10,18,.64);opacity:0;transition:opacity .22s ease;pointer-events:none;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:100% 100%;mask-size:100% 100%;}
+#cp-ext-nudge-backdrop.cp-show{opacity:1}
+#cp-ext-nudge-spotlight{position:relative!important;z-index:99982!important;isolation:isolate!important;border-radius:10px!important;box-shadow:0 0 0 5px var(--primary,#6848e8),0 0 0 9999px rgba(10,10,18,.64)!important;filter:brightness(1.08);}
+#cp-ext-nudge-card{position:fixed;z-index:99990;left:50%;top:42%;transform:translate(-50%,-44%) scale(.97);width:min(430px,calc(100vw - 34px));box-sizing:border-box;padding:26px;border:1px solid var(--border,#ded8ff);border-radius:22px;background:var(--card,#fff);color:var(--text,#191625);box-shadow:0 22px 80px rgba(0,0,0,.3);opacity:0;transition:opacity .22s ease,transform .22s ease;font-family:inherit;text-align:left;}
+#cp-ext-nudge-card.cp-show{opacity:1;transform:translate(-50%,-44%) scale(1)}
+#cp-ext-nudge-card .cp-nudge-kicker{display:inline-flex;align-items:center;gap:7px;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--primary,#6848e8);margin-bottom:10px}
+#cp-ext-nudge-card h2{font-size:clamp(1.45rem,4vw,1.8rem);line-height:1.2;margin:0 0 10px;color:var(--text,#191625)}
+#cp-ext-nudge-card p{font-size:1rem;line-height:1.6;margin:0 0 21px;color:var(--muted,#666273)}
+#cp-ext-nudge-card .cp-nudge-actions{display:flex;gap:10px;flex-wrap:wrap}
+#cp-ext-nudge-card .cp-nudge-btn{min-height:46px;flex:1 1 145px;border-radius:12px;padding:12px 16px;font:inherit;font-weight:800;cursor:pointer;transition:transform .15s,filter .15s;border:1px solid transparent}
+#cp-ext-nudge-card .cp-nudge-primary{background:var(--primary,#6848e8);color:#fff;box-shadow:0 5px 16px color-mix(in srgb,var(--primary,#6848e8) 30%,transparent)}
+#cp-ext-nudge-card .cp-nudge-primary:hover{filter:brightness(1.08);transform:translateY(-1px)}
+#cp-ext-nudge-card .cp-nudge-later{background:#f3f1f7;color:#595466;border-color:#e4e0eb}
+body.dark #cp-ext-nudge-card .cp-nudge-later,html.dark-loading #cp-ext-nudge-card .cp-nudge-later{background:#292832;color:#dedbe8;border-color:#41404c}
+#cp-ext-nudge-card .cp-nudge-arrow{position:absolute;top:-48px;right:54px;width:42px;height:48px;overflow:visible;filter:drop-shadow(0 2px 2px rgba(0,0,0,.12))}
+#cp-ext-nudge-card .cp-nudge-arrow path{stroke:var(--primary,#6848e8);stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:700px){#cp-ext-nudge-card{top:46%;padding:22px}#cp-ext-nudge-card .cp-nudge-arrow{right:25px;top:-43px}#cp-ext-nudge-spotlight{box-shadow:0 0 0 4px var(--primary,#6848e8),0 0 0 9999px rgba(10,10,18,.64)!important}}
+@media(prefers-reduced-motion:reduce){#cp-ext-nudge-backdrop,#cp-ext-nudge-card{transition:none}}
+</style>
+
+</head>
 <body>
 <nav class="navbar">
 <a class="logo" href="index.html">
@@ -554,7 +576,10 @@ html.dark-loading .navbar { background:#19191f !important; border-color:#303039 
 <a href="palettes.html">Explore Palettes</a>
 <a class="active-link" href="color-suggestions.html">Color Suggestions</a>
 <a href="color-wheel.html"><span data-i18n="navWheel">Color Wheel</span></a>
+<a href="get-extension.html">Get Extension</a>
 <a href="blog.html"><span data-i18n="navBlog">Blog</span></a>
+<a href="get-extension.html">Get Extension</a>
+<a class="nav-contact-link" data-i18n="contactUs" href="contact.html">Contact Us</a>
 </div>
 <div class="nav-actions">
 <div class="language-selector">
@@ -952,5 +977,37 @@ html.dark-loading .navbar { background:#19191f !important; border-color:#303039 
 })();
 </script>
 <script>(function(){if("serviceWorker" in navigator){navigator.serviceWorker.register("/service-worker.js?v=4",{scope:"/"}).catch(function(){});}})();</script>
-<section class="seo-answer-section page-seo-topics" id="page-seo-topics"><div class="seo-answer-inner"><h2>Related color combination topics</h2><ul class="seo-keyword-list"><li>color combination generator</li><li>matching colors</li><li>color matching tool</li><li>color scheme generator</li><li>color combination ideas</li></ul></div></section><section class="seo-answer-section page-seo-faq" id="page-seo-faq"><div class="seo-answer-inner"><h2>Color combination FAQs</h2><details class="seo-answer-card"><summary>How does the color combination tool work?</summary><p>Enter a base HEX, RGB or HSL color and the tool calculates related colors using hue relationships and lightness adjustments.</p></details><details class="seo-answer-card"><summary>How do I find colors that match a specific color?</summary><p>Enter the color you already have. The tool returns compatible options that can be tested as accents, backgrounds, buttons or supporting colors.</p></details><details class="seo-answer-card"><summary>What color formats can I enter?</summary><p>You can enter HEX, RGB or HSL values. The tool accepts common formats such as #6848E8, rgb(104,72,232) and hsl(255,75%,60%).</p></details><details class="seo-answer-card"><summary>Can this tool create a website color scheme?</summary><p>Yes. Use the generated colors as a starting point, then check contrast, hierarchy and accessibility in the actual interface.</p></details></div></section><section class="seo-answer-section" id="seo-tool-links"><div class="seo-answer-inner"><h2>Explore more color tools</h2><ul><li><a href="palettes.html">Color Palettes</a></li><li><a href="color-wheel.html">Color Wheel</a></li></ul></div></section></body>
+<section class="seo-answer-section page-seo-topics" id="page-seo-topics"><div class="seo-answer-inner"><h2>Related color combination topics</h2><ul class="seo-keyword-list"><li>color combination generator</li><li>matching colors</li><li>color matching tool</li><li>color scheme generator</li><li>color combination ideas</li></ul></div></section><section class="seo-answer-section page-seo-faq" id="page-seo-faq"><div class="seo-answer-inner"><h2>Color combination FAQs</h2><details class="seo-answer-card"><summary>How does the color combination tool work?</summary><p>Enter a base HEX, RGB or HSL color and the tool calculates related colors using hue relationships and lightness adjustments.</p></details><details class="seo-answer-card"><summary>How do I find colors that match a specific color?</summary><p>Enter the color you already have. The tool returns compatible options that can be tested as accents, backgrounds, buttons or supporting colors.</p></details><details class="seo-answer-card"><summary>What color formats can I enter?</summary><p>You can enter HEX, RGB or HSL values. The tool accepts common formats such as #6848E8, rgb(104,72,232) and hsl(255,75%,60%).</p></details><details class="seo-answer-card"><summary>Can this tool create a website color scheme?</summary><p>Yes. Use the generated colors as a starting point, then check contrast, hierarchy and accessibility in the actual interface.</p></details></div></section><section class="seo-answer-section" id="seo-tool-links"><div class="seo-answer-inner"><h2>Explore more color tools</h2><ul><li><a href="palettes.html">Color Palettes</a></li><li><a href="color-wheel.html">Color Wheel</a></li></ul></div></section>
+<script id="colorpick-extension-nudge-script">
+(function(){
+  if (location.pathname.endsWith('/get-extension.html') || location.pathname === '/get-extension.html') return;
+  var navLink = Array.from(document.querySelectorAll('a[href]')).find(function(a){
+    var href=(a.getAttribute('href')||'').split(/[?#]/)[0];
+    return /(^|\/)get-extension\.html$/.test(href) && /get extension/i.test((a.textContent||'').trim());
+  });
+  if(!navLink) return;
+  try { if(sessionStorage.getItem('cpExtensionNudgeDismissed')==='1' || sessionStorage.getItem('cpExtensionNudgeShown')==='1') return; } catch(e){}
+  function showNudge(){
+    if(!document.body || !document.body.contains(navLink)) return;
+    try { sessionStorage.setItem('cpExtensionNudgeShown','1'); } catch(e){}
+    var backdrop=document.createElement('div'); backdrop.id='cp-ext-nudge-backdrop'; backdrop.setAttribute('aria-hidden','true');
+    var r=navLink.getBoundingClientRect(), pad=7, x=Math.max(0,r.left-pad), y=Math.max(0,r.top-pad), w=Math.min(window.innerWidth-x,r.width+pad*2), h=Math.min(window.innerHeight-y,r.height+pad*2);
+    var maskSvg='<svg xmlns="http://www.w3.org/2000/svg" width="'+window.innerWidth+'" height="'+window.innerHeight+'" viewBox="0 0 '+window.innerWidth+' '+window.innerHeight+'"><rect width="100%" height="100%" fill="white"/><rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" rx="10" fill="black"/></svg>';
+    var maskUrl='url("data:image/svg+xml;charset=utf-8,'+encodeURIComponent(maskSvg)+'")'; backdrop.style.webkitMaskImage=maskUrl; backdrop.style.maskImage=maskUrl;
+    var card=document.createElement('section'); card.id='cp-ext-nudge-card'; card.setAttribute('role','dialog'); card.setAttribute('aria-modal','true'); card.setAttribute('aria-labelledby','cp-ext-nudge-title');
+    card.innerHTML='<svg class="cp-nudge-arrow" viewBox="0 0 42 48" aria-hidden="true"><path d="M7 43 C8 23 18 12 34 7 M23 6 L35 6 L34 18"/></svg><div class="cp-nudge-kicker">✨ ColorPick extension</div><h2 id="cp-ext-nudge-title">Get Extension</h2><p>Pick colors while you browse, save your favorites, and keep your color workflow close at hand.</p><div class="cp-nudge-actions"><button type="button" class="cp-nudge-btn cp-nudge-primary" id="cp-ext-nudge-go">Get Extension <span aria-hidden="true">→</span></button><button type="button" class="cp-nudge-btn cp-nudge-later" id="cp-ext-nudge-later">Not now</button></div>';
+    document.body.appendChild(backdrop); document.body.appendChild(card);
+    navLink.id='cp-ext-nudge-spotlight';
+    requestAnimationFrame(function(){backdrop.classList.add('cp-show');card.classList.add('cp-show');});
+    function close(){backdrop.classList.remove('cp-show');card.classList.remove('cp-show');navLink.classList.remove('cp-ext-nudge-spotlight');navLink.removeAttribute('id');setTimeout(function(){backdrop.remove();card.remove();},240);}
+    document.getElementById('cp-ext-nudge-go').addEventListener('click',function(){try{sessionStorage.setItem('cpExtensionNudgeDismissed','1')}catch(e){};location.href=navLink.getAttribute('href')||'get-extension.html';});
+    document.getElementById('cp-ext-nudge-later').addEventListener('click',function(){try{sessionStorage.setItem('cpExtensionNudgeDismissed','1')}catch(e){};close();});
+    backdrop.addEventListener('click',function(){try{sessionStorage.setItem('cpExtensionNudgeDismissed','1')}catch(e){};close();});
+    document.addEventListener('keydown',function esc(e){if(e.key==='Escape'){try{sessionStorage.setItem('cpExtensionNudgeDismissed','1')}catch(err){};close();document.removeEventListener('keydown',esc);}});
+  }
+  window.setTimeout(showNudge,5000);
+})();
+</script>
+
+</body>
 </html>
