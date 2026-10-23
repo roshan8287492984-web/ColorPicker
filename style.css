@@ -4605,3 +4605,7 @@ html.dark-mode .contact-submit,body.dark .contact-submit{background:#f8fafc;colo
         padding: 24px;
     }
 }
+
+
+/* Navbar logo icon size fix: keep the icon compact and aligned with the brand text. */
+.logo-icon { width: 32px; height: 32px; max-width: 32px; max-height: 32px; object-fit: contain; display: block; flex: 0 0 32px; }
