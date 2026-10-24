@@ -33,7 +33,7 @@ function sendError(res, status) {
   const file = path.join(ROOT, `${status}.html`);
   if (fs.existsSync(file)) return sendFile(res, file, status);
   res.writeHead(status, { "Content-Type": "text/plain; charset=utf-8" });
-  res.end(`ColorPick error ${status}`);
+  res.end(`Image Color Picker Online error ${status}`);
 }
 
 const server = http.createServer((req, res) => {
@@ -47,6 +47,6 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, "127.0.0.1", () => {
-  console.log(`ColorPick running at http://127.0.0.1:${PORT}/`);
+  console.log(`Image Color Picker Online running at http://127.0.0.1:${PORT}/`);
   console.log("Custom error pages are enabled. Try /this-page-does-not-exist");
 });

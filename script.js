@@ -197,7 +197,7 @@ function initializeColorPick() {
     if (!imageInput) {
 
         console.error(
-            "ColorPick: #imageInput was not found."
+            "Image Color Picker Online: #imageInput was not found."
         );
 
     }
@@ -206,7 +206,7 @@ function initializeColorPick() {
     if (!uploadBox) {
 
         console.error(
-            "ColorPick: #uploadBox was not found."
+            "Image Color Picker Online: #uploadBox was not found."
         );
 
     }
@@ -215,7 +215,7 @@ function initializeColorPick() {
     if (!canvas) {
 
         console.error(
-            "ColorPick: #canvas was not found."
+            "Image Color Picker Online: #canvas was not found."
         );
 
     }
@@ -2459,7 +2459,7 @@ function initializeColorPick() {
     ===================================================== */
 
     console.log(
-        "ColorPick initialized successfully."
+        "Image Color Picker Online initialized successfully."
     );
 
 }

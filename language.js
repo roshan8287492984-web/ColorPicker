@@ -16,7 +16,7 @@
 
     // Resolve the website root from language.js itself. This makes the language
     // switcher work both when the site is deployed at the domain root and when
-    // it is tested locally inside a project subfolder (for example /ColorPick/).
+    // it is tested locally inside a project subfolder (for example /Image Color Picker Online/).
     const SCRIPT_BASE = (function () {
         try {
             const scripts = document.getElementsByTagName("script");
@@ -140,7 +140,7 @@
                 'Color Code',
 
 
-            brand: "ColorPick",
+            brand: "Image Color Picker Online",
 
             navPicker: "Color Picker",
 
@@ -221,7 +221,7 @@
                 "A Simple Tool for Beautiful Colors",
 
             aboutDescription:
-                "ColorPick helps designers, developers, artists and creators extract colors from images quickly. You can also explore beautiful ready-made palettes for your next creative project.",
+                "Image Color Picker Online helps designers, developers, artists and creators extract colors from images quickly. You can also explore beautiful ready-made palettes for your next creative project.",
 
             rights:
                 "All rights reserved.",
@@ -292,7 +292,7 @@
                 'कलर कोड',
 
 
-            brand: "ColorPick",
+            brand: "Image Color Picker Online",
 
             navPicker:
                 "कलर पिकर",
@@ -379,7 +379,7 @@
                 "सुंदर रंगों के लिए आसान टूल",
 
             aboutDescription:
-                "ColorPick डिजाइनर, डेवलपर, कलाकार और क्रिएटर्स को इमेज से जल्दी रंग निकालने में मदद करता है। आप अपने अगले क्रिएटिव प्रोजेक्ट के लिए तैयार पैलेट्स भी देख सकते हैं।",
+                "Image Color Picker Online डिजाइनर, डेवलपर, कलाकार और क्रिएटर्स को इमेज से जल्दी रंग निकालने में मदद करता है। आप अपने अगले क्रिएटिव प्रोजेक्ट के लिए तैयार पैलेट्स भी देख सकते हैं।",
 
             rights:
                 "सभी अधिकार सुरक्षित हैं।",
@@ -450,7 +450,7 @@
                 'Código de color',
 
 
-            brand: "ColorPick",
+            brand: "Image Color Picker Online",
 
             navPicker:
                 "Selector de color",
@@ -537,7 +537,7 @@
                 "Una herramienta sencilla para colores hermosos",
 
             aboutDescription:
-                "ColorPick ayuda a diseñadores, desarrolladores, artistas y creadores a extraer colores de imágenes rápidamente.",
+                "Image Color Picker Online ayuda a diseñadores, desarrolladores, artistas y creadores a extraer colores de imágenes rápidamente.",
 
             rights:
                 "Todos los derechos reservados.",
@@ -608,7 +608,7 @@
                 'Code couleur',
 
 
-            brand: "ColorPick",
+            brand: "Image Color Picker Online",
 
             navPicker:
                 "Sélecteur de couleur",
@@ -695,7 +695,7 @@
                 "Un outil simple pour de belles couleurs",
 
             aboutDescription:
-                "ColorPick aide les designers, développeurs, artistes et créateurs à extraire rapidement les couleurs des images.",
+                "Image Color Picker Online aide les designers, développeurs, artistes et créateurs à extraire rapidement les couleurs des images.",
 
             rights:
                 "Tous droits réservés.",
@@ -766,7 +766,7 @@
                 'Farbcode',
 
 
-            brand: "ColorPick",
+            brand: "Image Color Picker Online",
 
             navPicker:
                 "Farbwähler",
@@ -853,7 +853,7 @@
                 "Ein einfaches Tool für wunderschöne Farben",
 
             aboutDescription:
-                "ColorPick hilft Designern, Entwicklern, Künstlern und Kreativen, schnell Farben aus Bildern zu extrahieren.",
+                "Image Color Picker Online hilft Designern, Entwicklern, Künstlern und Kreativen, schnell Farben aus Bildern zu extrahieren.",
 
             rights:
                 "Alle Rechte vorbehalten.",
@@ -924,7 +924,7 @@
                 'カラーコード',
 
 
-            brand: "ColorPick",
+            brand: "Image Color Picker Online",
 
             navPicker:
                 "カラーピッカー",
@@ -1065,7 +1065,7 @@
                 "navSuggestions": "Gợi ý màu",
                 "navWheel": "Bánh xe màu",
                 "navCode": "Mã màu",
-                "brand": "ColorPick",
+                "brand": "Image Color Picker Online",
                 "navPicker": "Bộ chọn màu",
                 "navPalettes": "Khám phá bảng màu",
                 "badge": "✨ Công cụ màu trực tuyến miễn phí",
@@ -1094,7 +1094,7 @@
                 "exploreButton": "Khám phá bảng màu →",
                 "aboutTitleSmall": "VỀ COLORPICK",
                 "aboutTitle": "Công cụ đơn giản cho những màu sắc đẹp",
-                "aboutDescription": "ColorPick giúp nhà thiết kế, nhà phát triển, nghệ sĩ và người sáng tạo nhanh chóng lấy màu từ hình ảnh.",
+                "aboutDescription": "Image Color Picker Online giúp nhà thiết kế, nhà phát triển, nghệ sĩ và người sáng tạo nhanh chóng lấy màu từ hình ảnh.",
                 "rights": "Bảo lưu mọi quyền.",
                 "paletteBadge": "🎨 Hơn 100 bảng màu",
                 "paletteHero1": "Khám phá những",
@@ -1117,7 +1117,7 @@
                 "navSuggestions": "پیشنهادهای رنگ",
                 "navWheel": "چرخه رنگ",
                 "navCode": "کد رنگ",
-                "brand": "ColorPick",
+                "brand": "Image Color Picker Online",
                 "navPicker": "انتخابگر رنگ",
                 "navPalettes": "کاوش پالت‌ها",
                 "badge": "✨ ابزار آنلاین رایگان رنگ",
@@ -1146,7 +1146,7 @@
                 "exploreButton": "کاوش پالت‌ها ←",
                 "aboutTitleSmall": "درباره COLORPICK",
                 "aboutTitle": "ابزاری ساده برای رنگ‌های زیبا",
-                "aboutDescription": "ColorPick به طراحان، توسعه‌دهندگان، هنرمندان و سازندگان کمک می‌کند رنگ‌ها را سریع از تصاویر استخراج کنند.",
+                "aboutDescription": "Image Color Picker Online به طراحان، توسعه‌دهندگان، هنرمندان و سازندگان کمک می‌کند رنگ‌ها را سریع از تصاویر استخراج کنند.",
                 "rights": "تمام حقوق محفوظ است.",
                 "paletteBadge": "🎨 بیش از ۱۰۰ پالت رنگ",
                 "paletteHero1": "پالت‌های رنگی زیبا را",
@@ -1169,7 +1169,7 @@
                 "navSuggestions": "Подбор цветов",
                 "navWheel": "Цветовой круг",
                 "navCode": "Код цвета",
-                "brand": "ColorPick",
+                "brand": "Image Color Picker Online",
                 "navPicker": "Пипетка цвета",
                 "navPalettes": "Исследовать палитры",
                 "badge": "✨ Бесплатный онлайн-инструмент для работы с цветом",
@@ -1198,7 +1198,7 @@
                 "exploreButton": "Исследовать палитры →",
                 "aboutTitleSmall": "О COLORPICK",
                 "aboutTitle": "Простой инструмент для красивых цветов",
-                "aboutDescription": "ColorPick помогает дизайнерам, разработчикам, художникам и создателям быстро извлекать цвета из изображений.",
+                "aboutDescription": "Image Color Picker Online помогает дизайнерам, разработчикам, художникам и создателям быстро извлекать цвета из изображений.",
                 "rights": "Все права защищены.",
                 "paletteBadge": "🎨 Более 100 цветовых палитр",
                 "paletteHero1": "Исследуйте красивые",
@@ -1221,7 +1221,7 @@
                 "navSuggestions": "Sugestões de cores",
                 "navWheel": "Roda de cores",
                 "navCode": "Código de cor",
-                "brand": "ColorPick",
+                "brand": "Image Color Picker Online",
                 "navPicker": "Seletor de cores",
                 "navPalettes": "Explorar paletas",
                 "badge": "✨ Ferramenta de cores online grátis",
@@ -1250,7 +1250,7 @@
                 "exploreButton": "Explorar paletas →",
                 "aboutTitleSmall": "SOBRE O COLORPICK",
                 "aboutTitle": "Uma ferramenta simples para cores incríveis",
-                "aboutDescription": "O ColorPick ajuda designers, desenvolvedores, artistas e criadores a extrair cores de imagens rapidamente.",
+                "aboutDescription": "O Image Color Picker Online ajuda designers, desenvolvedores, artistas e criadores a extrair cores de imagens rapidamente.",
                 "rights": "Todos os direitos reservados.",
                 "paletteBadge": "🎨 Mais de 100 paletas de cores",
                 "paletteHero1": "Explore lindas",
@@ -1273,7 +1273,7 @@
                 "navSuggestions": "색상 추천",
                 "navWheel": "컬러 휠",
                 "navCode": "색상 코드",
-                "brand": "ColorPick",
+                "brand": "Image Color Picker Online",
                 "navPicker": "컬러 피커",
                 "navPalettes": "팔레트 탐색",
                 "badge": "✨ 무료 온라인 색상 도구",
@@ -1325,7 +1325,7 @@
                 "navSuggestions": "Färgtips",
                 "navWheel": "Färghjul",
                 "navCode": "Färgkod",
-                "brand": "ColorPick",
+                "brand": "Image Color Picker Online",
                 "navPicker": "Färgväljare",
                 "navPalettes": "Utforska paletter",
                 "badge": "✨ Gratis färgverktyg online",
@@ -1354,7 +1354,7 @@
                 "exploreButton": "Utforska paletter →",
                 "aboutTitleSmall": "OM COLORPICK",
                 "aboutTitle": "Ett enkelt verktyg för vackra färger",
-                "aboutDescription": "ColorPick hjälper designers, utvecklare, konstnärer och kreatörer att snabbt hämta färger från bilder.",
+                "aboutDescription": "Image Color Picker Online hjälper designers, utvecklare, konstnärer och kreatörer att snabbt hämta färger från bilder.",
                 "rights": "Med ensamrätt.",
                 "paletteBadge": "🎨 Över 100 färgpaletter",
                 "paletteHero1": "Utforska vackra",
@@ -1377,7 +1377,7 @@
                 "navSuggestions": "色彩建議",
                 "navWheel": "色輪",
                 "navCode": "色碼",
-                "brand": "ColorPick",
+                "brand": "Image Color Picker Online",
                 "navPicker": "取色器",
                 "navPalettes": "探索配色",
                 "badge": "✨ 免費線上色彩工具",
@@ -1406,7 +1406,7 @@
                 "exploreButton": "探索配色 →",
                 "aboutTitleSmall": "關於 COLORPICK",
                 "aboutTitle": "簡單好用的美麗色彩工具",
-                "aboutDescription": "ColorPick 協助設計師、開發者、藝術家與創作者快速從圖片擷取顏色。",
+                "aboutDescription": "Image Color Picker Online 協助設計師、開發者、藝術家與創作者快速從圖片擷取顏色。",
                 "rights": "版權所有。",
                 "paletteBadge": "🎨 100+ 組色彩配色",
                 "paletteHero1": "探索美麗的",
@@ -1429,7 +1429,7 @@
                 "navSuggestions": "Sugestii de culori",
                 "navWheel": "Roata culorilor",
                 "navCode": "Cod de culoare",
-                "brand": "ColorPick",
+                "brand": "Image Color Picker Online",
                 "navPicker": "Selector de culori",
                 "navPalettes": "Explorează paletele",
                 "badge": "✨ Instrument online gratuit pentru culori",
@@ -1458,7 +1458,7 @@
                 "exploreButton": "Explorează paletele →",
                 "aboutTitleSmall": "DESPRE COLORPICK",
                 "aboutTitle": "Un instrument simplu pentru culori frumoase",
-                "aboutDescription": "ColorPick ajută designerii, dezvoltatorii, artiștii și creatorii să extragă rapid culori din imagini.",
+                "aboutDescription": "Image Color Picker Online ajută designerii, dezvoltatorii, artiștii și creatorii să extragă rapid culori din imagini.",
                 "rights": "Toate drepturile rezervate.",
                 "paletteBadge": "🎨 Peste 100 de palete de culori",
                 "paletteHero1": "Explorează palete",
@@ -1481,7 +1481,7 @@
                 "navSuggestions": "Mga mungkahi sa kulay",
                 "navWheel": "Color wheel",
                 "navCode": "Color code",
-                "brand": "ColorPick",
+                "brand": "Image Color Picker Online",
                 "navPicker": "Color Picker",
                 "navPalettes": "Tuklasin ang mga palette",
                 "badge": "✨ Libreng online color tool",
@@ -1510,7 +1510,7 @@
                 "exploreButton": "Tuklasin ang mga palette →",
                 "aboutTitleSmall": "TUNGKOL SA COLORPICK",
                 "aboutTitle": "Simpleng tool para sa magagandang kulay",
-                "aboutDescription": "Tinutulungan ng ColorPick ang mga designer, developer, artist at creator na mabilis kumuha ng mga kulay mula sa larawan.",
+                "aboutDescription": "Tinutulungan ng Image Color Picker Online ang mga designer, developer, artist at creator na mabilis kumuha ng mga kulay mula sa larawan.",
                 "rights": "Nakalaan ang lahat ng karapatan.",
                 "paletteBadge": "🎨 100+ color palette",
                 "paletteHero1": "Tuklasin ang magagandang",
@@ -1533,7 +1533,7 @@
                 "navSuggestions": "Saran warna",
                 "navWheel": "Roda warna",
                 "navCode": "Kode warna",
-                "brand": "ColorPick",
+                "brand": "Image Color Picker Online",
                 "navPicker": "Pemilih warna",
                 "navPalettes": "Jelajahi palet",
                 "badge": "✨ Alat warna online gratis",
@@ -1562,7 +1562,7 @@
                 "exploreButton": "Jelajahi palet →",
                 "aboutTitleSmall": "TENTANG COLORPICK",
                 "aboutTitle": "Alat sederhana untuk warna yang indah",
-                "aboutDescription": "ColorPick membantu desainer, developer, seniman, dan kreator mengekstrak warna dari gambar dengan cepat.",
+                "aboutDescription": "Image Color Picker Online membantu desainer, developer, seniman, dan kreator mengekstrak warna dari gambar dengan cepat.",
                 "rights": "Hak cipta dilindungi.",
                 "paletteBadge": "🎨 100+ palet warna",
                 "paletteHero1": "Jelajahi",
@@ -1585,7 +1585,7 @@
                 "navSuggestions": "Sugerencias de color",
                 "navWheel": "Rueda de color",
                 "navCode": "Código de color",
-                "brand": "ColorPick",
+                "brand": "Image Color Picker Online",
                 "navPicker": "Selector de color",
                 "navPalettes": "Explorar paletas",
                 "badge": "✨ Herramienta de color en línea gratis",
@@ -1614,7 +1614,7 @@
                 "exploreButton": "Explorar paletas →",
                 "aboutTitleSmall": "ACERCA DE COLORPICK",
                 "aboutTitle": "Una herramienta sencilla para colores increíbles",
-                "aboutDescription": "ColorPick ayuda a diseñadores, desarrolladores, artistas y creadores a extraer colores de imágenes rápidamente.",
+                "aboutDescription": "Image Color Picker Online ayuda a diseñadores, desarrolladores, artistas y creadores a extraer colores de imágenes rápidamente.",
                 "rights": "Todos los derechos reservados.",
                 "paletteBadge": "🎨 Más de 100 paletas de colores",
                 "paletteHero1": "Explora hermosas",
@@ -1637,7 +1637,7 @@
                 "navSuggestions": "Renk önerileri",
                 "navWheel": "Renk çarkı",
                 "navCode": "Renk kodu",
-                "brand": "ColorPick",
+                "brand": "Image Color Picker Online",
                 "navPicker": "Renk seçici",
                 "navPalettes": "Paletleri keşfet",
                 "badge": "✨ Ücretsiz çevrimiçi renk aracı",
@@ -1666,7 +1666,7 @@
                 "exploreButton": "Paletleri keşfet →",
                 "aboutTitleSmall": "COLORPICK HAKKINDA",
                 "aboutTitle": "Güzel renkler için basit bir araç",
-                "aboutDescription": "ColorPick; tasarımcıların, geliştiricilerin, sanatçıların ve içerik üreticilerinin görsellerden hızlıca renk çıkarmasına yardımcı olur.",
+                "aboutDescription": "Image Color Picker Online; tasarımcıların, geliştiricilerin, sanatçıların ve içerik üreticilerinin görsellerden hızlıca renk çıkarmasına yardımcı olur.",
                 "rights": "Tüm hakları saklıdır.",
                 "paletteBadge": "🎨 100+ renk paleti",
                 "paletteHero1": "Güzel renk",
@@ -1850,46 +1850,46 @@
         const path = window.location.pathname.toLowerCase();
         const titles = {
             en: {
-                index: "ColorPick - Image Color Picker",
-                palettes: "Explore Color Palettes - ColorPick",
-                suggestions: "Color Suggestions - ColorPick",
-                wheel: "Color Wheel - ColorPick",
-                code: "Color Information - ColorPick"
+                index: "Image Color Picker Online - Image Color Picker",
+                palettes: "Explore Color Palettes - Image Color Picker Online",
+                suggestions: "Color Suggestions - Image Color Picker Online",
+                wheel: "Color Wheel - Image Color Picker Online",
+                code: "Color Information - Image Color Picker Online"
             },
             hi: {
-                index: "ColorPick - इमेज कलर पिकर",
-                palettes: "कलर पैलेट्स देखें - ColorPick",
-                suggestions: "कलर सुझाव - ColorPick",
-                wheel: "कलर व्हील - ColorPick",
-                code: "कलर जानकारी - ColorPick"
+                index: "Image Color Picker Online - इमेज कलर पिकर",
+                palettes: "कलर पैलेट्स देखें - Image Color Picker Online",
+                suggestions: "कलर सुझाव - Image Color Picker Online",
+                wheel: "कलर व्हील - Image Color Picker Online",
+                code: "कलर जानकारी - Image Color Picker Online"
             },
             es: {
-                index: "ColorPick - Selector de color de imagen",
-                palettes: "Explorar paletas - ColorPick",
-                suggestions: "Sugerencias de color - ColorPick",
-                wheel: "Rueda de color - ColorPick",
-                code: "Información de color - ColorPick"
+                index: "Image Color Picker Online - Selector de color de imagen",
+                palettes: "Explorar paletas - Image Color Picker Online",
+                suggestions: "Sugerencias de color - Image Color Picker Online",
+                wheel: "Rueda de color - Image Color Picker Online",
+                code: "Información de color - Image Color Picker Online"
             },
             fr: {
-                index: "ColorPick - Sélecteur de couleur d'image",
-                palettes: "Explorer les palettes - ColorPick",
-                suggestions: "Suggestions de couleurs - ColorPick",
-                wheel: "Roue des couleurs - ColorPick",
-                code: "Informations sur la couleur - ColorPick"
+                index: "Image Color Picker Online - Sélecteur de couleur d'image",
+                palettes: "Explorer les palettes - Image Color Picker Online",
+                suggestions: "Suggestions de couleurs - Image Color Picker Online",
+                wheel: "Roue des couleurs - Image Color Picker Online",
+                code: "Informations sur la couleur - Image Color Picker Online"
             },
             de: {
-                index: "ColorPick - Bild-Farbwähler",
-                palettes: "Farbpaletten entdecken - ColorPick",
-                suggestions: "Farbvorschläge - ColorPick",
-                wheel: "Farbrad - ColorPick",
-                code: "Farbinformationen - ColorPick"
+                index: "Image Color Picker Online - Bild-Farbwähler",
+                palettes: "Farbpaletten entdecken - Image Color Picker Online",
+                suggestions: "Farbvorschläge - Image Color Picker Online",
+                wheel: "Farbrad - Image Color Picker Online",
+                code: "Farbinformationen - Image Color Picker Online"
             },
             ja: {
-                index: "ColorPick - 画像カラーピッカー",
-                palettes: "カラーパレット - ColorPick",
-                suggestions: "カラー提案 - ColorPick",
-                wheel: "カラーホイール - ColorPick",
-                code: "カラー情報 - ColorPick"
+                index: "Image Color Picker Online - 画像カラーピッカー",
+                palettes: "カラーパレット - Image Color Picker Online",
+                suggestions: "カラー提案 - Image Color Picker Online",
+                wheel: "カラーホイール - Image Color Picker Online",
+                code: "カラー情報 - Image Color Picker Online"
             }
         };
         let page = "index";
@@ -1897,10 +1897,10 @@
         else if (path.includes("color-suggestions")) page = "suggestions";
         else if (path.includes("color-wheel")) page = "wheel";
         else if (path.includes("color-code")) page = "code";
-        else if (path.includes("about.html")) { document.title = (language === "hi" ? "ColorPick के बारे में" : language === "es" ? "Sobre ColorPick" : language === "fr" ? "À propos de ColorPick" : language === "de" ? "Über ColorPick" : language === "ja" ? "ColorPickについて" : "About ColorPick") + " - ColorPick"; return; }
-        else if (path.includes("privacy-policy.html")) { document.title = (language === "hi" ? "गोपनीयता नीति" : language === "es" ? "Política de privacidad" : language === "fr" ? "Politique de confidentialité" : language === "de" ? "Datenschutzerklärung" : language === "ja" ? "プライバシーポリシー" : "Privacy Policy") + " - ColorPick"; return; }
-        else if (path.includes("terms.html")) { document.title = (language === "hi" ? "नियम और शर्तें" : language === "es" ? "Términos y condiciones" : language === "fr" ? "Conditions générales" : language === "de" ? "Allgemeine Geschäftsbedingungen" : language === "ja" ? "利用規約" : "Terms & Conditions") + " - ColorPick"; return; }
-        else if (path.includes("contact.html")) { document.title = (language === "hi" ? "संपर्क करें" : language === "es" ? "Contacto" : language === "fr" ? "Nous contacter" : language === "de" ? "Kontakt" : language === "ja" ? "お問い合わせ" : "Contact Us") + " - ColorPick"; return; }
+        else if (path.includes("about.html")) { document.title = (language === "hi" ? "Image Color Picker Online के बारे में" : language === "es" ? "Sobre Image Color Picker Online" : language === "fr" ? "À propos de Image Color Picker Online" : language === "de" ? "Über Image Color Picker Online" : language === "ja" ? "ColorPickについて" : "About Image Color Picker Online") + " - Image Color Picker Online"; return; }
+        else if (path.includes("privacy-policy.html")) { document.title = (language === "hi" ? "गोपनीयता नीति" : language === "es" ? "Política de privacidad" : language === "fr" ? "Politique de confidentialité" : language === "de" ? "Datenschutzerklärung" : language === "ja" ? "プライバシーポリシー" : "Privacy Policy") + " - Image Color Picker Online"; return; }
+        else if (path.includes("terms.html")) { document.title = (language === "hi" ? "नियम और शर्तें" : language === "es" ? "Términos y condiciones" : language === "fr" ? "Conditions générales" : language === "de" ? "Allgemeine Geschäftsbedingungen" : language === "ja" ? "利用規約" : "Terms & Conditions") + " - Image Color Picker Online"; return; }
+        else if (path.includes("contact.html")) { document.title = (language === "hi" ? "संपर्क करें" : language === "es" ? "Contacto" : language === "fr" ? "Nous contacter" : language === "de" ? "Kontakt" : language === "ja" ? "お問い合わせ" : "Contact Us") + " - Image Color Picker Online"; return; }
         document.title = (titles[language] && titles[language][page]) || titles.en[page];
     }
 
@@ -1918,24 +1918,24 @@
        so every locale has a consistent, complete page.
     ===================================================== */
     const paletteTranslations = {
-      en:{seoTitle:'Explore Palette Ideas for Every Creative Project',quick:'Quick answers',intro:'Quick answers to common questions about ColorPick palettes.',q1:'What are color palettes used for?',a1:'A color palette groups colors that work well together for websites, interfaces, branding, illustrations and other creative projects.',q2:'Can I copy a HEX color from a palette?',a2:'Yes. Select a palette color to copy its HEX value, then use that color in your design workflow.',rights:'All rights reserved.'},
-      hi:{seoTitle:'हर रचनात्मक प्रोजेक्ट के लिए कलर पैलेट आइडिया देखें',quick:'त्वरित उत्तर',intro:'ColorPick पैलेट्स से जुड़े सामान्य सवालों के त्वरित उत्तर।',q1:'कलर पैलेट का उपयोग किस लिए किया जाता है?',a1:'कलर पैलेट उन रंगों का समूह है जो वेबसाइट, इंटरफेस, ब्रांडिंग, इलस्ट्रेशन और अन्य रचनात्मक प्रोजेक्ट में साथ अच्छे लगते हैं।',q2:'क्या मैं पैलेट से HEX रंग कॉपी कर सकता हूँ?',a2:'हाँ। पैलेट में किसी रंग को चुनें और उसका HEX मान कॉपी करें, फिर उसे अपने डिज़ाइन में उपयोग करें।',rights:'सर्वाधिकार सुरक्षित।'},
-      es:{seoTitle:'Ideas de paletas de color para cada proyecto creativo',quick:'Respuestas rápidas',intro:'Respuestas rápidas a preguntas habituales sobre las paletas de ColorPick.',q1:'¿Para qué se utilizan las paletas de colores?',a1:'Una paleta reúne colores que funcionan bien juntos en sitios web, interfaces, marcas, ilustraciones y otros proyectos creativos.',q2:'¿Puedo copiar un color HEX de una paleta?',a2:'Sí. Selecciona un color de la paleta para copiar su valor HEX y úsalo en tu flujo de diseño.',rights:'Todos los derechos reservados.'},
-      fr:{seoTitle:'Idées de palettes de couleurs pour chaque projet créatif',quick:'Réponses rapides',intro:'Réponses rapides aux questions courantes sur les palettes ColorPick.',q1:'À quoi servent les palettes de couleurs ?',a1:'Une palette regroupe des couleurs qui fonctionnent bien ensemble pour les sites web, interfaces, marques, illustrations et autres projets créatifs.',q2:'Puis-je copier une couleur HEX depuis une palette ?',a2:'Oui. Sélectionnez une couleur de la palette pour copier sa valeur HEX, puis utilisez-la dans votre travail de conception.',rights:'Tous droits réservés.'},
-      de:{seoTitle:'Palettenideen für jedes kreative Projekt',quick:'Schnelle Antworten',intro:'Schnelle Antworten auf häufige Fragen zu ColorPick-Paletten.',q1:'Wofür werden Farbpaletten verwendet?',a1:'Eine Farbpalette bündelt Farben, die für Websites, Benutzeroberflächen, Branding, Illustrationen und andere kreative Projekte gut zusammenpassen.',q2:'Kann ich einen HEX-Farbwert aus einer Palette kopieren?',a2:'Ja. Wählen Sie eine Palettenfarbe aus, um ihren HEX-Wert zu kopieren und anschließend in Ihrem Design zu verwenden.',rights:'Alle Rechte vorbehalten.'},
+      en:{seoTitle:'Explore Palette Ideas for Every Creative Project',quick:'Quick answers',intro:'Quick answers to common questions about Image Color Picker Online palettes.',q1:'What are color palettes used for?',a1:'A color palette groups colors that work well together for websites, interfaces, branding, illustrations and other creative projects.',q2:'Can I copy a HEX color from a palette?',a2:'Yes. Select a palette color to copy its HEX value, then use that color in your design workflow.',rights:'All rights reserved.'},
+      hi:{seoTitle:'हर रचनात्मक प्रोजेक्ट के लिए कलर पैलेट आइडिया देखें',quick:'त्वरित उत्तर',intro:'Image Color Picker Online पैलेट्स से जुड़े सामान्य सवालों के त्वरित उत्तर।',q1:'कलर पैलेट का उपयोग किस लिए किया जाता है?',a1:'कलर पैलेट उन रंगों का समूह है जो वेबसाइट, इंटरफेस, ब्रांडिंग, इलस्ट्रेशन और अन्य रचनात्मक प्रोजेक्ट में साथ अच्छे लगते हैं।',q2:'क्या मैं पैलेट से HEX रंग कॉपी कर सकता हूँ?',a2:'हाँ। पैलेट में किसी रंग को चुनें और उसका HEX मान कॉपी करें, फिर उसे अपने डिज़ाइन में उपयोग करें।',rights:'सर्वाधिकार सुरक्षित।'},
+      es:{seoTitle:'Ideas de paletas de color para cada proyecto creativo',quick:'Respuestas rápidas',intro:'Respuestas rápidas a preguntas habituales sobre las paletas de Image Color Picker Online.',q1:'¿Para qué se utilizan las paletas de colores?',a1:'Una paleta reúne colores que funcionan bien juntos en sitios web, interfaces, marcas, ilustraciones y otros proyectos creativos.',q2:'¿Puedo copiar un color HEX de una paleta?',a2:'Sí. Selecciona un color de la paleta para copiar su valor HEX y úsalo en tu flujo de diseño.',rights:'Todos los derechos reservados.'},
+      fr:{seoTitle:'Idées de palettes de couleurs pour chaque projet créatif',quick:'Réponses rapides',intro:'Réponses rapides aux questions courantes sur les palettes Image Color Picker Online.',q1:'À quoi servent les palettes de couleurs ?',a1:'Une palette regroupe des couleurs qui fonctionnent bien ensemble pour les sites web, interfaces, marques, illustrations et autres projets créatifs.',q2:'Puis-je copier une couleur HEX depuis une palette ?',a2:'Oui. Sélectionnez une couleur de la palette pour copier sa valeur HEX, puis utilisez-la dans votre travail de conception.',rights:'Tous droits réservés.'},
+      de:{seoTitle:'Palettenideen für jedes kreative Projekt',quick:'Schnelle Antworten',intro:'Schnelle Antworten auf häufige Fragen zu Image Color Picker Online-Paletten.',q1:'Wofür werden Farbpaletten verwendet?',a1:'Eine Farbpalette bündelt Farben, die für Websites, Benutzeroberflächen, Branding, Illustrationen und andere kreative Projekte gut zusammenpassen.',q2:'Kann ich einen HEX-Farbwert aus einer Palette kopieren?',a2:'Ja. Wählen Sie eine Palettenfarbe aus, um ihren HEX-Wert zu kopieren und anschließend in Ihrem Design zu verwenden.',rights:'Alle Rechte vorbehalten.'},
       ja:{seoTitle:'あらゆるクリエイティブプロジェクトのカラーパレットアイデア',quick:'よくある質問',intro:'ColorPickのカラーパレットに関するよくある質問への簡単な回答です。',q1:'カラーパレットは何に使いますか？',a1:'カラーパレットは、ウェブサイト、インターフェース、ブランディング、イラストなどで組み合わせやすい色をまとめたものです。',q2:'パレットからHEXカラーをコピーできますか？',a2:'はい。パレットの色を選択するとHEX値をコピーできます。その色をデザインで利用できます。',rights:'All rights reserved.'},
-      vi:{seoTitle:'Khám phá ý tưởng bảng màu cho mọi dự án sáng tạo',quick:'Câu trả lời nhanh',intro:'Giải đáp nhanh các câu hỏi thường gặp về bảng màu ColorPick.',q1:'Bảng màu được dùng để làm gì?',a1:'Bảng màu tập hợp những màu phối hợp tốt cho website, giao diện, thương hiệu, minh họa và các dự án sáng tạo khác.',q2:'Tôi có thể sao chép mã HEX từ bảng màu không?',a2:'Có. Chọn một màu trong bảng để sao chép giá trị HEX, sau đó sử dụng màu đó trong thiết kế.',rights:'Bảo lưu mọi quyền.'},
-      fa:{seoTitle:'ایده‌های پالت رنگ برای هر پروژه خلاقانه',quick:'پاسخ‌های سریع',intro:'پاسخ‌های سریع به پرسش‌های رایج درباره پالت‌های ColorPick.',q1:'پالت‌های رنگ برای چه کاری استفاده می‌شوند؟',a1:'پالت رنگ مجموعه‌ای از رنگ‌هایی است که برای وب‌سایت، رابط کاربری، برندینگ، تصویرسازی و پروژه‌های خلاقانه دیگر با هم هماهنگ هستند.',q2:'آیا می‌توانم کد HEX یک رنگ را از پالت کپی کنم؟',a2:'بله. یک رنگ از پالت انتخاب کنید تا مقدار HEX آن کپی شود و سپس از آن در طراحی خود استفاده کنید.',rights:'تمامی حقوق محفوظ است.'},
-      ru:{seoTitle:'Идеи цветовых палитр для любого творческого проекта',quick:'Короткие ответы',intro:'Короткие ответы на распространённые вопросы о палитрах ColorPick.',q1:'Для чего используются цветовые палитры?',a1:'Цветовая палитра объединяет цвета, которые хорошо сочетаются для сайтов, интерфейсов, брендинга, иллюстраций и других творческих проектов.',q2:'Можно ли скопировать HEX-код цвета из палитры?',a2:'Да. Выберите цвет в палитре, чтобы скопировать его HEX-значение, а затем используйте его в дизайне.',rights:'Все права защищены.'},
-      'pt-BR':{seoTitle:'Ideias de paletas de cores para cada projeto criativo',quick:'Respostas rápidas',intro:'Respostas rápidas para dúvidas comuns sobre as paletas do ColorPick.',q1:'Para que servem as paletas de cores?',a1:'Uma paleta reúne cores que funcionam bem juntas em sites, interfaces, marcas, ilustrações e outros projetos criativos.',q2:'Posso copiar uma cor HEX de uma paleta?',a2:'Sim. Selecione uma cor da paleta para copiar seu valor HEX e use essa cor no seu fluxo de design.',rights:'Todos os direitos reservados.'},
-      ko:{seoTitle:'모든 창의적인 프로젝트를 위한 색상 팔레트 아이디어',quick:'빠른 답변',intro:'ColorPick 팔레트에 관한 자주 묻는 질문에 대한 간단한 답변입니다.',q1:'색상 팔레트는 어디에 사용하나요?',a1:'색상 팔레트는 웹사이트, 인터페이스, 브랜딩, 일러스트레이션 및 기타 창작 프로젝트에 잘 어울리는 색상을 모아 놓은 것입니다.',q2:'팔레트에서 HEX 색상을 복사할 수 있나요?',a2:'네. 팔레트에서 색상을 선택하면 HEX 값을 복사하여 디자인에 사용할 수 있습니다.',rights:'모든 권리 보유.'},
-      sv:{seoTitle:'Idéer på färgpaletter för alla kreativa projekt',quick:'Snabba svar',intro:'Snabba svar på vanliga frågor om ColorPick-paletter.',q1:'Vad används färgpaletter till?',a1:'En färgpalett samlar färger som passar bra tillsammans för webbplatser, gränssnitt, varumärken, illustrationer och andra kreativa projekt.',q2:'Kan jag kopiera en HEX-färg från en palett?',a2:'Ja. Välj en färg i paletten för att kopiera dess HEX-värde och använd sedan färgen i ditt designarbete.',rights:'Med ensamrätt.'},
-      'zh-TW':{seoTitle:'適合各種創意專案的色彩配置靈感',quick:'快速解答',intro:'快速解答關於 ColorPick 色盤的常見問題。',q1:'色彩配置可以用來做什麼？',a1:'色盤會整理適合搭配的色彩，可用於網站、介面、品牌、插畫及其他創意專案。',q2:'可以從色盤複製 HEX 顏色嗎？',a2:'可以。選擇色盤中的顏色即可複製 HEX 數值，然後將該顏色用於設計工作。',rights:'版權所有。'},
-      ro:{seoTitle:'Idei de palete de culori pentru orice proiect creativ',quick:'Răspunsuri rapide',intro:'Răspunsuri rapide la întrebările frecvente despre paletele ColorPick.',q1:'La ce sunt folosite paletele de culori?',a1:'O paletă grupează culori care se potrivesc pentru site-uri, interfețe, branding, ilustrații și alte proiecte creative.',q2:'Pot copia o culoare HEX dintr-o paletă?',a2:'Da. Selectează o culoare din paletă pentru a-i copia valoarea HEX, apoi folosește culoarea în proiectul tău.',rights:'Toate drepturile rezervate.'},
-      fil:{seoTitle:'Mga ideya sa color palette para sa bawat malikhaing proyekto',quick:'Mga mabilis na sagot',intro:'Mabilis na sagot sa mga karaniwang tanong tungkol sa ColorPick palettes.',q1:'Para saan ginagamit ang color palettes?',a1:'Ang color palette ay nagtitipon ng mga kulay na mahusay pagsamahin para sa mga website, interface, branding, illustration at iba pang malikhaing proyekto.',q2:'Maaari ba akong kumopya ng HEX color mula sa palette?',a2:'Oo. Pumili ng kulay sa palette para makopya ang HEX value nito at gamitin ito sa iyong disenyo.',rights:'Nakalaan ang lahat ng karapatan.'},
-      id:{seoTitle:'Ide palet warna untuk setiap proyek kreatif',quick:'Jawaban cepat',intro:'Jawaban singkat untuk pertanyaan umum tentang palet ColorPick.',q1:'Untuk apa palet warna digunakan?',a1:'Palet warna mengelompokkan warna yang cocok digunakan bersama untuk situs web, antarmuka, branding, ilustrasi, dan proyek kreatif lainnya.',q2:'Bisakah saya menyalin warna HEX dari palet?',a2:'Ya. Pilih warna pada palet untuk menyalin nilai HEX, lalu gunakan warna tersebut dalam desain Anda.',rights:'Hak cipta dilindungi.'},
-      'es-MX':{seoTitle:'Ideas de paletas de colores para cada proyecto creativo',quick:'Respuestas rápidas',intro:'Respuestas rápidas a preguntas comunes sobre las paletas de ColorPick.',q1:'¿Para qué se usan las paletas de colores?',a1:'Una paleta reúne colores que combinan bien para sitios web, interfaces, marcas, ilustraciones y otros proyectos creativos.',q2:'¿Puedo copiar un color HEX de una paleta?',a2:'Sí. Selecciona un color de la paleta para copiar su valor HEX y úsalo en tu flujo de diseño.',rights:'Todos los derechos reservados.'},
-      tr:{seoTitle:'Her yaratıcı proje için renk paleti fikirleri',quick:'Hızlı yanıtlar',intro:'ColorPick paletleri hakkında sık sorulan sorulara hızlı yanıtlar.',q1:'Renk paletleri ne için kullanılır?',a1:'Renk paleti; web siteleri, arayüzler, markalar, illüstrasyonlar ve diğer yaratıcı projeler için birlikte uyumlu renkleri bir araya getirir.',q2:'Bir paletten HEX rengini kopyalayabilir miyim?',a2:'Evet. Paletten bir renk seçerek HEX değerini kopyalayabilir ve tasarımınızda kullanabilirsiniz.',rights:'Tüm hakları saklıdır.'}
+      vi:{seoTitle:'Khám phá ý tưởng bảng màu cho mọi dự án sáng tạo',quick:'Câu trả lời nhanh',intro:'Giải đáp nhanh các câu hỏi thường gặp về bảng màu Image Color Picker Online.',q1:'Bảng màu được dùng để làm gì?',a1:'Bảng màu tập hợp những màu phối hợp tốt cho website, giao diện, thương hiệu, minh họa và các dự án sáng tạo khác.',q2:'Tôi có thể sao chép mã HEX từ bảng màu không?',a2:'Có. Chọn một màu trong bảng để sao chép giá trị HEX, sau đó sử dụng màu đó trong thiết kế.',rights:'Bảo lưu mọi quyền.'},
+      fa:{seoTitle:'ایده‌های پالت رنگ برای هر پروژه خلاقانه',quick:'پاسخ‌های سریع',intro:'پاسخ‌های سریع به پرسش‌های رایج درباره پالت‌های Image Color Picker Online.',q1:'پالت‌های رنگ برای چه کاری استفاده می‌شوند؟',a1:'پالت رنگ مجموعه‌ای از رنگ‌هایی است که برای وب‌سایت، رابط کاربری، برندینگ، تصویرسازی و پروژه‌های خلاقانه دیگر با هم هماهنگ هستند.',q2:'آیا می‌توانم کد HEX یک رنگ را از پالت کپی کنم؟',a2:'بله. یک رنگ از پالت انتخاب کنید تا مقدار HEX آن کپی شود و سپس از آن در طراحی خود استفاده کنید.',rights:'تمامی حقوق محفوظ است.'},
+      ru:{seoTitle:'Идеи цветовых палитр для любого творческого проекта',quick:'Короткие ответы',intro:'Короткие ответы на распространённые вопросы о палитрах Image Color Picker Online.',q1:'Для чего используются цветовые палитры?',a1:'Цветовая палитра объединяет цвета, которые хорошо сочетаются для сайтов, интерфейсов, брендинга, иллюстраций и других творческих проектов.',q2:'Можно ли скопировать HEX-код цвета из палитры?',a2:'Да. Выберите цвет в палитре, чтобы скопировать его HEX-значение, а затем используйте его в дизайне.',rights:'Все права защищены.'},
+      'pt-BR':{seoTitle:'Ideias de paletas de cores para cada projeto criativo',quick:'Respostas rápidas',intro:'Respostas rápidas para dúvidas comuns sobre as paletas do Image Color Picker Online.',q1:'Para que servem as paletas de cores?',a1:'Uma paleta reúne cores que funcionam bem juntas em sites, interfaces, marcas, ilustrações e outros projetos criativos.',q2:'Posso copiar uma cor HEX de uma paleta?',a2:'Sim. Selecione uma cor da paleta para copiar seu valor HEX e use essa cor no seu fluxo de design.',rights:'Todos os direitos reservados.'},
+      ko:{seoTitle:'모든 창의적인 프로젝트를 위한 색상 팔레트 아이디어',quick:'빠른 답변',intro:'Image Color Picker Online 팔레트에 관한 자주 묻는 질문에 대한 간단한 답변입니다.',q1:'색상 팔레트는 어디에 사용하나요?',a1:'색상 팔레트는 웹사이트, 인터페이스, 브랜딩, 일러스트레이션 및 기타 창작 프로젝트에 잘 어울리는 색상을 모아 놓은 것입니다.',q2:'팔레트에서 HEX 색상을 복사할 수 있나요?',a2:'네. 팔레트에서 색상을 선택하면 HEX 값을 복사하여 디자인에 사용할 수 있습니다.',rights:'모든 권리 보유.'},
+      sv:{seoTitle:'Idéer på färgpaletter för alla kreativa projekt',quick:'Snabba svar',intro:'Snabba svar på vanliga frågor om Image Color Picker Online-paletter.',q1:'Vad används färgpaletter till?',a1:'En färgpalett samlar färger som passar bra tillsammans för webbplatser, gränssnitt, varumärken, illustrationer och andra kreativa projekt.',q2:'Kan jag kopiera en HEX-färg från en palett?',a2:'Ja. Välj en färg i paletten för att kopiera dess HEX-värde och använd sedan färgen i ditt designarbete.',rights:'Med ensamrätt.'},
+      'zh-TW':{seoTitle:'適合各種創意專案的色彩配置靈感',quick:'快速解答',intro:'快速解答關於 Image Color Picker Online 色盤的常見問題。',q1:'色彩配置可以用來做什麼？',a1:'色盤會整理適合搭配的色彩，可用於網站、介面、品牌、插畫及其他創意專案。',q2:'可以從色盤複製 HEX 顏色嗎？',a2:'可以。選擇色盤中的顏色即可複製 HEX 數值，然後將該顏色用於設計工作。',rights:'版權所有。'},
+      ro:{seoTitle:'Idei de palete de culori pentru orice proiect creativ',quick:'Răspunsuri rapide',intro:'Răspunsuri rapide la întrebările frecvente despre paletele Image Color Picker Online.',q1:'La ce sunt folosite paletele de culori?',a1:'O paletă grupează culori care se potrivesc pentru site-uri, interfețe, branding, ilustrații și alte proiecte creative.',q2:'Pot copia o culoare HEX dintr-o paletă?',a2:'Da. Selectează o culoare din paletă pentru a-i copia valoarea HEX, apoi folosește culoarea în proiectul tău.',rights:'Toate drepturile rezervate.'},
+      fil:{seoTitle:'Mga ideya sa color palette para sa bawat malikhaing proyekto',quick:'Mga mabilis na sagot',intro:'Mabilis na sagot sa mga karaniwang tanong tungkol sa Image Color Picker Online palettes.',q1:'Para saan ginagamit ang color palettes?',a1:'Ang color palette ay nagtitipon ng mga kulay na mahusay pagsamahin para sa mga website, interface, branding, illustration at iba pang malikhaing proyekto.',q2:'Maaari ba akong kumopya ng HEX color mula sa palette?',a2:'Oo. Pumili ng kulay sa palette para makopya ang HEX value nito at gamitin ito sa iyong disenyo.',rights:'Nakalaan ang lahat ng karapatan.'},
+      id:{seoTitle:'Ide palet warna untuk setiap proyek kreatif',quick:'Jawaban cepat',intro:'Jawaban singkat untuk pertanyaan umum tentang palet Image Color Picker Online.',q1:'Untuk apa palet warna digunakan?',a1:'Palet warna mengelompokkan warna yang cocok digunakan bersama untuk situs web, antarmuka, branding, ilustrasi, dan proyek kreatif lainnya.',q2:'Bisakah saya menyalin warna HEX dari palet?',a2:'Ya. Pilih warna pada palet untuk menyalin nilai HEX, lalu gunakan warna tersebut dalam desain Anda.',rights:'Hak cipta dilindungi.'},
+      'es-MX':{seoTitle:'Ideas de paletas de colores para cada proyecto creativo',quick:'Respuestas rápidas',intro:'Respuestas rápidas a preguntas comunes sobre las paletas de Image Color Picker Online.',q1:'¿Para qué se usan las paletas de colores?',a1:'Una paleta reúne colores que combinan bien para sitios web, interfaces, marcas, ilustraciones y otros proyectos creativos.',q2:'¿Puedo copiar un color HEX de una paleta?',a2:'Sí. Selecciona un color de la paleta para copiar su valor HEX y úsalo en tu flujo de diseño.',rights:'Todos los derechos reservados.'},
+      tr:{seoTitle:'Her yaratıcı proje için renk paleti fikirleri',quick:'Hızlı yanıtlar',intro:'Image Color Picker Online paletleri hakkında sık sorulan sorulara hızlı yanıtlar.',q1:'Renk paletleri ne için kullanılır?',a1:'Renk paleti; web siteleri, arayüzler, markalar, illüstrasyonlar ve diğer yaratıcı projeler için birlikte uyumlu renkleri bir araya getirir.',q2:'Bir paletten HEX rengini kopyalayabilir miyim?',a2:'Evet. Paletten bir renk seçerek HEX değerini kopyalayabilir ve tasarımınızda kullanabilirsiniz.',rights:'Tüm hakları saklıdır.'}
     };
 
     const paletteWorkflowTranslations = {
@@ -1967,7 +1967,7 @@
         "navWheel": "Color Wheel",
         "suggestionsBadge": "🎨 COLOR COMBINATION TOOL",
         "suggestionsTitle": "Find 3 Colors That Work Together.",
-        "suggestionsDesc": "Paste a HEX color code and ColorPick will generate three visually compatible colors with strong contrast for websites, UI, branding and design.",
+        "suggestionsDesc": "Paste a HEX color code and Image Color Picker Online will generate three visually compatible colors with strong contrast for websites, UI, branding and design.",
         "enterColor": "Enter your color code",
         "generate": "Generate Colors",
         "supported": "Supported: HEX (#RGB or #RRGGBB), RGB and HSL.",
@@ -2013,7 +2013,7 @@
         "navWheel": "कलर व्हील",
         "suggestionsBadge": "🎨 कलर कॉम्बिनेशन टूल",
         "suggestionsTitle": "ऐसे 3 रंग खोजें जो साथ में अच्छे लगें।",
-        "suggestionsDesc": "HEX रंग कोड डालें और ColorPick वेबसाइट, UI, ब्रांडिंग और डिज़ाइन के लिए अच्छे कॉन्ट्रास्ट वाले तीन रंग बनाएगा।",
+        "suggestionsDesc": "HEX रंग कोड डालें और Image Color Picker Online वेबसाइट, UI, ब्रांडिंग और डिज़ाइन के लिए अच्छे कॉन्ट्रास्ट वाले तीन रंग बनाएगा।",
         "enterColor": "अपना रंग कोड डालें",
         "generate": "रंग बनाएं",
         "supported": "समर्थित: HEX (#RGB या #RRGGBB), RGB और HSL।",
@@ -2059,7 +2059,7 @@
         "navWheel": "Rueda de color",
         "suggestionsBadge": "🎨 HERRAMIENTA DE COMBINACIÓN DE COLORES",
         "suggestionsTitle": "Encuentra 3 colores que funcionen juntos.",
-        "suggestionsDesc": "Introduce un código HEX y ColorPick generará tres colores visualmente compatibles con buen contraste para sitios web, UI, branding y diseño.",
+        "suggestionsDesc": "Introduce un código HEX y Image Color Picker Online generará tres colores visualmente compatibles con buen contraste para sitios web, UI, branding y diseño.",
         "enterColor": "Introduce tu código de color",
         "generate": "Generar colores",
         "supported": "Compatible: HEX (#RGB o #RRGGBB), RGB y HSL.",
@@ -2105,7 +2105,7 @@
         "navWheel": "Roue des couleurs",
         "suggestionsBadge": "🎨 OUTIL DE COMBINAISON DE COULEURS",
         "suggestionsTitle": "Trouvez 3 couleurs qui vont ensemble.",
-        "suggestionsDesc": "Entrez un code HEX et ColorPick générera trois couleurs compatibles avec un contraste adapté aux sites web, à l’UI, au branding et au design.",
+        "suggestionsDesc": "Entrez un code HEX et Image Color Picker Online générera trois couleurs compatibles avec un contraste adapté aux sites web, à l’UI, au branding et au design.",
         "enterColor": "Entrez votre code couleur",
         "generate": "Générer les couleurs",
         "supported": "Pris en charge : HEX (#RGB ou #RRGGBB), RGB et HSL.",
@@ -2151,7 +2151,7 @@
         "navWheel": "Farbrad",
         "suggestionsBadge": "🎨 FARBKOMBINATIONSTOOL",
         "suggestionsTitle": "Finde 3 Farben, die zusammenpassen.",
-        "suggestionsDesc": "Gib einen HEX-Farbcode ein und ColorPick erstellt drei visuell passende Farben mit starkem Kontrast für Websites, UI, Branding und Design.",
+        "suggestionsDesc": "Gib einen HEX-Farbcode ein und Image Color Picker Online erstellt drei visuell passende Farben mit starkem Kontrast für Websites, UI, Branding und Design.",
         "enterColor": "Farbcode eingeben",
         "generate": "Farben erzeugen",
         "supported": "Unterstützt: HEX (#RGB oder #RRGGBB), RGB und HSL.",
@@ -2243,7 +2243,7 @@
         "navWheel": "Bánh xe màu",
         "suggestionsBadge": "🎨 CÔNG CỤ KẾT HỢP MÀU",
         "suggestionsTitle": "Tìm 3 màu kết hợp hài hòa.",
-        "suggestionsDesc": "Nhập mã màu HEX và ColorPick sẽ tạo ba màu tương thích về mặt thị giác với độ tương phản tốt cho website, giao diện, thương hiệu và thiết kế.",
+        "suggestionsDesc": "Nhập mã màu HEX và Image Color Picker Online sẽ tạo ba màu tương thích về mặt thị giác với độ tương phản tốt cho website, giao diện, thương hiệu và thiết kế.",
         "enterColor": "Nhập mã màu",
         "generate": "Tạo màu",
         "supported": "Hỗ trợ: HEX (#RGB hoặc #RRGGBB), RGB và HSL.",
@@ -2289,7 +2289,7 @@
         "navWheel": "چرخ رنگ",
         "suggestionsBadge": "🎨 ابزار ترکیب رنگ",
         "suggestionsTitle": "۳ رنگ هماهنگ پیدا کنید.",
-        "suggestionsDesc": "کد HEX را وارد کنید تا ColorPick سه رنگ سازگار با کنتراست مناسب برای وب‌سایت، رابط کاربری، برند و طراحی ایجاد کند.",
+        "suggestionsDesc": "کد HEX را وارد کنید تا Image Color Picker Online سه رنگ سازگار با کنتراست مناسب برای وب‌سایت، رابط کاربری، برند و طراحی ایجاد کند.",
         "enterColor": "کد رنگ خود را وارد کنید",
         "generate": "ایجاد رنگ‌ها",
         "supported": "پشتیبانی: HEX (#RGB یا #RRGGBB)، RGB و HSL.",
@@ -2335,7 +2335,7 @@
         "navWheel": "Цветовое колесо",
         "suggestionsBadge": "🎨 ИНСТРУМЕНТ СОЧЕТАНИЯ ЦВЕТОВ",
         "suggestionsTitle": "Найдите 3 сочетающихся цвета.",
-        "suggestionsDesc": "Введите HEX-код, и ColorPick создаст три визуально совместимых цвета с хорошим контрастом для сайтов, интерфейсов, брендинга и дизайна.",
+        "suggestionsDesc": "Введите HEX-код, и Image Color Picker Online создаст три визуально совместимых цвета с хорошим контрастом для сайтов, интерфейсов, брендинга и дизайна.",
         "enterColor": "Введите код цвета",
         "generate": "Создать цвета",
         "supported": "Поддерживаются: HEX (#RGB или #RRGGBB), RGB и HSL.",
@@ -2381,7 +2381,7 @@
         "navWheel": "Roda de cores",
         "suggestionsBadge": "🎨 FERRAMENTA DE COMBINAÇÃO DE CORES",
         "suggestionsTitle": "Encontre 3 cores que combinam.",
-        "suggestionsDesc": "Cole um código HEX e o ColorPick criará três cores visualmente compatíveis, com bom contraste para sites, interfaces, marcas e design.",
+        "suggestionsDesc": "Cole um código HEX e o Image Color Picker Online criará três cores visualmente compatíveis, com bom contraste para sites, interfaces, marcas e design.",
         "enterColor": "Digite seu código de cor",
         "generate": "Gerar cores",
         "supported": "Compatível com: HEX (#RGB ou #RRGGBB), RGB e HSL.",
@@ -2473,7 +2473,7 @@
         "navWheel": "Färghjul",
         "suggestionsBadge": "🎨 VERKTYG FÖR FÄRGKOMBINATIONER",
         "suggestionsTitle": "Hitta 3 färger som passar ihop.",
-        "suggestionsDesc": "Klistra in en HEX-kod så skapar ColorPick tre visuellt kompatibla färger med tydlig kontrast för webbplatser, gränssnitt, varumärken och design.",
+        "suggestionsDesc": "Klistra in en HEX-kod så skapar Image Color Picker Online tre visuellt kompatibla färger med tydlig kontrast för webbplatser, gränssnitt, varumärken och design.",
         "enterColor": "Ange din färgkod",
         "generate": "Skapa färger",
         "supported": "Stöds: HEX (#RGB eller #RRGGBB), RGB och HSL.",
@@ -2519,7 +2519,7 @@
         "navWheel": "色輪",
         "suggestionsBadge": "🎨 色彩搭配工具",
         "suggestionsTitle": "找出 3 個適合搭配的顏色。",
-        "suggestionsDesc": "貼上 HEX 色碼，ColorPick 會為網站、介面、品牌與設計產生三個視覺上協調且具有良好對比的顏色。",
+        "suggestionsDesc": "貼上 HEX 色碼，Image Color Picker Online 會為網站、介面、品牌與設計產生三個視覺上協調且具有良好對比的顏色。",
         "enterColor": "輸入色碼",
         "generate": "產生顏色",
         "supported": "支援：HEX (#RGB 或 #RRGGBB)、RGB、HSL。",
@@ -2565,7 +2565,7 @@
         "navWheel": "Roata culorilor",
         "suggestionsBadge": "🎨 INSTRUMENT DE COMBINARE A CULORILOR",
         "suggestionsTitle": "Găsește 3 culori care se potrivesc.",
-        "suggestionsDesc": "Introdu un cod HEX, iar ColorPick va genera trei culori compatibile vizual, cu un contrast bun pentru site-uri, interfețe, branding și design.",
+        "suggestionsDesc": "Introdu un cod HEX, iar Image Color Picker Online va genera trei culori compatibile vizual, cu un contrast bun pentru site-uri, interfețe, branding și design.",
         "enterColor": "Introdu codul culorii",
         "generate": "Generează culori",
         "supported": "Acceptat: HEX (#RGB sau #RRGGBB), RGB și HSL.",
@@ -2611,7 +2611,7 @@
         "navWheel": "Color wheel",
         "suggestionsBadge": "🎨 TOOL PARA SA PAGHAHALO NG KULAY",
         "suggestionsTitle": "Maghanap ng 3 kulay na magkakasundo.",
-        "suggestionsDesc": "Maglagay ng HEX color code at bubuo ang ColorPick ng tatlong kulay na bagay sa isa’t isa at may magandang contrast para sa website, UI, branding at disenyo.",
+        "suggestionsDesc": "Maglagay ng HEX color code at bubuo ang Image Color Picker Online ng tatlong kulay na bagay sa isa’t isa at may magandang contrast para sa website, UI, branding at disenyo.",
         "enterColor": "Ilagay ang color code",
         "generate": "Bumuo ng mga kulay",
         "supported": "Sinusuportahan: HEX (#RGB o #RRGGBB), RGB at HSL.",
@@ -2657,7 +2657,7 @@
         "navWheel": "Roda warna",
         "suggestionsBadge": "🎨 ALAT KOMBINASI WARNA",
         "suggestionsTitle": "Temukan 3 warna yang serasi.",
-        "suggestionsDesc": "Tempelkan kode HEX dan ColorPick akan membuat tiga warna yang serasi secara visual dengan kontras kuat untuk situs web, UI, branding, dan desain.",
+        "suggestionsDesc": "Tempelkan kode HEX dan Image Color Picker Online akan membuat tiga warna yang serasi secara visual dengan kontras kuat untuk situs web, UI, branding, dan desain.",
         "enterColor": "Masukkan kode warna",
         "generate": "Buat warna",
         "supported": "Didukung: HEX (#RGB atau #RRGGBB), RGB, dan HSL.",
@@ -2703,7 +2703,7 @@
         "navWheel": "Rueda de color",
         "suggestionsBadge": "🎨 HERRAMIENTA DE COMBINACIÓN DE COLORES",
         "suggestionsTitle": "Encuentra 3 colores que combinen.",
-        "suggestionsDesc": "Pega un código HEX y ColorPick generará tres colores visualmente compatibles con buen contraste para sitios web, interfaces, marcas y diseño.",
+        "suggestionsDesc": "Pega un código HEX y Image Color Picker Online generará tres colores visualmente compatibles con buen contraste para sitios web, interfaces, marcas y diseño.",
         "enterColor": "Ingresa tu código de color",
         "generate": "Generar colores",
         "supported": "Compatible con: HEX (#RGB o #RRGGBB), RGB y HSL.",
@@ -2749,7 +2749,7 @@
         "navWheel": "Renk çarkı",
         "suggestionsBadge": "🎨 RENK KOMBİNASYONU ARACI",
         "suggestionsTitle": "Birbiriyle uyumlu 3 renk bulun.",
-        "suggestionsDesc": "Bir HEX kodu girin; ColorPick web siteleri, arayüzler, markalar ve tasarım için güçlü kontrastlı üç uyumlu renk oluştursun.",
+        "suggestionsDesc": "Bir HEX kodu girin; Image Color Picker Online web siteleri, arayüzler, markalar ve tasarım için güçlü kontrastlı üç uyumlu renk oluştursun.",
         "enterColor": "Renk kodunuzu girin",
         "generate": "Renkleri oluştur",
         "supported": "Desteklenir: HEX (#RGB veya #RRGGBB), RGB ve HSL.",
@@ -2797,34 +2797,34 @@
     ===================================================== */
     const legalTranslations = {
       en: {
-        about:{badge:'🎨 About ColorPick',title:'About ColorPick',desc:'Simple browser-based color tools for discovering, understanding and using colors with confidence.',h:['Our purpose','What we build','Designed for practical work','Browser-first experience','Our approach to improvement','Independent use','Get in touch']},
-        privacy:{badge:'Privacy Policy',title:'Privacy Policy',desc:'A clear overview of the information ColorPick may process when you use the website.',h:['Effective date','Information processed in your browser','Images and color picking','Contact information','Cookies and similar technologies','Third-party services','Data retention and security','Your choices','Changes to this policy','Contact']},
-        terms:{badge:'Terms & Conditions',title:'Terms & Conditions',desc:'Rules and guidelines for using ColorPick and its browser-based color tools.',h:['Acceptance of these terms','The service','Color information','Acceptable use','Intellectual property','Your content','Availability','No professional advice','Limitation of liability','Changes','Contact']},
-        contact:{badge:'Contact Us',title:'Contact Us',desc:'Have a question, found a bug, or have an idea that could make ColorPick better? Get in touch.',h:['We would like to hear from you','Email','What to include in a bug report','Feature requests','Accessibility feedback','Business and collaboration','Response expectations','Related pages']}
+        about:{badge:'🎨 About Image Color Picker Online',title:'About Image Color Picker Online',desc:'Simple browser-based color tools for discovering, understanding and using colors with confidence.',h:['Our purpose','What we build','Designed for practical work','Browser-first experience','Our approach to improvement','Independent use','Get in touch']},
+        privacy:{badge:'Privacy Policy',title:'Privacy Policy',desc:'A clear overview of the information Image Color Picker Online may process when you use the website.',h:['Effective date','Information processed in your browser','Images and color picking','Contact information','Cookies and similar technologies','Third-party services','Data retention and security','Your choices','Changes to this policy','Contact']},
+        terms:{badge:'Terms & Conditions',title:'Terms & Conditions',desc:'Rules and guidelines for using Image Color Picker Online and its browser-based color tools.',h:['Acceptance of these terms','The service','Color information','Acceptable use','Intellectual property','Your content','Availability','No professional advice','Limitation of liability','Changes','Contact']},
+        contact:{badge:'Contact Us',title:'Contact Us',desc:'Have a question, found a bug, or have an idea that could make Image Color Picker Online better? Get in touch.',h:['We would like to hear from you','Email','What to include in a bug report','Feature requests','Accessibility feedback','Business and collaboration','Response expectations','Related pages']}
       },
       hi: {
-        about:{badge:'🎨 ColorPick के बारे में',title:'ColorPick के बारे में',desc:'रंगों को खोजने, समझने और आत्मविश्वास से उपयोग करने के लिए सरल ब्राउज़र-आधारित रंग टूल।',h:['हमारा उद्देश्य','हम क्या बनाते हैं','व्यावहारिक काम के लिए डिज़ाइन','ब्राउज़र-आधारित अनुभव','हमारा सुधार दृष्टिकोण','सामान्य उपयोग','संपर्क करें']},
-        privacy:{badge:'गोपनीयता नीति',title:'गोपनीयता नीति',desc:'वेबसाइट का उपयोग करते समय ColorPick द्वारा संसाधित की जा सकने वाली जानकारी का स्पष्ट विवरण।',h:['प्रभावी तिथि','आपके ब्राउज़र में संसाधित जानकारी','इमेज और कलर पिकिंग','संपर्क जानकारी','कुकीज़ और समान तकनीकें','तृतीय-पक्ष सेवाएँ','डेटा संग्रह और सुरक्षा','आपके विकल्प','इस नीति में बदलाव','संपर्क']},
-        terms:{badge:'नियम और शर्तें',title:'नियम और शर्तें',desc:'ColorPick और इसके ब्राउज़र-आधारित रंग टूल का उपयोग करने के नियम और दिशानिर्देश।',h:['इन शर्तों की स्वीकृति','सेवा','रंग जानकारी','स्वीकार्य उपयोग','बौद्धिक संपदा','आपकी सामग्री','उपलब्धता','पेशेवर सलाह नहीं','दायित्व की सीमा','बदलाव','संपर्क']},
-        contact:{badge:'संपर्क करें',title:'संपर्क करें',desc:'कोई सवाल है, बग मिला है या ColorPick को बेहतर बनाने का विचार है? हमसे संपर्क करें।',h:['हम आपसे सुनना चाहते हैं','ईमेल','बग रिपोर्ट में क्या शामिल करें','फीचर अनुरोध','एक्सेसिबिलिटी फीडबैक','व्यवसाय और सहयोग','उत्तर की अपेक्षाएँ','संबंधित पेज']}
+        about:{badge:'🎨 Image Color Picker Online के बारे में',title:'Image Color Picker Online के बारे में',desc:'रंगों को खोजने, समझने और आत्मविश्वास से उपयोग करने के लिए सरल ब्राउज़र-आधारित रंग टूल।',h:['हमारा उद्देश्य','हम क्या बनाते हैं','व्यावहारिक काम के लिए डिज़ाइन','ब्राउज़र-आधारित अनुभव','हमारा सुधार दृष्टिकोण','सामान्य उपयोग','संपर्क करें']},
+        privacy:{badge:'गोपनीयता नीति',title:'गोपनीयता नीति',desc:'वेबसाइट का उपयोग करते समय Image Color Picker Online द्वारा संसाधित की जा सकने वाली जानकारी का स्पष्ट विवरण।',h:['प्रभावी तिथि','आपके ब्राउज़र में संसाधित जानकारी','इमेज और कलर पिकिंग','संपर्क जानकारी','कुकीज़ और समान तकनीकें','तृतीय-पक्ष सेवाएँ','डेटा संग्रह और सुरक्षा','आपके विकल्प','इस नीति में बदलाव','संपर्क']},
+        terms:{badge:'नियम और शर्तें',title:'नियम और शर्तें',desc:'Image Color Picker Online और इसके ब्राउज़र-आधारित रंग टूल का उपयोग करने के नियम और दिशानिर्देश।',h:['इन शर्तों की स्वीकृति','सेवा','रंग जानकारी','स्वीकार्य उपयोग','बौद्धिक संपदा','आपकी सामग्री','उपलब्धता','पेशेवर सलाह नहीं','दायित्व की सीमा','बदलाव','संपर्क']},
+        contact:{badge:'संपर्क करें',title:'संपर्क करें',desc:'कोई सवाल है, बग मिला है या Image Color Picker Online को बेहतर बनाने का विचार है? हमसे संपर्क करें।',h:['हम आपसे सुनना चाहते हैं','ईमेल','बग रिपोर्ट में क्या शामिल करें','फीचर अनुरोध','एक्सेसिबिलिटी फीडबैक','व्यवसाय और सहयोग','उत्तर की अपेक्षाएँ','संबंधित पेज']}
       },
       es: {
-        about:{badge:'🎨 Sobre ColorPick',title:'Sobre ColorPick',desc:'Herramientas de color sencillas basadas en el navegador para descubrir, comprender y usar colores con confianza.',h:['Nuestro propósito','Lo que creamos','Diseñado para el trabajo práctico','Experiencia basada en el navegador','Nuestro enfoque de mejora','Uso general','Ponte en contacto']},
-        privacy:{badge:'Política de privacidad',title:'Política de privacidad',desc:'Una descripción clara de la información que ColorPick puede procesar cuando utilizas el sitio web.',h:['Fecha de vigencia','Información procesada en tu navegador','Imágenes y selección de color','Información de contacto','Cookies y tecnologías similares','Servicios de terceros','Conservación y seguridad de datos','Tus opciones','Cambios en esta política','Contacto']},
-        terms:{badge:'Términos y condiciones',title:'Términos y condiciones',desc:'Reglas y pautas para usar ColorPick y sus herramientas de color basadas en el navegador.',h:['Aceptación de estos términos','El servicio','Información de color','Uso aceptable','Propiedad intelectual','Tu contenido','Disponibilidad','No es asesoramiento profesional','Limitación de responsabilidad','Cambios','Contacto']},
-        contact:{badge:'Contacto',title:'Contacto',desc:'¿Tienes una pregunta, encontraste un error o tienes una idea para mejorar ColorPick? Escríbenos.',h:['Nos gustaría saber de ti','Correo electrónico','Qué incluir en un informe de errores','Solicitudes de funciones','Comentarios de accesibilidad','Negocios y colaboración','Expectativas de respuesta','Páginas relacionadas']}
+        about:{badge:'🎨 Sobre Image Color Picker Online',title:'Sobre Image Color Picker Online',desc:'Herramientas de color sencillas basadas en el navegador para descubrir, comprender y usar colores con confianza.',h:['Nuestro propósito','Lo que creamos','Diseñado para el trabajo práctico','Experiencia basada en el navegador','Nuestro enfoque de mejora','Uso general','Ponte en contacto']},
+        privacy:{badge:'Política de privacidad',title:'Política de privacidad',desc:'Una descripción clara de la información que Image Color Picker Online puede procesar cuando utilizas el sitio web.',h:['Fecha de vigencia','Información procesada en tu navegador','Imágenes y selección de color','Información de contacto','Cookies y tecnologías similares','Servicios de terceros','Conservación y seguridad de datos','Tus opciones','Cambios en esta política','Contacto']},
+        terms:{badge:'Términos y condiciones',title:'Términos y condiciones',desc:'Reglas y pautas para usar Image Color Picker Online y sus herramientas de color basadas en el navegador.',h:['Aceptación de estos términos','El servicio','Información de color','Uso aceptable','Propiedad intelectual','Tu contenido','Disponibilidad','No es asesoramiento profesional','Limitación de responsabilidad','Cambios','Contacto']},
+        contact:{badge:'Contacto',title:'Contacto',desc:'¿Tienes una pregunta, encontraste un error o tienes una idea para mejorar Image Color Picker Online? Escríbenos.',h:['Nos gustaría saber de ti','Correo electrónico','Qué incluir en un informe de errores','Solicitudes de funciones','Comentarios de accesibilidad','Negocios y colaboración','Expectativas de respuesta','Páginas relacionadas']}
       },
       fr: {
-        about:{badge:'🎨 À propos de ColorPick',title:'À propos de ColorPick',desc:'Des outils de couleur simples dans le navigateur pour découvrir, comprendre et utiliser les couleurs en toute confiance.',h:['Notre objectif','Ce que nous créons','Conçu pour un travail pratique','Expérience dans le navigateur','Notre approche d’amélioration','Utilisation générale','Nous contacter']},
-        privacy:{badge:'Politique de confidentialité',title:'Politique de confidentialité',desc:'Un aperçu clair des informations que ColorPick peut traiter lorsque vous utilisez le site.',h:['Date d’entrée en vigueur','Informations traitées dans votre navigateur','Images et sélection de couleurs','Informations de contact','Cookies et technologies similaires','Services tiers','Conservation et sécurité des données','Vos choix','Modifications de cette politique','Contact']},
-        terms:{badge:'Conditions générales',title:'Conditions générales',desc:'Règles et directives pour utiliser ColorPick et ses outils de couleur dans le navigateur.',h:['Acceptation de ces conditions','Le service','Informations sur les couleurs','Utilisation acceptable','Propriété intellectuelle','Votre contenu','Disponibilité','Aucun conseil professionnel','Limitation de responsabilité','Modifications','Contact']},
-        contact:{badge:'Nous contacter',title:'Nous contacter',desc:'Une question, un bug ou une idée pour améliorer ColorPick ? Contactez-nous.',h:['Nous aimerions vous entendre','E-mail','Que mettre dans un rapport de bug','Demandes de fonctionnalités','Retour sur l’accessibilité','Entreprise et collaboration','Délai de réponse','Pages associées']}
+        about:{badge:'🎨 À propos de Image Color Picker Online',title:'À propos de Image Color Picker Online',desc:'Des outils de couleur simples dans le navigateur pour découvrir, comprendre et utiliser les couleurs en toute confiance.',h:['Notre objectif','Ce que nous créons','Conçu pour un travail pratique','Expérience dans le navigateur','Notre approche d’amélioration','Utilisation générale','Nous contacter']},
+        privacy:{badge:'Politique de confidentialité',title:'Politique de confidentialité',desc:'Un aperçu clair des informations que Image Color Picker Online peut traiter lorsque vous utilisez le site.',h:['Date d’entrée en vigueur','Informations traitées dans votre navigateur','Images et sélection de couleurs','Informations de contact','Cookies et technologies similaires','Services tiers','Conservation et sécurité des données','Vos choix','Modifications de cette politique','Contact']},
+        terms:{badge:'Conditions générales',title:'Conditions générales',desc:'Règles et directives pour utiliser Image Color Picker Online et ses outils de couleur dans le navigateur.',h:['Acceptation de ces conditions','Le service','Informations sur les couleurs','Utilisation acceptable','Propriété intellectuelle','Votre contenu','Disponibilité','Aucun conseil professionnel','Limitation de responsabilité','Modifications','Contact']},
+        contact:{badge:'Nous contacter',title:'Nous contacter',desc:'Une question, un bug ou une idée pour améliorer Image Color Picker Online ? Contactez-nous.',h:['Nous aimerions vous entendre','E-mail','Que mettre dans un rapport de bug','Demandes de fonctionnalités','Retour sur l’accessibilité','Entreprise et collaboration','Délai de réponse','Pages associées']}
       },
       de: {
-        about:{badge:'🎨 Über ColorPick',title:'Über ColorPick',desc:'Einfache browserbasierte Farbtools zum Entdecken, Verstehen und sicheren Verwenden von Farben.',h:['Unser Zweck','Was wir entwickeln','Für praktische Arbeit entwickelt','Browserbasiertes Erlebnis','Unser Verbesserungsansatz','Allgemeine Nutzung','Kontakt aufnehmen']},
-        privacy:{badge:'Datenschutzerklärung',title:'Datenschutzerklärung',desc:'Ein klarer Überblick über Informationen, die ColorPick bei der Nutzung der Website verarbeiten kann.',h:['Gültigkeitsdatum','In Ihrem Browser verarbeitete Informationen','Bilder und Farbauswahl','Kontaktinformationen','Cookies und ähnliche Technologien','Drittanbieterdienste','Datenspeicherung und Sicherheit','Ihre Möglichkeiten','Änderungen dieser Richtlinie','Kontakt']},
-        terms:{badge:'Allgemeine Geschäftsbedingungen',title:'Allgemeine Geschäftsbedingungen',desc:'Regeln und Richtlinien für die Nutzung von ColorPick und seinen browserbasierten Farbtools.',h:['Akzeptanz dieser Bedingungen','Der Dienst','Farbinformationen','Zulässige Nutzung','Geistiges Eigentum','Ihre Inhalte','Verfügbarkeit','Keine professionelle Beratung','Haftungsbeschränkung','Änderungen','Kontakt']},
-        contact:{badge:'Kontakt',title:'Kontakt',desc:'Eine Frage, ein Fehler oder eine Idee, die ColorPick verbessern könnte? Kontaktieren Sie uns.',h:['Wir möchten von Ihnen hören','E-Mail','Was in einen Fehlerbericht gehört','Funktionswünsche','Feedback zur Barrierefreiheit','Geschäft und Zusammenarbeit','Antworterwartungen','Verwandte Seiten']}
+        about:{badge:'🎨 Über Image Color Picker Online',title:'Über Image Color Picker Online',desc:'Einfache browserbasierte Farbtools zum Entdecken, Verstehen und sicheren Verwenden von Farben.',h:['Unser Zweck','Was wir entwickeln','Für praktische Arbeit entwickelt','Browserbasiertes Erlebnis','Unser Verbesserungsansatz','Allgemeine Nutzung','Kontakt aufnehmen']},
+        privacy:{badge:'Datenschutzerklärung',title:'Datenschutzerklärung',desc:'Ein klarer Überblick über Informationen, die Image Color Picker Online bei der Nutzung der Website verarbeiten kann.',h:['Gültigkeitsdatum','In Ihrem Browser verarbeitete Informationen','Bilder und Farbauswahl','Kontaktinformationen','Cookies und ähnliche Technologien','Drittanbieterdienste','Datenspeicherung und Sicherheit','Ihre Möglichkeiten','Änderungen dieser Richtlinie','Kontakt']},
+        terms:{badge:'Allgemeine Geschäftsbedingungen',title:'Allgemeine Geschäftsbedingungen',desc:'Regeln und Richtlinien für die Nutzung von Image Color Picker Online und seinen browserbasierten Farbtools.',h:['Akzeptanz dieser Bedingungen','Der Dienst','Farbinformationen','Zulässige Nutzung','Geistiges Eigentum','Ihre Inhalte','Verfügbarkeit','Keine professionelle Beratung','Haftungsbeschränkung','Änderungen','Kontakt']},
+        contact:{badge:'Kontakt',title:'Kontakt',desc:'Eine Frage, ein Fehler oder eine Idee, die Image Color Picker Online verbessern könnte? Kontaktieren Sie uns.',h:['Wir möchten von Ihnen hören','E-Mail','Was in einen Fehlerbericht gehört','Funktionswünsche','Feedback zur Barrierefreiheit','Geschäft und Zusammenarbeit','Antworterwartungen','Verwandte Seiten']}
       },
       ja: {
         about:{badge:'🎨 ColorPickについて',title:'ColorPickについて',desc:'色を見つけ、理解し、自信を持って使うためのシンプルなブラウザベースのカラー ツールです。',h:['私たちの目的','私たちが作るもの','実用的な作業のための設計','ブラウザベースの体験','改善への取り組み','一般的な利用','お問い合わせ']},
@@ -2836,42 +2836,42 @@
 
     const WEB3FORMS_ACCESS_KEY = window.COLORPICK_WEB3FORMS_ACCESS_KEY || "YOUR_WEB3FORMS_ACCESS_KEY";
     const contactFormTranslations = {
-      en:{formTitle:'Send us your feedback',formDesc:'Use this form to ask a question, report a bug, suggest an improvement, or share feedback about ColorPick.',nameLabel:'Name',namePlaceholder:'Your name (optional)',emailLabel:'Email',emailPlaceholder:'you@example.com (optional)',typeLabel:'Feedback type',typeBug:'Bug report',typeFeature:'Feature suggestion',typeAccessibility:'Accessibility feedback',typeQuestion:'Question',typeOther:'Other feedback',messageLabel:'Your feedback',messagePlaceholder:'Tell us what you would like us to know...',submit:'Send Feedback',note:'Please do not include passwords, payment information, or other sensitive information.',tipsTitle:'Helpful feedback gets a faster response',bugTitle:'Reporting a bug',bugText:'Tell us which ColorPick page you used, what device and browser you were using, what you expected, and what happened instead.',featureTitle:'Suggesting a feature',featureText:'Describe the problem you are trying to solve and how a new feature would make the color workflow easier.',accessTitle:'Accessibility',accessText:'If a control, menu, contrast choice, or layout is difficult to use with a keyboard, screen reader, zoom, or mobile device, let us know.',sending:'Sending...',success:'Thank you for submitting your feedback!',error:'Sorry, your message could not be sent. Please try again.'},
-      hi:{formTitle:'अपना फीडबैक भेजें',formDesc:'सवाल पूछने, बग रिपोर्ट करने, सुधार सुझाने या ColorPick के बारे में फीडबैक साझा करने के लिए इस फॉर्म का उपयोग करें।',nameLabel:'नाम',namePlaceholder:'आपका नाम (वैकल्पिक)',emailLabel:'ईमेल',emailPlaceholder:'you@example.com (वैकल्पिक)',typeLabel:'फीडबैक प्रकार',typeBug:'बग रिपोर्ट',typeFeature:'फीचर सुझाव',typeAccessibility:'एक्सेसिबिलिटी फीडबैक',typeQuestion:'सवाल',typeOther:'अन्य फीडबैक',messageLabel:'आपका फीडबैक',messagePlaceholder:'हमें बताएं कि आप क्या साझा करना चाहते हैं...',submit:'फीडबैक भेजें',note:'पासवर्ड, भुगतान जानकारी या अन्य संवेदनशील जानकारी न भेजें।',tipsTitle:'स्पष्ट फीडबैक से बेहतर जवाब मिलता है',bugTitle:'बग रिपोर्ट करना',bugText:'बताएं कि आपने ColorPick का कौन सा पेज इस्तेमाल किया, कौन सा डिवाइस और ब्राउज़र था, क्या होना चाहिए था और वास्तव में क्या हुआ।',featureTitle:'फीचर सुझाएं',featureText:'बताएं कि आप किस समस्या को हल करना चाहते हैं और नया फीचर आपके काम को कैसे आसान बनाएगा।',accessTitle:'एक्सेसिबिलिटी',accessText:'अगर कोई बटन, मेनू, कंट्रास्ट या लेआउट कीबोर्ड, स्क्रीन रीडर, ज़ूम या मोबाइल पर कठिन है, तो हमें बताएं।',sending:'भेजा जा रहा है...',success:'फीडबैक भेजने के लिए धन्यवाद!',error:'माफ़ कीजिए, आपका संदेश नहीं भेजा जा सका। कृपया फिर कोशिश करें।'},
-      es:{formTitle:'Envíanos tus comentarios',formDesc:'Usa este formulario para hacer una pregunta, informar de un error, sugerir una mejora o compartir comentarios sobre ColorPick.',nameLabel:'Nombre',namePlaceholder:'Tu nombre (opcional)',emailLabel:'Correo electrónico',emailPlaceholder:'you@example.com (opcional)',typeLabel:'Tipo de comentario',typeBug:'Informe de error',typeFeature:'Sugerencia de función',typeAccessibility:'Comentarios de accesibilidad',typeQuestion:'Pregunta',typeOther:'Otros comentarios',messageLabel:'Tus comentarios',messagePlaceholder:'Cuéntanos qué te gustaría compartir...',submit:'Enviar comentarios',note:'No incluyas contraseñas, información de pago ni otros datos sensibles.',tipsTitle:'Los comentarios claros ayudan a responder mejor',bugTitle:'Informar de un error',bugText:'Indica qué página de ColorPick usabas, qué dispositivo y navegador tenías, qué esperabas y qué ocurrió.',featureTitle:'Sugerir una función',featureText:'Describe el problema que quieres resolver y cómo una nueva función haría más fácil tu flujo de trabajo.',accessTitle:'Accesibilidad',accessText:'Si un control, menú, contraste o diseño es difícil de usar con teclado, lector de pantalla, zoom o móvil, cuéntanoslo.',sending:'Enviando...',success:'¡Gracias por enviar tus comentarios!',error:'No se pudo enviar el mensaje. Inténtalo de nuevo.'},
-      fr:{formTitle:'Envoyez-nous vos commentaires',formDesc:'Utilisez ce formulaire pour poser une question, signaler un bug, suggérer une amélioration ou partager vos commentaires sur ColorPick.',nameLabel:'Nom',namePlaceholder:'Votre nom (facultatif)',emailLabel:'E-mail',emailPlaceholder:'you@example.com (facultatif)',typeLabel:'Type de commentaire',typeBug:'Signaler un bug',typeFeature:'Suggestion de fonctionnalité',typeAccessibility:'Retour sur l’accessibilité',typeQuestion:'Question',typeOther:'Autre commentaire',messageLabel:'Votre commentaire',messagePlaceholder:'Dites-nous ce que vous souhaitez partager...',submit:'Envoyer le commentaire',note:'N’incluez pas de mots de passe, d’informations de paiement ou d’autres données sensibles.',tipsTitle:'Des commentaires précis facilitent la réponse',bugTitle:'Signaler un bug',bugText:'Indiquez la page ColorPick utilisée, votre appareil et navigateur, ce que vous attendiez et ce qui s’est produit.',featureTitle:'Suggérer une fonctionnalité',featureText:'Décrivez le problème à résoudre et expliquez comment une nouvelle fonctionnalité faciliterait votre travail.',accessTitle:'Accessibilité',accessText:'Si un contrôle, un menu, un contraste ou une mise en page est difficile à utiliser au clavier, avec un lecteur d’écran, le zoom ou un mobile, dites-le-nous.',sending:'Envoi...',success:'Merci d’avoir envoyé vos commentaires !',error:'Impossible d’envoyer le message. Veuillez réessayer.'},
-      de:{formTitle:'Feedback senden',formDesc:'Nutzen Sie dieses Formular für Fragen, Fehlerberichte, Verbesserungsvorschläge oder Feedback zu ColorPick.',nameLabel:'Name',namePlaceholder:'Ihr Name (optional)',emailLabel:'E-Mail',emailPlaceholder:'you@example.com (optional)',typeLabel:'Feedback-Typ',typeBug:'Fehlerbericht',typeFeature:'Funktionsvorschlag',typeAccessibility:'Feedback zur Barrierefreiheit',typeQuestion:'Frage',typeOther:'Sonstiges',messageLabel:'Ihr Feedback',messagePlaceholder:'Teilen Sie uns mit, was Sie uns mitteilen möchten...',submit:'Feedback senden',note:'Bitte senden Sie keine Passwörter, Zahlungsdaten oder andere vertrauliche Informationen.',tipsTitle:'Klare Rückmeldungen helfen bei einer schnellen Antwort',bugTitle:'Fehler melden',bugText:'Nennen Sie die verwendete ColorPick-Seite, Gerät und Browser, das erwartete Verhalten und was tatsächlich passiert ist.',featureTitle:'Funktion vorschlagen',featureText:'Beschreiben Sie das Problem und wie eine neue Funktion Ihren Farb-Workflow verbessern würde.',accessTitle:'Barrierefreiheit',accessText:'Wenn ein Bedienelement, Menü, Kontrast oder Layout mit Tastatur, Screenreader, Zoom oder Mobilgerät schwer nutzbar ist, teilen Sie es uns mit.',sending:'Wird gesendet...',success:'Vielen Dank für Ihr Feedback!',error:'Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.'},
+      en:{formTitle:'Send us your feedback',formDesc:'Use this form to ask a question, report a bug, suggest an improvement, or share feedback about Image Color Picker Online.',nameLabel:'Name',namePlaceholder:'Your name (optional)',emailLabel:'Email',emailPlaceholder:'you@example.com (optional)',typeLabel:'Feedback type',typeBug:'Bug report',typeFeature:'Feature suggestion',typeAccessibility:'Accessibility feedback',typeQuestion:'Question',typeOther:'Other feedback',messageLabel:'Your feedback',messagePlaceholder:'Tell us what you would like us to know...',submit:'Send Feedback',note:'Please do not include passwords, payment information, or other sensitive information.',tipsTitle:'Helpful feedback gets a faster response',bugTitle:'Reporting a bug',bugText:'Tell us which Image Color Picker Online page you used, what device and browser you were using, what you expected, and what happened instead.',featureTitle:'Suggesting a feature',featureText:'Describe the problem you are trying to solve and how a new feature would make the color workflow easier.',accessTitle:'Accessibility',accessText:'If a control, menu, contrast choice, or layout is difficult to use with a keyboard, screen reader, zoom, or mobile device, let us know.',sending:'Sending...',success:'Thank you for submitting your feedback!',error:'Sorry, your message could not be sent. Please try again.'},
+      hi:{formTitle:'अपना फीडबैक भेजें',formDesc:'सवाल पूछने, बग रिपोर्ट करने, सुधार सुझाने या Image Color Picker Online के बारे में फीडबैक साझा करने के लिए इस फॉर्म का उपयोग करें।',nameLabel:'नाम',namePlaceholder:'आपका नाम (वैकल्पिक)',emailLabel:'ईमेल',emailPlaceholder:'you@example.com (वैकल्पिक)',typeLabel:'फीडबैक प्रकार',typeBug:'बग रिपोर्ट',typeFeature:'फीचर सुझाव',typeAccessibility:'एक्सेसिबिलिटी फीडबैक',typeQuestion:'सवाल',typeOther:'अन्य फीडबैक',messageLabel:'आपका फीडबैक',messagePlaceholder:'हमें बताएं कि आप क्या साझा करना चाहते हैं...',submit:'फीडबैक भेजें',note:'पासवर्ड, भुगतान जानकारी या अन्य संवेदनशील जानकारी न भेजें।',tipsTitle:'स्पष्ट फीडबैक से बेहतर जवाब मिलता है',bugTitle:'बग रिपोर्ट करना',bugText:'बताएं कि आपने Image Color Picker Online का कौन सा पेज इस्तेमाल किया, कौन सा डिवाइस और ब्राउज़र था, क्या होना चाहिए था और वास्तव में क्या हुआ।',featureTitle:'फीचर सुझाएं',featureText:'बताएं कि आप किस समस्या को हल करना चाहते हैं और नया फीचर आपके काम को कैसे आसान बनाएगा।',accessTitle:'एक्सेसिबिलिटी',accessText:'अगर कोई बटन, मेनू, कंट्रास्ट या लेआउट कीबोर्ड, स्क्रीन रीडर, ज़ूम या मोबाइल पर कठिन है, तो हमें बताएं।',sending:'भेजा जा रहा है...',success:'फीडबैक भेजने के लिए धन्यवाद!',error:'माफ़ कीजिए, आपका संदेश नहीं भेजा जा सका। कृपया फिर कोशिश करें।'},
+      es:{formTitle:'Envíanos tus comentarios',formDesc:'Usa este formulario para hacer una pregunta, informar de un error, sugerir una mejora o compartir comentarios sobre Image Color Picker Online.',nameLabel:'Nombre',namePlaceholder:'Tu nombre (opcional)',emailLabel:'Correo electrónico',emailPlaceholder:'you@example.com (opcional)',typeLabel:'Tipo de comentario',typeBug:'Informe de error',typeFeature:'Sugerencia de función',typeAccessibility:'Comentarios de accesibilidad',typeQuestion:'Pregunta',typeOther:'Otros comentarios',messageLabel:'Tus comentarios',messagePlaceholder:'Cuéntanos qué te gustaría compartir...',submit:'Enviar comentarios',note:'No incluyas contraseñas, información de pago ni otros datos sensibles.',tipsTitle:'Los comentarios claros ayudan a responder mejor',bugTitle:'Informar de un error',bugText:'Indica qué página de Image Color Picker Online usabas, qué dispositivo y navegador tenías, qué esperabas y qué ocurrió.',featureTitle:'Sugerir una función',featureText:'Describe el problema que quieres resolver y cómo una nueva función haría más fácil tu flujo de trabajo.',accessTitle:'Accesibilidad',accessText:'Si un control, menú, contraste o diseño es difícil de usar con teclado, lector de pantalla, zoom o móvil, cuéntanoslo.',sending:'Enviando...',success:'¡Gracias por enviar tus comentarios!',error:'No se pudo enviar el mensaje. Inténtalo de nuevo.'},
+      fr:{formTitle:'Envoyez-nous vos commentaires',formDesc:'Utilisez ce formulaire pour poser une question, signaler un bug, suggérer une amélioration ou partager vos commentaires sur Image Color Picker Online.',nameLabel:'Nom',namePlaceholder:'Votre nom (facultatif)',emailLabel:'E-mail',emailPlaceholder:'you@example.com (facultatif)',typeLabel:'Type de commentaire',typeBug:'Signaler un bug',typeFeature:'Suggestion de fonctionnalité',typeAccessibility:'Retour sur l’accessibilité',typeQuestion:'Question',typeOther:'Autre commentaire',messageLabel:'Votre commentaire',messagePlaceholder:'Dites-nous ce que vous souhaitez partager...',submit:'Envoyer le commentaire',note:'N’incluez pas de mots de passe, d’informations de paiement ou d’autres données sensibles.',tipsTitle:'Des commentaires précis facilitent la réponse',bugTitle:'Signaler un bug',bugText:'Indiquez la page Image Color Picker Online utilisée, votre appareil et navigateur, ce que vous attendiez et ce qui s’est produit.',featureTitle:'Suggérer une fonctionnalité',featureText:'Décrivez le problème à résoudre et expliquez comment une nouvelle fonctionnalité faciliterait votre travail.',accessTitle:'Accessibilité',accessText:'Si un contrôle, un menu, un contraste ou une mise en page est difficile à utiliser au clavier, avec un lecteur d’écran, le zoom ou un mobile, dites-le-nous.',sending:'Envoi...',success:'Merci d’avoir envoyé vos commentaires !',error:'Impossible d’envoyer le message. Veuillez réessayer.'},
+      de:{formTitle:'Feedback senden',formDesc:'Nutzen Sie dieses Formular für Fragen, Fehlerberichte, Verbesserungsvorschläge oder Feedback zu Image Color Picker Online.',nameLabel:'Name',namePlaceholder:'Ihr Name (optional)',emailLabel:'E-Mail',emailPlaceholder:'you@example.com (optional)',typeLabel:'Feedback-Typ',typeBug:'Fehlerbericht',typeFeature:'Funktionsvorschlag',typeAccessibility:'Feedback zur Barrierefreiheit',typeQuestion:'Frage',typeOther:'Sonstiges',messageLabel:'Ihr Feedback',messagePlaceholder:'Teilen Sie uns mit, was Sie uns mitteilen möchten...',submit:'Feedback senden',note:'Bitte senden Sie keine Passwörter, Zahlungsdaten oder andere vertrauliche Informationen.',tipsTitle:'Klare Rückmeldungen helfen bei einer schnellen Antwort',bugTitle:'Fehler melden',bugText:'Nennen Sie die verwendete Image Color Picker Online-Seite, Gerät und Browser, das erwartete Verhalten und was tatsächlich passiert ist.',featureTitle:'Funktion vorschlagen',featureText:'Beschreiben Sie das Problem und wie eine neue Funktion Ihren Farb-Workflow verbessern würde.',accessTitle:'Barrierefreiheit',accessText:'Wenn ein Bedienelement, Menü, Kontrast oder Layout mit Tastatur, Screenreader, Zoom oder Mobilgerät schwer nutzbar ist, teilen Sie es uns mit.',sending:'Wird gesendet...',success:'Vielen Dank für Ihr Feedback!',error:'Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.'},
       ja:{formTitle:'フィードバックを送る',formDesc:'質問、バグ報告、改善提案、ColorPickへのご意見をこのフォームからお送りください。',nameLabel:'名前',namePlaceholder:'お名前（任意）',emailLabel:'メール',emailPlaceholder:'you@example.com（任意）',typeLabel:'フィードバックの種類',typeBug:'バグ報告',typeFeature:'機能提案',typeAccessibility:'アクセシビリティ',typeQuestion:'質問',typeOther:'その他',messageLabel:'フィードバック',messagePlaceholder:'お知らせになりたい内容を入力してください...',submit:'フィードバックを送信',note:'パスワード、支払い情報、その他の機密情報は入力しないでください。',tipsTitle:'具体的なフィードバックは確認しやすくなります',bugTitle:'バグを報告する',bugText:'使用したColorPickのページ、端末とブラウザ、期待した結果、実際に起きたことを教えてください。',featureTitle:'機能を提案する',featureText:'解決したい問題と、新機能によって作業がどう楽になるかを説明してください。',accessTitle:'アクセシビリティ',accessText:'キーボード、スクリーンリーダー、ズーム、モバイル端末などで操作しにくい部分があればお知らせください。',sending:'送信中...',success:'フィードバックを送信していただきありがとうございます！',error:'メッセージを送信できませんでした。もう一度お試しください。'}
     };
     const contactFallback = contactFormTranslations.en;
     const contactOther = {
-      vi:['Gửi phản hồi','Sử dụng biểu mẫu này để đặt câu hỏi, báo lỗi, đề xuất cải tiến hoặc chia sẻ ý kiến về ColorPick.','Tên','Tên của bạn (tùy chọn)','Email','you@example.com (tùy chọn)','Loại phản hồi','Báo lỗi','Đề xuất tính năng','Phản hồi về khả năng tiếp cận','Câu hỏi','Phản hồi khác','Phản hồi của bạn','Hãy cho chúng tôi biết điều bạn muốn chia sẻ...','Gửi phản hồi','Vui lòng không gửi mật khẩu, thông tin thanh toán hoặc dữ liệu nhạy cảm khác.','Gửi...','Cảm ơn bạn đã gửi phản hồi!','Không thể gửi tin nhắn. Vui lòng thử lại.'],
-      fa:['ارسال بازخورد','برای پرسش، گزارش خطا، پیشنهاد بهبود یا ارسال نظر درباره ColorPick از این فرم استفاده کنید.','نام','نام شما (اختیاری)','ایمیل','you@example.com (اختیاری)','نوع بازخورد','گزارش خطا','پیشنهاد قابلیت','بازخورد دسترس‌پذیری','سؤال','بازخورد دیگر','بازخورد شما','پیام خود را بنویسید...','ارسال بازخورد','لطفاً رمز عبور، اطلاعات پرداخت یا اطلاعات حساس دیگر را ارسال نکنید.','در حال ارسال...','از ارسال بازخورد شما متشکریم!','ارسال پیام ممکن نشد. دوباره تلاش کنید.'],
-      ru:['Отправить отзыв','Используйте форму, чтобы задать вопрос, сообщить об ошибке, предложить улучшение или оставить отзыв о ColorPick.','Имя','Ваше имя (необязательно)','Эл. почта','you@example.com (необязательно)','Тип отзыва','Сообщение об ошибке','Предложение функции','Доступность','Вопрос','Другое','Ваш отзыв','Расскажите, что вы хотите сообщить...','Отправить отзыв','Не указывайте пароли, платёжные данные или другую конфиденциальную информацию.','Отправка...','Спасибо за ваш отзыв!','Не удалось отправить сообщение. Попробуйте ещё раз.'],
-      'pt-BR':['Envie seu feedback','Use este formulário para fazer uma pergunta, relatar um erro, sugerir uma melhoria ou enviar comentários sobre o ColorPick.','Nome','Seu nome (opcional)','E-mail','you@example.com (opcional)','Tipo de feedback','Relatório de erro','Sugestão de recurso','Acessibilidade','Pergunta','Outro feedback','Seu feedback','Conte o que você gostaria de compartilhar...','Enviar feedback','Não inclua senhas, informações de pagamento ou outros dados sensíveis.','Enviando...','Obrigado por enviar seu feedback!','Não foi possível enviar a mensagem. Tente novamente.'],
+      vi:['Gửi phản hồi','Sử dụng biểu mẫu này để đặt câu hỏi, báo lỗi, đề xuất cải tiến hoặc chia sẻ ý kiến về Image Color Picker Online.','Tên','Tên của bạn (tùy chọn)','Email','you@example.com (tùy chọn)','Loại phản hồi','Báo lỗi','Đề xuất tính năng','Phản hồi về khả năng tiếp cận','Câu hỏi','Phản hồi khác','Phản hồi của bạn','Hãy cho chúng tôi biết điều bạn muốn chia sẻ...','Gửi phản hồi','Vui lòng không gửi mật khẩu, thông tin thanh toán hoặc dữ liệu nhạy cảm khác.','Gửi...','Cảm ơn bạn đã gửi phản hồi!','Không thể gửi tin nhắn. Vui lòng thử lại.'],
+      fa:['ارسال بازخورد','برای پرسش، گزارش خطا، پیشنهاد بهبود یا ارسال نظر درباره Image Color Picker Online از این فرم استفاده کنید.','نام','نام شما (اختیاری)','ایمیل','you@example.com (اختیاری)','نوع بازخورد','گزارش خطا','پیشنهاد قابلیت','بازخورد دسترس‌پذیری','سؤال','بازخورد دیگر','بازخورد شما','پیام خود را بنویسید...','ارسال بازخورد','لطفاً رمز عبور، اطلاعات پرداخت یا اطلاعات حساس دیگر را ارسال نکنید.','در حال ارسال...','از ارسال بازخورد شما متشکریم!','ارسال پیام ممکن نشد. دوباره تلاش کنید.'],
+      ru:['Отправить отзыв','Используйте форму, чтобы задать вопрос, сообщить об ошибке, предложить улучшение или оставить отзыв о Image Color Picker Online.','Имя','Ваше имя (необязательно)','Эл. почта','you@example.com (необязательно)','Тип отзыва','Сообщение об ошибке','Предложение функции','Доступность','Вопрос','Другое','Ваш отзыв','Расскажите, что вы хотите сообщить...','Отправить отзыв','Не указывайте пароли, платёжные данные или другую конфиденциальную информацию.','Отправка...','Спасибо за ваш отзыв!','Не удалось отправить сообщение. Попробуйте ещё раз.'],
+      'pt-BR':['Envie seu feedback','Use este formulário para fazer uma pergunta, relatar um erro, sugerir uma melhoria ou enviar comentários sobre o Image Color Picker Online.','Nome','Seu nome (opcional)','E-mail','you@example.com (opcional)','Tipo de feedback','Relatório de erro','Sugestão de recurso','Acessibilidade','Pergunta','Outro feedback','Seu feedback','Conte o que você gostaria de compartilhar...','Enviar feedback','Não inclua senhas, informações de pagamento ou outros dados sensíveis.','Enviando...','Obrigado por enviar seu feedback!','Não foi possível enviar a mensagem. Tente novamente.'],
       ko:['피드백 보내기','질문, 버그 신고, 개선 제안 또는 ColorPick에 대한 의견을 이 양식으로 보내주세요.','이름','이름 (선택 사항)','이메일','you@example.com (선택 사항)','피드백 유형','버그 신고','기능 제안','접근성 의견','질문','기타 의견','피드백','알리고 싶은 내용을 입력하세요...','피드백 보내기','비밀번호, 결제 정보 또는 기타 민감한 정보를 입력하지 마세요.','전송 중...','피드백을 보내주셔서 감사합니다!','메시지를 보내지 못했습니다. 다시 시도해 주세요.'],
-      sv:['Skicka feedback','Använd formuläret för frågor, felrapporter, förbättringsförslag eller feedback om ColorPick.','Namn','Ditt namn (valfritt)','E-post','you@example.com (valfritt)','Typ av feedback','Felrapport','Funktionsförslag','Tillgänglighetsfeedback','Fråga','Övrig feedback','Din feedback','Berätta vad du vill dela med oss...','Skicka feedback','Skicka inte lösenord, betalningsuppgifter eller annan känslig information.','Skickar...','Tack för din feedback!','Meddelandet kunde inte skickas. Försök igen.'],
-      'zh-TW':['送出意見','使用此表單提問、回報錯誤、提出改進建議或分享對 ColorPick 的意見。','姓名','您的姓名（選填）','電子郵件','you@example.com（選填）','意見類型','錯誤回報','功能建議','無障礙意見','問題','其他意見','您的意見','請告訴我們您想分享的內容...','送出意見','請勿提供密碼、付款資訊或其他敏感資料。','傳送中...','感謝您提交意見！','訊息無法送出，請再試一次。'],
-      ro:['Trimite feedback','Folosește formularul pentru întrebări, raportarea erorilor, sugestii sau feedback despre ColorPick.','Nume','Numele dvs. (opțional)','E-mail','you@example.com (opțional)','Tip feedback','Raport de eroare','Sugestie de funcție','Feedback despre accesibilitate','Întrebare','Alt feedback','Feedbackul dvs.','Spuneți-ne ce doriți să transmiteți...','Trimite feedback','Nu includeți parole, informații de plată sau alte date sensibile.','Se trimite...','Vă mulțumim pentru feedback!','Mesajul nu a putut fi trimis. Încercați din nou.'],
-      fil:['Ipadala ang feedback','Gamitin ang form para magtanong, mag-ulat ng bug, magmungkahi ng pagpapabuti, o magbigay ng feedback tungkol sa ColorPick.','Pangalan','Iyong pangalan (opsyonal)','Email','you@example.com (opsyonal)','Uri ng feedback','Ulat ng bug','Mungkahi ng feature','Feedback sa accessibility','Tanong','Iba pang feedback','Iyong feedback','Sabihin sa amin kung ano ang gusto mong ibahagi...','Ipadala ang feedback','Huwag magsama ng password, impormasyon sa pagbabayad, o iba pang sensitibong impormasyon.','Ipinapadala...','Salamat sa iyong feedback!','Hindi naipadala ang mensahe. Subukan muli.'],
-      id:['Kirim masukan','Gunakan formulir ini untuk bertanya, melaporkan bug, menyarankan perbaikan, atau memberi masukan tentang ColorPick.','Nama','Nama Anda (opsional)','Email','you@example.com (opsional)','Jenis masukan','Laporan bug','Saran fitur','Masukan aksesibilitas','Pertanyaan','Masukan lainnya','Masukan Anda','Beri tahu kami apa yang ingin Anda sampaikan...','Kirim masukan','Jangan sertakan kata sandi, informasi pembayaran, atau data sensitif lainnya.','Mengirim...','Terima kasih telah mengirim masukan!','Pesan tidak dapat dikirim. Silakan coba lagi.'],
-      'es-MX':['Envíanos tus comentarios','Usa este formulario para hacer una pregunta, reportar un error, sugerir una mejora o compartir comentarios sobre ColorPick.','Nombre','Tu nombre (opcional)','Correo electrónico','you@example.com (opcional)','Tipo de comentario','Reporte de error','Sugerencia de función','Comentarios de accesibilidad','Pregunta','Otro comentario','Tus comentarios','Cuéntanos qué quieres compartir...','Enviar comentarios','No incluyas contraseñas, información de pago ni otros datos sensibles.','Enviando...','¡Gracias por enviar tus comentarios!','No se pudo enviar el mensaje. Inténtalo de nuevo.'],
-      tr:['Geri bildirim gönder','Soru sormak, hata bildirmek, iyileştirme önermek veya ColorPick hakkında görüş paylaşmak için bu formu kullanın.','Ad','Adınız (isteğe bağlı)','E-posta','you@example.com (isteğe bağlı)','Geri bildirim türü','Hata bildirimi','Özellik önerisi','Erişilebilirlik geri bildirimi','Soru','Diğer geri bildirim','Geri bildiriminiz','Paylaşmak istediğiniz şeyi yazın...','Geri bildirim gönder','Lütfen şifre, ödeme bilgileri veya diğer hassas bilgileri göndermeyin.','Gönderiliyor...','Geri bildiriminizi gönderdiğiniz için teşekkürler!','Mesaj gönderilemedi. Lütfen tekrar deneyin.']
+      sv:['Skicka feedback','Använd formuläret för frågor, felrapporter, förbättringsförslag eller feedback om Image Color Picker Online.','Namn','Ditt namn (valfritt)','E-post','you@example.com (valfritt)','Typ av feedback','Felrapport','Funktionsförslag','Tillgänglighetsfeedback','Fråga','Övrig feedback','Din feedback','Berätta vad du vill dela med oss...','Skicka feedback','Skicka inte lösenord, betalningsuppgifter eller annan känslig information.','Skickar...','Tack för din feedback!','Meddelandet kunde inte skickas. Försök igen.'],
+      'zh-TW':['送出意見','使用此表單提問、回報錯誤、提出改進建議或分享對 Image Color Picker Online 的意見。','姓名','您的姓名（選填）','電子郵件','you@example.com（選填）','意見類型','錯誤回報','功能建議','無障礙意見','問題','其他意見','您的意見','請告訴我們您想分享的內容...','送出意見','請勿提供密碼、付款資訊或其他敏感資料。','傳送中...','感謝您提交意見！','訊息無法送出，請再試一次。'],
+      ro:['Trimite feedback','Folosește formularul pentru întrebări, raportarea erorilor, sugestii sau feedback despre Image Color Picker Online.','Nume','Numele dvs. (opțional)','E-mail','you@example.com (opțional)','Tip feedback','Raport de eroare','Sugestie de funcție','Feedback despre accesibilitate','Întrebare','Alt feedback','Feedbackul dvs.','Spuneți-ne ce doriți să transmiteți...','Trimite feedback','Nu includeți parole, informații de plată sau alte date sensibile.','Se trimite...','Vă mulțumim pentru feedback!','Mesajul nu a putut fi trimis. Încercați din nou.'],
+      fil:['Ipadala ang feedback','Gamitin ang form para magtanong, mag-ulat ng bug, magmungkahi ng pagpapabuti, o magbigay ng feedback tungkol sa Image Color Picker Online.','Pangalan','Iyong pangalan (opsyonal)','Email','you@example.com (opsyonal)','Uri ng feedback','Ulat ng bug','Mungkahi ng feature','Feedback sa accessibility','Tanong','Iba pang feedback','Iyong feedback','Sabihin sa amin kung ano ang gusto mong ibahagi...','Ipadala ang feedback','Huwag magsama ng password, impormasyon sa pagbabayad, o iba pang sensitibong impormasyon.','Ipinapadala...','Salamat sa iyong feedback!','Hindi naipadala ang mensahe. Subukan muli.'],
+      id:['Kirim masukan','Gunakan formulir ini untuk bertanya, melaporkan bug, menyarankan perbaikan, atau memberi masukan tentang Image Color Picker Online.','Nama','Nama Anda (opsional)','Email','you@example.com (opsional)','Jenis masukan','Laporan bug','Saran fitur','Masukan aksesibilitas','Pertanyaan','Masukan lainnya','Masukan Anda','Beri tahu kami apa yang ingin Anda sampaikan...','Kirim masukan','Jangan sertakan kata sandi, informasi pembayaran, atau data sensitif lainnya.','Mengirim...','Terima kasih telah mengirim masukan!','Pesan tidak dapat dikirim. Silakan coba lagi.'],
+      'es-MX':['Envíanos tus comentarios','Usa este formulario para hacer una pregunta, reportar un error, sugerir una mejora o compartir comentarios sobre Image Color Picker Online.','Nombre','Tu nombre (opcional)','Correo electrónico','you@example.com (opcional)','Tipo de comentario','Reporte de error','Sugerencia de función','Comentarios de accesibilidad','Pregunta','Otro comentario','Tus comentarios','Cuéntanos qué quieres compartir...','Enviar comentarios','No incluyas contraseñas, información de pago ni otros datos sensibles.','Enviando...','¡Gracias por enviar tus comentarios!','No se pudo enviar el mensaje. Inténtalo de nuevo.'],
+      tr:['Geri bildirim gönder','Soru sormak, hata bildirmek, iyileştirme önermek veya Image Color Picker Online hakkında görüş paylaşmak için bu formu kullanın.','Ad','Adınız (isteğe bağlı)','E-posta','you@example.com (isteğe bağlı)','Geri bildirim türü','Hata bildirimi','Özellik önerisi','Erişilebilirlik geri bildirimi','Soru','Diğer geri bildirim','Geri bildiriminiz','Paylaşmak istediğiniz şeyi yazın...','Geri bildirim gönder','Lütfen şifre, ödeme bilgileri veya diğer hassas bilgileri göndermeyin.','Gönderiliyor...','Geri bildiriminizi gönderdiğiniz için teşekkürler!','Mesaj gönderilemedi. Lütfen tekrar deneyin.']
     };
     Object.entries(contactOther).forEach(([lang,a])=>{contactFormTranslations[lang]={formTitle:a[0],formDesc:a[1],nameLabel:a[2],namePlaceholder:a[3],emailLabel:a[4],emailPlaceholder:a[5],typeLabel:a[6],typeBug:a[7],typeFeature:a[8],typeAccessibility:a[9],typeQuestion:a[10],typeOther:a[11],messageLabel:a[12],messagePlaceholder:a[13],submit:a[14],note:a[15],tipsTitle:undefined,bugTitle:undefined,bugText:undefined,featureTitle:undefined,featureText:undefined,accessTitle:undefined,accessText:undefined,sending:a[16],success:a[17],error:a[18]};});
     const contactTipTranslations = {
-      vi:['Phản hồi rõ ràng giúp chúng tôi trả lời nhanh hơn','Báo lỗi','Cho biết trang ColorPick, thiết bị và trình duyệt bạn dùng, kết quả mong đợi và điều đã xảy ra.','Đề xuất tính năng','Mô tả vấn đề bạn muốn giải quyết và cách tính năng mới có thể giúp quy trình chọn màu dễ hơn.','Khả năng tiếp cận','Nếu nút, menu, độ tương phản hoặc bố cục khó dùng bằng bàn phím, trình đọc màn hình, zoom hoặc thiết bị di động, hãy cho chúng tôi biết.'],
-      fa:['بازخورد دقیق به پاسخ سریع‌تر کمک می‌کند','گزارش خطا','صفحه ColorPick، دستگاه و مرورگر، نتیجه مورد انتظار و اتفاقی که رخ داده است را توضیح دهید.','پیشنهاد قابلیت','مشکلی را که می‌خواهید حل کنید و اینکه قابلیت جدید چگونه کار با رنگ را آسان‌تر می‌کند توضیح دهید.','دسترس‌پذیری','اگر کنترل، منو، کنتراست یا چیدمان با صفحه‌کلید، صفحه‌خوان، بزرگ‌نمایی یا موبایل دشوار است، به ما اطلاع دهید.'],
-      ru:['Чёткий отзыв помогает быстрее ответить','Сообщение об ошибке','Укажите страницу ColorPick, устройство и браузер, ожидаемый результат и то, что произошло на самом деле.','Предложение функции','Опишите проблему и то, как новая функция может упростить работу с цветом.','Доступность','Сообщите, если элемент, меню, контраст или макет трудно использовать с клавиатурой, экранным диктором, масштабированием или на мобильном устройстве.'],
-      'pt-BR':['Feedback claro ajuda a responder mais rápido','Relatar um erro','Informe a página do ColorPick, o dispositivo e navegador, o resultado esperado e o que aconteceu.','Sugerir um recurso','Descreva o problema que deseja resolver e como um novo recurso facilitaria seu trabalho com cores.','Acessibilidade','Avise se algum controle, menu, contraste ou layout for difícil de usar com teclado, leitor de tela, zoom ou celular.'],
-      ko:['구체적인 피드백은 더 빠른 답변에 도움이 됩니다','버그 신고','사용한 ColorPick 페이지, 기기와 브라우저, 예상한 결과와 실제 결과를 알려주세요.','기능 제안','해결하려는 문제와 새 기능이 색상 작업을 어떻게 쉽게 만들 수 있는지 설명해 주세요.','접근성','키보드, 화면 낭독기, 확대/축소 또는 모바일에서 사용하기 어려운 버튼, 메뉴, 대비나 레이아웃이 있다면 알려주세요.'],
-      sv:['Tydlig feedback gör det lättare att svara snabbt','Rapportera ett fel','Berätta vilken ColorPick-sida du använde, enhet och webbläsare, vad du förväntade dig och vad som hände.','Föreslå en funktion','Beskriv problemet du vill lösa och hur en ny funktion skulle göra färgarbetet enklare.','Tillgänglighet','Berätta om något reglage, en meny, kontrast eller layout är svårt att använda med tangentbord, skärmläsare, zoom eller mobil.'],
-      'zh-TW':['清楚的意見有助於更快回覆','回報錯誤','請告訴我們使用的 ColorPick 頁面、裝置與瀏覽器、預期結果以及實際發生的情況。','功能建議','說明您想解決的問題，以及新功能如何讓色彩工作更容易。','無障礙','如果按鈕、選單、對比度或版面在鍵盤、螢幕閱讀器、縮放或行動裝置上難以使用，請告訴我們。'],
-      ro:['Feedbackul clar ajută la un răspuns mai rapid','Raportarea unei erori','Spune ce pagină ColorPick ai folosit, ce dispozitiv și browser, ce te așteptai să se întâmple și ce s-a întâmplat.','Sugerează o funcție','Descrie problema pe care vrei să o rezolvi și cum ar face o funcție nouă lucrul cu culorile mai ușor.','Accesibilitate','Spune-ne dacă un control, meniu, contrast sau aspect este greu de folosit cu tastatura, cititorul de ecran, zoom sau mobil.'],
-      fil:['Mas mabilis na masasagot ang malinaw na feedback','Pag-uulat ng bug','Sabihin kung aling pahina ng ColorPick ang ginamit, anong device at browser, ano ang inaasahan mo, at ano ang nangyari.','Mungkahi ng feature','Ilarawan ang problemang gusto mong lutasin at kung paano mapapadali ng bagong feature ang iyong color workflow.','Accessibility','Sabihin sa amin kung may control, menu, contrast o layout na mahirap gamitin gamit ang keyboard, screen reader, zoom o mobile.'],
-      id:['Masukan yang jelas membantu kami merespons lebih cepat','Melaporkan bug','Sebutkan halaman ColorPick yang digunakan, perangkat dan browser, hasil yang diharapkan, serta apa yang terjadi.','Menyarankan fitur','Jelaskan masalah yang ingin Anda selesaikan dan bagaimana fitur baru dapat mempermudah pekerjaan dengan warna.','Aksesibilitas','Beri tahu kami jika kontrol, menu, kontras, atau tata letak sulit digunakan dengan keyboard, pembaca layar, zoom, atau perangkat seluler.'],
-      'es-MX':['Los comentarios claros ayudan a responder más rápido','Reportar un error','Indica qué página de ColorPick usaste, qué dispositivo y navegador tenías, qué esperabas y qué ocurrió.','Sugerir una función','Describe el problema que quieres resolver y cómo una nueva función facilitaría tu trabajo con colores.','Accesibilidad','Cuéntanos si algún control, menú, contraste o diseño es difícil de usar con teclado, lector de pantalla, zoom o celular.'],
-      tr:['Açık geri bildirim daha hızlı yanıt vermemize yardımcı olur','Hata bildirimi','Kullandığınız ColorPick sayfasını, cihaz ve tarayıcıyı, beklediğiniz sonucu ve gerçekte ne olduğunu belirtin.','Özellik önerme','Çözmek istediğiniz sorunu ve yeni bir özelliğin renk iş akışınızı nasıl kolaylaştıracağını açıklayın.','Erişilebilirlik','Bir kontrolün, menünün, kontrastın veya düzenin klavye, ekran okuyucu, yakınlaştırma ya da mobil cihazla kullanımının zor olduğunu bize bildirin.']
+      vi:['Phản hồi rõ ràng giúp chúng tôi trả lời nhanh hơn','Báo lỗi','Cho biết trang Image Color Picker Online, thiết bị và trình duyệt bạn dùng, kết quả mong đợi và điều đã xảy ra.','Đề xuất tính năng','Mô tả vấn đề bạn muốn giải quyết và cách tính năng mới có thể giúp quy trình chọn màu dễ hơn.','Khả năng tiếp cận','Nếu nút, menu, độ tương phản hoặc bố cục khó dùng bằng bàn phím, trình đọc màn hình, zoom hoặc thiết bị di động, hãy cho chúng tôi biết.'],
+      fa:['بازخورد دقیق به پاسخ سریع‌تر کمک می‌کند','گزارش خطا','صفحه Image Color Picker Online، دستگاه و مرورگر، نتیجه مورد انتظار و اتفاقی که رخ داده است را توضیح دهید.','پیشنهاد قابلیت','مشکلی را که می‌خواهید حل کنید و اینکه قابلیت جدید چگونه کار با رنگ را آسان‌تر می‌کند توضیح دهید.','دسترس‌پذیری','اگر کنترل، منو، کنتراست یا چیدمان با صفحه‌کلید، صفحه‌خوان، بزرگ‌نمایی یا موبایل دشوار است، به ما اطلاع دهید.'],
+      ru:['Чёткий отзыв помогает быстрее ответить','Сообщение об ошибке','Укажите страницу Image Color Picker Online, устройство и браузер, ожидаемый результат и то, что произошло на самом деле.','Предложение функции','Опишите проблему и то, как новая функция может упростить работу с цветом.','Доступность','Сообщите, если элемент, меню, контраст или макет трудно использовать с клавиатурой, экранным диктором, масштабированием или на мобильном устройстве.'],
+      'pt-BR':['Feedback claro ajuda a responder mais rápido','Relatar um erro','Informe a página do Image Color Picker Online, o dispositivo e navegador, o resultado esperado e o que aconteceu.','Sugerir um recurso','Descreva o problema que deseja resolver e como um novo recurso facilitaria seu trabalho com cores.','Acessibilidade','Avise se algum controle, menu, contraste ou layout for difícil de usar com teclado, leitor de tela, zoom ou celular.'],
+      ko:['구체적인 피드백은 더 빠른 답변에 도움이 됩니다','버그 신고','사용한 Image Color Picker Online 페이지, 기기와 브라우저, 예상한 결과와 실제 결과를 알려주세요.','기능 제안','해결하려는 문제와 새 기능이 색상 작업을 어떻게 쉽게 만들 수 있는지 설명해 주세요.','접근성','키보드, 화면 낭독기, 확대/축소 또는 모바일에서 사용하기 어려운 버튼, 메뉴, 대비나 레이아웃이 있다면 알려주세요.'],
+      sv:['Tydlig feedback gör det lättare att svara snabbt','Rapportera ett fel','Berätta vilken Image Color Picker Online-sida du använde, enhet och webbläsare, vad du förväntade dig och vad som hände.','Föreslå en funktion','Beskriv problemet du vill lösa och hur en ny funktion skulle göra färgarbetet enklare.','Tillgänglighet','Berätta om något reglage, en meny, kontrast eller layout är svårt att använda med tangentbord, skärmläsare, zoom eller mobil.'],
+      'zh-TW':['清楚的意見有助於更快回覆','回報錯誤','請告訴我們使用的 Image Color Picker Online 頁面、裝置與瀏覽器、預期結果以及實際發生的情況。','功能建議','說明您想解決的問題，以及新功能如何讓色彩工作更容易。','無障礙','如果按鈕、選單、對比度或版面在鍵盤、螢幕閱讀器、縮放或行動裝置上難以使用，請告訴我們。'],
+      ro:['Feedbackul clar ajută la un răspuns mai rapid','Raportarea unei erori','Spune ce pagină Image Color Picker Online ai folosit, ce dispozitiv și browser, ce te așteptai să se întâmple și ce s-a întâmplat.','Sugerează o funcție','Descrie problema pe care vrei să o rezolvi și cum ar face o funcție nouă lucrul cu culorile mai ușor.','Accesibilitate','Spune-ne dacă un control, meniu, contrast sau aspect este greu de folosit cu tastatura, cititorul de ecran, zoom sau mobil.'],
+      fil:['Mas mabilis na masasagot ang malinaw na feedback','Pag-uulat ng bug','Sabihin kung aling pahina ng Image Color Picker Online ang ginamit, anong device at browser, ano ang inaasahan mo, at ano ang nangyari.','Mungkahi ng feature','Ilarawan ang problemang gusto mong lutasin at kung paano mapapadali ng bagong feature ang iyong color workflow.','Accessibility','Sabihin sa amin kung may control, menu, contrast o layout na mahirap gamitin gamit ang keyboard, screen reader, zoom o mobile.'],
+      id:['Masukan yang jelas membantu kami merespons lebih cepat','Melaporkan bug','Sebutkan halaman Image Color Picker Online yang digunakan, perangkat dan browser, hasil yang diharapkan, serta apa yang terjadi.','Menyarankan fitur','Jelaskan masalah yang ingin Anda selesaikan dan bagaimana fitur baru dapat mempermudah pekerjaan dengan warna.','Aksesibilitas','Beri tahu kami jika kontrol, menu, kontras, atau tata letak sulit digunakan dengan keyboard, pembaca layar, zoom, atau perangkat seluler.'],
+      'es-MX':['Los comentarios claros ayudan a responder más rápido','Reportar un error','Indica qué página de Image Color Picker Online usaste, qué dispositivo y navegador tenías, qué esperabas y qué ocurrió.','Sugerir una función','Describe el problema que quieres resolver y cómo una nueva función facilitaría tu trabajo con colores.','Accesibilidad','Cuéntanos si algún control, menú, contraste o diseño es difícil de usar con teclado, lector de pantalla, zoom o celular.'],
+      tr:['Açık geri bildirim daha hızlı yanıt vermemize yardımcı olur','Hata bildirimi','Kullandığınız Image Color Picker Online sayfasını, cihaz ve tarayıcıyı, beklediğiniz sonucu ve gerçekte ne olduğunu belirtin.','Özellik önerme','Çözmek istediğiniz sorunu ve yeni bir özelliğin renk iş akışınızı nasıl kolaylaştıracağını açıklayın.','Erişilebilirlik','Bir kontrolün, menünün, kontrastın veya düzenin klavye, ekran okuyucu, yakınlaştırma ya da mobil cihazla kullanımının zor olduğunu bize bildirin.']
     };
     Object.entries(contactTipTranslations).forEach(([lang,a])=>{const t=contactFormTranslations[lang]; if(t){t.tipsTitle=a[0];t.bugTitle=a[1];t.bugText=a[2];t.featureTitle=a[3];t.featureText=a[4];t.accessTitle=a[5];t.accessText=a[6];}});
 
@@ -2888,25 +2888,25 @@
       const form=document.getElementById('colorpickContactForm'); if(!form) return;
       applyContactFormTranslations(language);
       const hero={
-        en:['Contact Us','Contact Us','Have a question, found a bug, or have an idea that could make ColorPick better? Get in touch.'],
-        hi:['संपर्क करें','संपर्क करें','कोई सवाल है, बग मिला है या ColorPick को बेहतर बनाने का विचार है? हमसे संपर्क करें।'],
-        es:['Contacto','Contacto','¿Tienes una pregunta, encontraste un error o tienes una idea para mejorar ColorPick? Escríbenos.'],
-        fr:['Nous contacter','Nous contacter','Une question, un bug ou une idée pour améliorer ColorPick ? Contactez-nous.'],
-        de:['Kontakt','Kontakt','Eine Frage, ein Fehler oder eine Idee, die ColorPick verbessern könnte? Kontaktieren Sie uns.'],
+        en:['Contact Us','Contact Us','Have a question, found a bug, or have an idea that could make Image Color Picker Online better? Get in touch.'],
+        hi:['संपर्क करें','संपर्क करें','कोई सवाल है, बग मिला है या Image Color Picker Online को बेहतर बनाने का विचार है? हमसे संपर्क करें।'],
+        es:['Contacto','Contacto','¿Tienes una pregunta, encontraste un error o tienes una idea para mejorar Image Color Picker Online? Escríbenos.'],
+        fr:['Nous contacter','Nous contacter','Une question, un bug ou une idée pour améliorer Image Color Picker Online ? Contactez-nous.'],
+        de:['Kontakt','Kontakt','Eine Frage, ein Fehler oder eine Idee, die Image Color Picker Online verbessern könnte? Kontaktieren Sie uns.'],
         ja:['お問い合わせ','お問い合わせ','質問、バグ報告、ColorPickを改善するアイデアがあれば、ぜひご連絡ください。'],
-        vi:['Liên hệ','Liên hệ','Bạn có câu hỏi, phát hiện lỗi hoặc ý tưởng giúp ColorPick tốt hơn? Hãy liên hệ với chúng tôi.'],
-        fa:['تماس با ما','تماس با ما','سؤال، گزارش خطا یا ایده‌ای برای بهتر شدن ColorPick دارید؟ با ما در تماس باشید.'],
-        ru:['Контакты','Контакты','Есть вопрос, ошибка или идея, которая поможет улучшить ColorPick? Напишите нам.'],
-        'pt-BR':['Contato','Contato','Tem uma pergunta, encontrou um erro ou tem uma ideia para melhorar o ColorPick? Fale conosco.'],
+        vi:['Liên hệ','Liên hệ','Bạn có câu hỏi, phát hiện lỗi hoặc ý tưởng giúp Image Color Picker Online tốt hơn? Hãy liên hệ với chúng tôi.'],
+        fa:['تماس با ما','تماس با ما','سؤال، گزارش خطا یا ایده‌ای برای بهتر شدن Image Color Picker Online دارید؟ با ما در تماس باشید.'],
+        ru:['Контакты','Контакты','Есть вопрос, ошибка или идея, которая поможет улучшить Image Color Picker Online? Напишите нам.'],
+        'pt-BR':['Contato','Contato','Tem uma pergunta, encontrou um erro ou tem uma ideia para melhorar o Image Color Picker Online? Fale conosco.'],
         ko:['문의하기','문의하기','질문, 버그 신고 또는 ColorPick을 개선할 아이디어가 있다면 알려주세요.'],
-        sv:['Kontakt','Kontakt','Har du en fråga, hittat ett fel eller en idé som kan förbättra ColorPick? Hör av dig.'],
-        'zh-TW':['聯絡我們','聯絡我們','如果您有問題、發現錯誤或有改善 ColorPick 的想法，歡迎與我們聯絡。'],
-        ro:['Contact','Contact','Ai o întrebare, ai găsit o eroare sau ai o idee pentru îmbunătățirea ColorPick? Scrie-ne.'],
-        fil:['Makipag-ugnayan','Makipag-ugnayan','May tanong, nakakita ng bug, o may ideya para mapahusay ang ColorPick? Makipag-ugnayan sa amin.'],
-        id:['Kontak','Kontak','Punya pertanyaan, menemukan bug, atau punya ide untuk meningkatkan ColorPick? Hubungi kami.'],
-        'es-MX':['Contacto','Contacto','¿Tienes una pregunta, encontraste un error o tienes una idea para mejorar ColorPick? Escríbenos.'],
-        tr:['İletişim','İletişim','Bir sorunuz, hata bildiriminiz veya ColorPick’i geliştirmek için bir fikriniz mi var? Bize ulaşın.']
-      }[language]||['Contact Us','Contact Us','Have a question, found a bug, or have an idea that could make ColorPick better? Get in touch.'];
+        sv:['Kontakt','Kontakt','Har du en fråga, hittat ett fel eller en idé som kan förbättra Image Color Picker Online? Hör av dig.'],
+        'zh-TW':['聯絡我們','聯絡我們','如果您有問題、發現錯誤或有改善 Image Color Picker Online 的想法，歡迎與我們聯絡。'],
+        ro:['Contact','Contact','Ai o întrebare, ai găsit o eroare sau ai o idee pentru îmbunătățirea Image Color Picker Online? Scrie-ne.'],
+        fil:['Makipag-ugnayan','Makipag-ugnayan','May tanong, nakakita ng bug, o may ideya para mapahusay ang Image Color Picker Online? Makipag-ugnayan sa amin.'],
+        id:['Kontak','Kontak','Punya pertanyaan, menemukan bug, atau punya ide untuk meningkatkan Image Color Picker Online? Hubungi kami.'],
+        'es-MX':['Contacto','Contacto','¿Tienes una pregunta, encontraste un error o tienes una idea para mejorar Image Color Picker Online? Escríbenos.'],
+        tr:['İletişim','İletişim','Bir sorunuz, hata bildiriminiz veya Image Color Picker Online’i geliştirmek için bir fikriniz mi var? Bize ulaşın.']
+      }[language]||['Contact Us','Contact Us','Have a question, found a bug, or have an idea that could make Image Color Picker Online better? Get in touch.'];
       setText('.legal-hero .eyebrow',hero[0]);setText('.legal-hero h1',hero[1]);setText('.legal-hero p',hero[2]);
       const t=contactFormTranslations[language]||contactFallback;
       const msg=document.getElementById('contactMessage'), count=document.getElementById('contactCount'), submit=document.getElementById('contactSubmit'), status=document.getElementById('contactStatus');
@@ -3043,7 +3043,7 @@
             workflow.querySelector('h3').textContent = wt.sub;
             workflow.querySelector('h3 + p').textContent = wt.subtext;
             const foot = document.querySelector('footer > p');
-            if(foot) foot.textContent = '© 2026 ColorPick. ' + pt.rights;
+            if(foot) foot.textContent = '© 2026 Image Color Picker Online. ' + pt.rights;
         }
     }
 
@@ -3430,7 +3430,7 @@
 
 
     console.log(
-        "ColorPick language system initialized:",
+        "Image Color Picker Online language system initialized:",
         currentLanguage
     );
 

@@ -1,4 +1,4 @@
-# ColorPick robots.txt
+# Image Color Picker Online robots.txt
 
 User-agent: *
 Allow: /

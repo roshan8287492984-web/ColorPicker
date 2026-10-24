@@ -1,4 +1,4 @@
-ColorPick indexing audit — 12 October 2026
+Image Color Picker Online indexing audit — 12 October 2026
 
 Changes made:
 - Removed the `noindex,follow` robots meta directive from all 18 contact pages (English + 17 localized versions).

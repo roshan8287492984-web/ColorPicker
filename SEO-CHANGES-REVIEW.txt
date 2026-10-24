@@ -1,4 +1,4 @@
-ColorPick SEO update — review before publishing
+Image Color Picker Online SEO update — review before publishing
 
 Updated English-language pages:
 - index.html: refined title/description/social metadata, clearer H1, contextual link to the HEX/code tool, and an accurate note about closest CSS color-name matching.

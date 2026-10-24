@@ -1,6 +1,6 @@
 {
-  "name": "ColorPick",
-  "short_name": "ColorPick",
+  "name": "Image Color Picker Online",
+  "short_name": "Image Color Picker Online",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

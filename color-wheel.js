@@ -430,7 +430,7 @@
     setTimeout(()=>button.textContent="Copy Palette",1000);
   });
 
-  /* Same theme storage key as the existing ColorPick website. */
+  /* Same theme storage key as the existing Image Color Picker Online website. */
   function applyTheme(theme){
     const dark=theme==="dark";
     document.body.classList.toggle("dark",dark);
